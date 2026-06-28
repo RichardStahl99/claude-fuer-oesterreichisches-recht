@@ -75,7 +75,13 @@ description: "<eine Zeile: Gebiet + was der Skill tut>. Österreich, kein deutsc
 python3 tools/ris_client.py norm ABGB 932           # Permalink + HTTP-Status
 python3 tools/ris_client.py judikatur "<Stichworte>" --gericht OGH --von 2022-01-01
 python3 tools/ris_client.py smoke                    # Grounding-Selbsttest
+python3 tools/ris_client.py linie "<Stichworte>" --gesetz ABGB --paragraf 932  # OGH-Leitsätze nach Linientiefe + Fassungsstand
+python3 tools/ris_client.py leit "6 Ob 158/22m"     # Leitentscheidungs-Signal (Stamm? Linientiefe?)
+python3 tools/ris_client.py aktualitaet MRG 16 --seit 2010-06-01  # ⚠️ Norm nach Entscheidung geändert?
+python3 tools/ris_client.py volltext "6 Ob 158/22m"  # Begründung im Volltext
 ```
+
+`linie`/`leit`/`aktualitaet`/`volltext` liefern **Rohmaterial** (Gerichts-Leitsätze, Linientiefe, Fassungsstand, Volltext) — keine geprüfte Doktrin; Auswahl und Bewertung bleiben anwaltliche Aufgabe. Details: `references/ris-quellen.md` Abschnitt 6.
 
 OGD-Eigenheiten (in `references/ris-quellen.md` dokumentiert): tief verschachteltes Schema (`Organ` unter `Technisch`, `DokumentUrl` unter `Allgemein`); `Suchworte` sind **UND-verknüpft** (praktikabel max. 2 Wörter); gültige `DokumenteProSeite`: `Ten/Twenty/Fifty/OneHundred`; ausländische Organe (`AUSL/EGMR`) werden gefiltert; Rechtssätze tragen eine **Semikolon-Liste** von Geschäftszahlen (führende GZ = Leitentscheidung).
 

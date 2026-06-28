@@ -30,6 +30,8 @@ Empirisch verifiziertes Verhalten der OGD-Judikatur-Suche (Stand: live geprüft)
 from __future__ import annotations
 
 import argparse
+import datetime
+import html
 import json
 import re
 import sys
@@ -149,6 +151,7 @@ def search_judikatur(
     norm: str | None = None,
     von: str | None = None,
     bis: str | None = None,
+    geschaeftszahl: str | None = None,
     applikation: str = "Justiz",
     page: int = 1,
     size: str = "Ten",
@@ -172,6 +175,8 @@ def search_judikatur(
         params["EntscheidungsdatumVon"] = von
     if bis:
         params["EntscheidungsdatumBis"] = bis
+    if geschaeftszahl:
+        params["Geschaeftszahl"] = geschaeftszahl
 
     url, data = _request("Judikatur", params)
     root = data.get("OgdSearchResult", {})
@@ -247,6 +252,184 @@ def format_citation(result: dict) -> str:
 
 
 # --------------------------------------------------------------------------- #
+# Volltext, Leitsatz, Leitentscheidungs-Signal, Fassungsstand (Aktualität)
+# --------------------------------------------------------------------------- #
+def _strip_html(raw: str) -> str:
+    raw = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw)
+    raw = re.sub(r"(?s)<[^>]+>", " ", raw)
+    return re.sub(r"\s+", " ", html.unescape(raw)).strip()
+
+
+def get_document_text(doknr: str) -> str | None:
+    """Volltext eines RIS-Justiz-Dokuments (Rechtssatz JJR_ oder Entscheidung JJT_)."""
+    url = f"{RIS_WEB}Dokumente/Justiz/{doknr}/{doknr}.html"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return _strip_html(resp.read().decode("utf-8", "replace"))
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def rechtssatz_leitsatz(doknr: str) -> dict:
+    """Den vom OGH formulierten Leitsatz (Rechtssatz) und die interpretierte Norm
+    aus einem JJR_-Dokument ziehen — die frei verfügbare 'Doktrin' des Gerichts."""
+    text = get_document_text(doknr) or ""
+    norm = None
+    m = re.search(r"\bNorm\b\s+(.+?)\s+(?:Rechtssatz|Schlagworte|European|Kopf)", text)
+    if m:
+        norm = m.group(1).strip()[:160]
+    leitsatz = None
+    m = re.search(
+        r"\bRechtssatz\b\s+(.+?)\s+(?:European Case Law|Im RIS seit|Schlagworte|Dokumentnummer|Zuletzt akt)",
+        text,
+    )
+    if m:
+        leitsatz = m.group(1).strip()
+    return {"doknr": doknr, "norm": norm, "leitsatz": leitsatz}
+
+
+def leitentscheidung(gz: str) -> dict:
+    """Leitentscheidungs-Signal für eine Geschäftszahl, abgeleitet aus dem
+    Rechtssatz-System: Ist die GZ der STAMM (führende GZ) eines Rechtssatzes,
+    hat sie diese Linie begründet. Die Linientiefe (Anzahl Entscheidungen in
+    der Linie) misst, wie gefestigt sie ist."""
+    target = normalize_gz(gz).replace(" ", "")
+    res = search_judikatur(geschaeftszahl=gz, size="Fifty")
+    stamm_of, member_of = [], []
+    for r in res["results"]:
+        if not r.get("rs_number"):
+            continue
+        entry = {
+            "rs": r["rs_number"],
+            "stamm_gz": r["leading_gz"],
+            "linientiefe": len(r["gz_list"]),
+            "doknr": r["doc_id"],
+        }
+        if (r.get("leading_gz") or "").replace(" ", "") == target:
+            stamm_of.append(entry)
+        else:
+            member_of.append(entry)
+    depths = [e["linientiefe"] for e in stamm_of + member_of]
+    return {
+        "gz": gz,
+        "ist_leitentscheidung": bool(stamm_of),
+        "stamm_von": stamm_of,
+        "folgt_linie": member_of,
+        "max_linientiefe": max(depths, default=0),
+    }
+
+
+def stamm_entscheidung_doknr(gz: str) -> str | None:
+    """JJT_-Dokumentnummer der Entscheidung, die unter dieser GZ eine Rechtssatz-
+    Linie begründet hat (nur wenn die GZ Stamm ist)."""
+    for e in leitentscheidung(gz)["stamm_von"]:
+        if (e.get("doknr") or "").startswith("JJR_"):
+            return e["doknr"].replace("JJR_", "JJT_", 1)
+    return None
+
+
+def _para_num(s: str | None):
+    m = re.search(r"(\d+)", s or "")
+    return int(m.group(1)) if m else None
+
+
+def norm_inkrafttreten(abbrev_or_gnr: str, paragraf: str) -> dict | None:
+    """Fassungsstand eines Paragrafen: seit wann die geltende Fassung in Kraft ist
+    und durch welches BGBl sie zuletzt geändert wurde. Paginiert über die (ggf.
+    sehr lange) konsolidierte Norm, bricht ab, sobald der Paragraf gefunden oder
+    überschritten ist (für große Gesetze wie das ABGB)."""
+    gnr = GESETZESNUMMER.get(abbrev_or_gnr.upper(), abbrev_or_gnr)
+    target = re.sub(r"[^0-9a-zäöüß]", "", str(paragraf).lower())
+    target_num = _para_num(paragraf)
+    today = datetime.date.today().isoformat()
+    for page in range(1, 30):
+        params = {
+            "Applikation": "BrKons",
+            "Gesetzesnummer": str(gnr),
+            "Fassung.FassungVom": today,
+            "DokumenteProSeite": "OneHundred",
+            "Seitennummer": str(page),
+        }
+        _, data = _request("Bundesrecht", params)
+        res = data.get("OgdSearchResult", {}).get("OgdDocumentResults")
+        if not res:
+            break
+        refs = _as_list(res.get("OgdDocumentReference"))
+        last_num = None
+        for ref in refs:
+            brk = (
+                ref.get("Data", {}).get("Metadaten", {})
+                .get("Bundesrecht", {}).get("BrKons", {})
+            )
+            pn = brk.get("Paragraphnummer") or brk.get("ArtikelParagraphAnlage") or ""
+            cand = re.sub(r"[^0-9a-zäöüß]", "", pn.lower())
+            if cand == target:
+                return {
+                    "paragraf": (brk.get("ArtikelParagraphAnlage") or f"§ {paragraf}").strip(),
+                    "inkrafttretensdatum": brk.get("Inkrafttretensdatum"),
+                    "idf": brk.get("Kundmachungsorgan"),
+                }
+            n = _para_num(pn)
+            if n is not None:
+                last_num = n
+        # Paragrafen kommen aufsteigend — abbrechen, sobald wir den Zielparagrafen
+        # überschritten haben (Puffer für Buchstaben-§§ wie 932a).
+        if target_num is not None and last_num is not None and last_num > target_num + 3:
+            break
+        if len(refs) < 100:
+            break
+    return None
+
+
+def currency_flag(abbrev_or_gnr: str, paragraf: str, decision_date: str | None) -> dict:
+    """Aktualitäts-Flag: Wurde § <paragraf> NACH <decision_date> geändert?
+    Erkennt (flaggt) eine Änderung — beurteilt NICHT, ob sie die Aussage betrifft."""
+    info = norm_inkrafttreten(abbrev_or_gnr, paragraf)
+    label = f"§ {paragraf} {abbrev_or_gnr.upper()}"
+    if not info or not info.get("inkrafttretensdatum"):
+        return {"status": "unbekannt",
+                "message": f"Fassungsstand von {label} nicht ermittelbar — Fassung manuell in RIS prüfen."}
+    ikd = info["inkrafttretensdatum"]
+    if decision_date and ikd > decision_date:
+        return {"status": "geaendert", "inkrafttretensdatum": ikd, "idf": info.get("idf"),
+                "message": (f"⚠️  {label}: geltende Fassung in Kraft seit {ikd} ({info.get('idf')}) — "
+                            f"also NACH der Entscheidung vom {decision_date}. "
+                            "Die Entscheidung kann überholt sein; Leitsatz an der geltenden Fassung prüfen.")}
+    if decision_date:
+        return {"status": "aktuell", "inkrafttretensdatum": ikd, "idf": info.get("idf"),
+                "message": f"✓  {label}: Fassung seit der Entscheidung ({decision_date}) unverändert (in Kraft seit {ikd})."}
+    return {"status": "info", "inkrafttretensdatum": ikd, "idf": info.get("idf"),
+            "message": f"ℹ️  {label}: geltende Fassung in Kraft seit {ikd} ({info.get('idf')})."}
+
+
+def linie(suchworte: str, gericht: str = "OGH", von: str | None = None,
+          norm_gesetz: str | None = None, norm_paragraf: str | None = None,
+          size: str = "Ten", max_lines: int = 8) -> dict:
+    """Doktrinäre Linie zu einem Thema: OGH-Rechtssätze nach Linientiefe sortiert,
+    je mit dem vom Gericht formulierten Leitsatz, plus Fassungsstand der Norm.
+    ROHMATERIAL für eine Synthese — die Bewertung bleibt anwaltliche Aufgabe."""
+    res = search_judikatur(suchworte=suchworte, gericht=gericht, von=von, size=size)
+    rss = [r for r in res["results"] if r.get("rs_number")]
+    rss.sort(key=lambda r: len(r["gz_list"]), reverse=True)
+    linien = []
+    for r in rss[:max_lines]:
+        ls = rechtssatz_leitsatz(r["doc_id"])
+        linien.append({
+            "rs": r["rs_number"],
+            "leitsatz": ls.get("leitsatz"),
+            "norm": ls.get("norm"),
+            "stamm_gz": r["leading_gz"],
+            "stamm_datum": r["entscheidungsdatum"],
+            "linientiefe": len(r["gz_list"]),
+            "permalink": r["dokument_url"],
+        })
+    fassung = (norm_inkrafttreten(norm_gesetz, norm_paragraf)
+               if (norm_gesetz and norm_paragraf) else None)
+    return {"suchworte": suchworte, "total": res["total"], "linien": linien, "norm_fassung": fassung}
+
+
+# --------------------------------------------------------------------------- #
 # Smoke-Test = Phase-1 Definition-of-Done
 # --------------------------------------------------------------------------- #
 def smoke() -> int:
@@ -317,10 +500,78 @@ def _cli(argv=None) -> int:
 
     sub.add_parser("smoke", help="Phase-1 Grounding-Smoke-Test")
 
+    p_linie = sub.add_parser("linie", help="Doktrinäre Linie: OGH-Leitsätze nach Linientiefe + Fassungsstand")
+    p_linie.add_argument("suchworte")
+    p_linie.add_argument("--gericht", default="OGH")
+    p_linie.add_argument("--von", default=None)
+    p_linie.add_argument("--gesetz", default=None, help="Norm für Fassungsstand, z.B. ABGB")
+    p_linie.add_argument("--paragraf", default=None)
+    p_linie.add_argument("--size", default="Ten", choices=VALID_PAGE_SIZES)
+
+    p_leit = sub.add_parser("leit", help="Leitentscheidungs-Signal für eine Geschäftszahl")
+    p_leit.add_argument("gz")
+
+    p_akt = sub.add_parser("aktualitaet", help="Fassungsstand eines Paragrafen (optional relativ zu einem Entscheidungsdatum)")
+    p_akt.add_argument("gesetz")
+    p_akt.add_argument("paragraf")
+    p_akt.add_argument("--seit", default=None, help="Entscheidungsdatum YYYY-MM-DD: flaggt Änderung danach")
+
+    p_vt = sub.add_parser("volltext", help="Volltext einer Entscheidung/Rechtssatzes (GZ oder Dokumentnummer)")
+    p_vt.add_argument("gz_oder_doknr")
+    p_vt.add_argument("--chars", type=int, default=3000)
+
     args = parser.parse_args(argv)
 
     if args.cmd == "smoke":
         return smoke()
+
+    if args.cmd == "leit":
+        info = leitentscheidung(args.gz)
+        print(f"Geschäftszahl {args.gz}: "
+              f"{'LEITENTSCHEIDUNG (Stamm einer Rechtssatz-Linie)' if info['ist_leitentscheidung'] else 'Folgeentscheidung'}")
+        for e in info["stamm_von"]:
+            print(f"  ★ Stamm von RIS-Justiz {e['rs']}  ({e['linientiefe']} Entscheidungen in der Linie)")
+        for e in info["folgt_linie"]:
+            print(f"  · folgt Linie {e['rs']} (Stamm {e['stamm_gz']}, {e['linientiefe']} Entscheidungen)")
+        print(f"  größte Linientiefe: {info['max_linientiefe']}")
+        return 0
+
+    if args.cmd == "aktualitaet":
+        print(currency_flag(args.gesetz, args.paragraf, args.seit)["message"])
+        return 0
+
+    if args.cmd == "volltext":
+        arg = args.gz_oder_doknr
+        doknr = arg if arg.startswith(("JJR_", "JJT_")) else stamm_entscheidung_doknr(arg)
+        if not doknr:
+            print("Kein Stamm-Entscheidungstext zur GZ gefunden. RIS-Web-Suche:")
+            print(f"{RIS_WEB}Ergebnis.wxe?Abfrage=Justiz&Suchworte={urllib.parse.quote(arg)}")
+            return 1
+        text = get_document_text(doknr)
+        if not text:
+            print("Dokument nicht abrufbar:", doknr)
+            return 1
+        print(f"# {doknr}\n")
+        print(text[:args.chars] + (" …" if len(text) > args.chars else ""))
+        return 0
+
+    if args.cmd == "linie":
+        data = linie(args.suchworte, gericht=args.gericht, von=args.von,
+                     norm_gesetz=args.gesetz, norm_paragraf=args.paragraf, size=args.size)
+        print(f'# Linie zu „{data["suchworte"]}"  ({data["total"]} Treffer; OGH-Rechtssätze nach Linientiefe)\n')
+        for ln in data["linien"]:
+            print(f"RIS-Justiz {ln['rs']}  ·  {ln['linientiefe']} Entscheidungen  ·  Stamm {ln['stamm_gz']} ({ln['stamm_datum']})")
+            if ln.get("norm"):
+                print(f"   Norm: {ln['norm']}")
+            if ln.get("leitsatz"):
+                print(f"   Leitsatz: {ln['leitsatz'][:400]}")
+            print(f"   {ln['permalink']}")
+        nf = data.get("norm_fassung")
+        if nf:
+            print(f"\nFassungsstand {nf['paragraf']}: in Kraft seit {nf['inkrafttretensdatum']} ({nf.get('idf')}).")
+            print("→ Leitsätze mit Stamm-Datum VOR diesem Datum auf die geltende Fassung prüfen.")
+        print("\nHinweis: Rohmaterial (Gerichts-Leitsätze), keine geprüfte Doktrin. Synthese/Bewertung bleibt anwaltliche Aufgabe.")
+        return 0
 
     if args.cmd == "norm":
         url = norm_permalink(args.gesetz, args.paragraf)

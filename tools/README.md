@@ -23,7 +23,25 @@ python3 tools/ris_client.py judikatur "laesio enormis" --gericht OGH --json
 
 # Phase-1-Grounding-Smoke-Test: Norm (§ 932 ABGB) + Judikatur, je HTTP-200-geprüft
 python3 tools/ris_client.py smoke
+
+# Doktrinäre Linie: OGH-Leitsätze nach Linientiefe + Fassungsstand der Norm
+python3 tools/ris_client.py linie "Verbesserung Gewährleistung" --gesetz ABGB --paragraf 932
+
+# Leitentscheidungs-Signal (Stamm eines Rechtssatzes? wie gefestigt die Linie?)
+python3 tools/ris_client.py leit "6 Ob 158/22m"
+
+# Aktualität: wurde § 16 MRG nach einer Entscheidung (2010) geändert? -> ⚠️ Flag
+python3 tools/ris_client.py aktualitaet MRG 16 --seit 2010-06-01
+
+# Volltext (Begründung) einer Entscheidung
+python3 tools/ris_client.py volltext "6 Ob 158/22m" --chars 4000
 ```
+
+### Linie / Leitentscheidung / Aktualität
+
+- `linie` liefert die vom OGH formulierten **Leitsätze** (frei verfügbare „Doktrin") als **Rohmaterial** — keine geprüfte Lehrmeinung; Bewertung bleibt anwaltliche Aufgabe.
+- `leit` nutzt das Rechtssatz-System: eine GZ ist **Leitentscheidung**, wenn sie **Stamm** (führende GZ) eines Rechtssatzes ist; die **Linientiefe** (Anzahl Entscheidungen) zeigt, wie gefestigt die Linie ist.
+- `aktualitaet --seit <Entscheidungsdatum>` **flaggt** Gesetzesänderungen nach dem Entscheidungsdatum (⚠️ ggf. überholt) — erkennt die Änderung, beurteilt sie nicht. Details: `references/ris-quellen.md` Abschnitt 6.
 
 ### Als Modul
 

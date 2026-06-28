@@ -81,5 +81,16 @@ Als Modul: `from tools.ris_client import search_judikatur, norm_permalink, forma
 
 ## 5. Was RIS-Grounding leistet — und was nicht
 
-- **Fängt:** erfundene Geschäftszahlen, RS-Nummern, nicht existierende Paragrafen, tote Permalinks.
-- **Fängt nicht:** dogmatische Fehlinterpretation einer real existierenden Entscheidung; veraltete Rechtslage, wenn eine alte (existierende) Entscheidung zitiert wird; Lehrstreit. Dafür braucht es Kommentarliteratur und/oder anwaltliche Prüfung. Ein bekanntes Test-Set mit *bekannten richtigen Antworten* (Regressionsfälle) ergänzt die reine Linkprüfung.
+- **Fängt:** erfundene Geschäftszahlen, RS-Nummern, nicht existierende Paragrafen, tote Permalinks; **Gesetzesänderungen nach dem Entscheidungsdatum** (Aktualitäts-Flag, s. u. Abschnitt 6).
+- **Fängt nicht:** dogmatische Fehlinterpretation einer real existierenden Entscheidung; ob eine erkannte Gesetzesänderung die Aussage *inhaltlich* überholt (geflaggt wird die Änderung, nicht ihre Tragweite); akademischer Lehrstreit. Dafür braucht es Kommentarliteratur und/oder anwaltliche Prüfung. Ein bekanntes Test-Set mit *bekannten richtigen Antworten* (Regressionsfälle) ergänzt die reine Linkprüfung.
+
+## 6. Linie, Leitentscheidung, Aktualität, Volltext
+
+Über die reine Permalink-Prüfung hinaus liefert `tools/ris_client.py` strukturiertes **Rohmaterial** für eine (anwaltlich zu verantwortende) Synthese:
+
+- **`linie "<Stichworte>" [--gesetz ABGB --paragraf 932]`** — OGH-Rechtssätze zum Thema, sortiert nach **Linientiefe** (Anzahl Entscheidungen in der Linie), je mit dem **vom Gericht formulierten Leitsatz** (die frei verfügbare Doktrin) und dem **Fassungsstand** der Norm.
+- **`leit <Geschäftszahl>`** — Leitentscheidungs-Signal: Ist die GZ **Stamm** (führende GZ) eines Rechtssatzes, hat sie die Linie **begründet** (Leitentscheidung). Die Linientiefe misst, wie gefestigt sie ist (z. B. RS0039018: 157 Entscheidungen = gefestigte ständige Rechtsprechung).
+- **`aktualitaet <Gesetz> <§> [--seit JJJJ-MM-TT]`** — Fassungsstand: seit wann die geltende Fassung in Kraft ist (Inkrafttretensdatum + änderndes BGBl). Mit `--seit <Entscheidungsdatum>` wird **geflaggt**, ob der Paragraf **nach** der Entscheidung geändert wurde (⚠️ ggf. überholt). Erkennt die Änderung, beurteilt sie **nicht**.
+- **`volltext <GZ|Dokumentnummer>`** — Volltext einer Entscheidung (Begründung) bzw. eines Rechtssatzes.
+
+**Doktrin ohne Kommentar — was geht (frei, verifizierbar):** die vom OGH selbst formulierten **Leitsätze** (Rechtssätze) und die **Begründungen** der Entscheidungen sind kostenlos und zitierfähig; sie geben die *gerichtliche* Sicht der gefestigten Linie. **Was nicht geht:** der akademische Meinungsstreit (Lehre) lebt in kostenpflichtigen Kommentaren und ist nicht in RIS. Eine `linie`-Ausgabe ist **Rohmaterial**, keine geprüfte Doktrin — Auswahl, Gewichtung und Bewertung bleiben anwaltliche Aufgabe.
