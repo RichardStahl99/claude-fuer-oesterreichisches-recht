@@ -15,7 +15,7 @@
     {
       "name": "gewaehrleistung-konsumentenschutz",
       "source": "./gewaehrleistung-konsumentenschutz",
-      "description": "Gewährleistung bei Waren: Regimewahl VGG (B2C, ab 1.1.2022) vs. §§ 922 ff ABGB, Behelfshierarchie, Verjährung. Pilot-Vertikale. (Skelett — Skills folgen in Phase 2.)",
+      "description": "Gewährleistung bei Waren: Regimewahl VGG (B2C, ab 1.1.2022) vs. §§ 922 ff ABGB, Behelfshierarchie, Verjährung. Erste Pilot-Vertikale (RIS-gegroundet).",
       "version": "0.1.0",
       "author": "RichardStahl99"
     },
