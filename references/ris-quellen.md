@@ -1,0 +1,85 @@
+# RIS — Quellenanbindung und Grounding-Protokoll
+
+> Diese Datei beschreibt, **wie** österreichische Primärquellen verifiziert werden. Sie ist die Daten-Grundlage hinter `references/zitierweise.md`. Tooling: `tools/ris_client.py`.
+
+## 1. Was ist RIS?
+
+**RIS — Rechtsinformationssystem des Bundes** (`https://www.ris.bka.gv.at`) ist die amtliche, **kostenlose** Rechtsdatenbank Österreichs. Sie ersetzt funktional, was im deutschen Repository `gesetze-im-internet.de` + `rechtsprechung-im-internet.de` leisten — deckt aber zusätzlich Landesrecht und nahezu die gesamte Höchstgerichts-Judikatur ab.
+
+Abdeckung u. a.: **Bundesrecht konsolidiert**, **Landesrecht**, **Judikatur** (OGH, OLG, LG; VwGH, VfGH, BVwG, LVwG; teils EGMR/EuGH-Verweise), Erlässe, BGBl.
+
+**Wichtig — Grenze:** RIS enthält **Primärrecht** (Normtext + Entscheidungen), **keine Lehrmeinung**. Dogmatik/Kommentierung liegt in kostenpflichtigen Werken (rdb.at/Manz, LexisNexis, Linde). RIS-Grounding beweist daher, dass eine **Fundstelle existiert und einschlägig ist** — es ersetzt **nicht** die fachliche Richtigkeitsprüfung der Doktrin. Für diese bleibt der Anwalt zuständig (siehe Driver-Seat-Prinzip).
+
+## 2. OGD-API (maschinell)
+
+Offene Schnittstelle, **kein API-Key**, JSON oder XML:
+
+```
+Basis:  https://data.bka.gv.at/ris/api/v2.6/
+```
+
+(Version 2.6 verwenden — `v2.5` antwortet mit 404.) Kein veröffentlichtes Rate-Limit: **fair use, aggressiv cachen, Backoff** einbauen; Kontakt bei intensiver Nutzung `ris.it@bka.gv.at`. Die OGD-Nutzungsbedingungen (CC-BY-artig) vor produktiver Nutzung prüfen.
+
+### Verifiziertes Antwortschema (Judikatur)
+
+Die Antwort ist **tief verschachtelt** — nicht flach:
+
+```
+OgdSearchResult
+└─ OgdDocumentResults
+   ├─ Hits            { "@pageNumber", "@pageSize", "#text": <Gesamttreffer> }
+   └─ OgdDocumentReference[]        (bei size=Ten bis zu 10)
+      └─ Data
+         └─ Metadaten
+            ├─ Technisch   { ID, Applikation, Organ, ImportTimestamp }
+            ├─ Allgemein   { Veroeffentlicht, Geaendert, DokumentUrl }
+            └─ Judikatur   { Dokumenttyp, Geschaeftszahl{item}, Normen,
+                             Entscheidungsdatum, EuropeanCaseLawIdentifier, Justiz }
+```
+
+**Fallstricke (alle empirisch bestätigt):**
+
+1. **`Organ` steht unter `Technisch`**, nicht unter `Judikatur`. Werte wie `"OGH"` oder `"OGH; AUSL EGMR"` — bei reiner OGH-Recherche ausländische/überstaatliche Organe (`AUSL`, `EGMR`, `EUGH`) **herausfiltern**.
+2. **Standardtreffer sind Rechtssätze** (Dokument-ID `JJR_…`, ECLI `…:RSxxxxxxx`). Bei einem Rechtssatz ist `Geschaeftszahl.item` eine **mit Semikolon getrennte Liste** *aller* bestätigenden Entscheidungen (oft 30+). Die **führende** GZ (erste der Liste) ist die Leitentscheidung; das `Entscheidungsdatum` ist das der **jüngsten** Bestätigung.
+3. **`DokumentUrl`** (unter `Allgemein`) ist der zitierfähige Permalink.
+4. **Gültige `DokumenteProSeite`-Werte:** `Ten`, `Twenty`, `Fifty`, `OneHundred` (alles andere → `OgdSearchResult.Error`).
+5. **0 Treffer:** `OgdSearchResult` ohne `OgdDocumentResults` (kein Absturz — abfangen). Ungültige Parameter: `OgdSearchResult.Error{Applikation, Message}`.
+6. **Strukturierte Norm-Filterung (`Norm=`) ist unzuverlässig.** Robuster ist Volltext (`Suchworte=`); jeden Norm-Treffer am Text gegenprüfen.
+
+### Norm-Permalinks
+
+```
+https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=<GNR>&Paragraf=<§>
+```
+
+Gesetzesnummern (`GNR`) sind RIS-intern und **werden nie geraten**, sondern verifiziert. Verifiziert: **ABGB = 10001622** (`§ 932` → HTTP 200). Weitere Gesetze beim ersten Gebrauch über RIS auflösen und in `tools/ris_client.py` (`GESETZESNUMMER`) eintragen.
+
+## 3. Grounding-Protokoll für Skills
+
+Jeder Skill, der eine österreichische Rechtsaussage trifft, folgt dieser Reihenfolge:
+
+1. **Norm zuerst.** Einschlägige(n) Paragrafen bestimmen, Permalink über `ris_client.norm_permalink(...)` bilden, Existenz (HTTP 200) belegen.
+2. **Dann Judikatur.** Mit `ris_client.search_judikatur(suchworte=…, gericht="OGH", von=…)` einen einschlägigen **Rechtssatz** oder eine Entscheidung holen. Ausgegeben werden nur: führende GZ, RS-Nummer, ECLI, Permalink — alles aus der Live-Antwort.
+3. **Regime/Aktualität prüfen.** Z. B. VGG (ab 1.1.2022) vs. §§ 922 ff ABGB: reine Alt-Judikatur zu § 932 nicht unbesehen auf Verbraucher-Sachverhalte übertragen.
+4. **Formatieren** nach `references/zitierweise.md` (`ris_client.format_citation(...)`).
+5. **Unsicheres als Prüfpunkt** ausweisen, nicht als gesichertes Zitat.
+
+## 4. CLI
+
+```bash
+# Norm-Permalink bauen und prüfen
+python3 tools/ris_client.py norm ABGB 932
+
+# OGH-Judikatur ab 2022 zu Stichworten
+python3 tools/ris_client.py judikatur "Gewährleistung Verbesserung" --gericht OGH --von 2022-01-01
+
+# Phase-1-Grounding-Smoke-Test (Norm + Judikatur, je HTTP-200-geprüft)
+python3 tools/ris_client.py smoke
+```
+
+Als Modul: `from tools.ris_client import search_judikatur, norm_permalink, format_citation`.
+
+## 5. Was RIS-Grounding leistet — und was nicht
+
+- **Fängt:** erfundene Geschäftszahlen, RS-Nummern, nicht existierende Paragrafen, tote Permalinks.
+- **Fängt nicht:** dogmatische Fehlinterpretation einer real existierenden Entscheidung; veraltete Rechtslage, wenn eine alte (existierende) Entscheidung zitiert wird; Lehrstreit. Dafür braucht es Kommentarliteratur und/oder anwaltliche Prüfung. Ein bekanntes Test-Set mit *bekannten richtigen Antworten* (Regressionsfälle) ergänzt die reine Linkprüfung.

@@ -1,0 +1,23 @@
+{
+  "name": "gewaehrleistung-konsumentenschutz",
+  "version": "0.1.0",
+  "description": "Gewährleistung bei Waren aus anwaltlicher Sicht: Regimewahl zwischen VGG (Verbrauchergeschäft, ab 1.1.2022) und §§ 922 ff ABGB (B2B/C2C/Liegenschaften), Behelfshierarchie (Verbesserung/Austausch vor Preisminderung/Wandlung), Vermutungsfristen und Verjährung. Pilot-Vertikale des Repositorys — Skill-Inhalte folgen in Phase 2.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "RichardStahl99",
+    "email": "RichardStahl99@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/RichardStahl99/claude-fuer-oesterreichisches-recht",
+  "keywords": [
+    "gewaehrleistung",
+    "vgg",
+    "konsumentenschutz",
+    "abgb",
+    "maengel",
+    "verbesserung",
+    "preisminderung",
+    "wandlung",
+    "verjaehrung",
+    "oesterreich"
+  ]
+}

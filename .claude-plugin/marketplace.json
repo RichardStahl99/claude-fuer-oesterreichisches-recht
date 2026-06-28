@@ -1,0 +1,23 @@
+{
+  "name": "klotzkette-austrian-legal-skills",
+  "description": "Claude-Skills für die österreichische Rechtspraxis — Adaption der Arbeitsweise aus 'claude-fuer-deutsches-recht' auf das österreichische Recht (ABGB, Sondergesetze, öZPO, RIS). Experimentell, nicht geprüft.",
+  "version": "0.1.0",
+  "owner": {
+    "name": "RichardStahl99",
+    "email": "RichardStahl99@users.noreply.github.com"
+  },
+  "metadata": {
+    "homepage": "https://github.com/RichardStahl99/claude-fuer-oesterreichisches-recht",
+    "jurisdiktion": "AT",
+    "sprache": "de-AT"
+  },
+  "plugins": [
+    {
+      "name": "gewaehrleistung-konsumentenschutz",
+      "source": "./gewaehrleistung-konsumentenschutz",
+      "description": "Gewährleistung bei Waren: Regimewahl VGG (B2C, ab 1.1.2022) vs. §§ 922 ff ABGB, Behelfshierarchie, Verjährung. Pilot-Vertikale. (Skelett — Skills folgen in Phase 2.)",
+      "version": "0.1.0",
+      "author": "RichardStahl99"
+    }
+  ]
+}
