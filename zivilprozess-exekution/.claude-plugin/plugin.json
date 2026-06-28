@@ -1,0 +1,26 @@
+{
+  "name": "zivilprozess-exekution",
+  "version": "0.1.0",
+  "description": "Forderungsdurchsetzung im österreichischen Zivilverfahren aus anwaltlicher Sicht: Zuständigkeit und Anwaltspflicht (JN, § 27 ZPO), automatisches Mahnverfahren (Zahlungsbefehl, § 248 ZPO), Verfahrensgang und Rechtsmittel (Neuerungsverbot, Fristen) sowie Exekution (EO). Dritte Pilot-Vertikale; nutzt dieselben Grundlagen unverändert.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "RichardStahl99",
+    "email": "RichardStahl99@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/RichardStahl99/claude-fuer-oesterreichisches-recht",
+  "keywords": [
+    "zivilprozess",
+    "zpo",
+    "jurisdiktionsnorm",
+    "jn",
+    "zustaendigkeit",
+    "anwaltspflicht",
+    "mahnverfahren",
+    "zahlungsbefehl",
+    "rechtsmittel",
+    "exekution",
+    "eo",
+    "erv",
+    "oesterreich"
+  ]
+}
