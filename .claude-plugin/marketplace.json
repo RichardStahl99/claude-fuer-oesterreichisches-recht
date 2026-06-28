@@ -18,6 +18,13 @@
       "description": "Gewährleistung bei Waren: Regimewahl VGG (B2C, ab 1.1.2022) vs. §§ 922 ff ABGB, Behelfshierarchie, Verjährung. Pilot-Vertikale. (Skelett — Skills folgen in Phase 2.)",
       "version": "0.1.0",
       "author": "RichardStahl99"
+    },
+    {
+      "name": "mietzins-mrg",
+      "source": "./mietzins-mrg",
+      "description": "Mietzinsrecht nach dem MRG: Anwendungsbereich (Voll-/Teil-/Vollausnahme, § 1), Mietzinsbildung (Richtwert/Kategorie/angemessen, § 16 + RichtWG), Überprüfung/Rückforderung (§ 16 Abs 8) und Außerstreit-/Schlichtungsstellenverfahren (§ 37). Zweite Pilot-Vertikale.",
+      "version": "0.1.0",
+      "author": "RichardStahl99"
     }
   ]
 }

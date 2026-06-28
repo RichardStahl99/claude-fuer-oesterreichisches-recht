@@ -50,7 +50,7 @@ Bewusst klein gewählte erste Vertikale (`gewaehrleistung-konsumentenschutz/`): 
 - [x] **Phase 0 — Gerüst.** Frisches Repository, Marketplace-Manifest, Pilot-Plugin-Skelett.
 - [x] **Phase 1 — Grundlagen.** AT-Zitierweise + RIS-Client (live geprüft) und ABGB-Methodik.
 - [x] **Phase 2 — Pilot-Vertikale** `gewaehrleistung-konsumentenschutz`: 6 Skills (Triage → Regimewahl → Mangel → Behelf → Frist → Routing), schnellstart/werkstatt und die Test-Akte `testakten/geschirrspueler-mangel/`. Alle zitierten Norm-Permalinks (VGG §§ 10–13, ABGB §§ 922/924/928/932/933/933a/1489) und Rechtssätze lösen live in RIS auf; Regimezuordnung (VGG) korrekt.
-- [ ] **Phase 3 — Zweite Vertikale**, die beide Grundlagen **unverändert** wiederverwendet (Beweis, dass der Schnitt Motor/Rechtsschicht trägt).
+- [x] **Phase 3 — Zweite Vertikale** `mietzins-mrg` (Mietzinsrecht): 6 Skills (Triage → Anwendungsbereich § 1 MRG → Mietzinsbildung → Überprüfung § 16 Abs 8 → Außerstreit/Schlichtungsstelle § 37) + Test-Akte `testakten/altbau-richtwert-ueberschreitung/`. **Beweis erbracht:** `zitierweise.md` und `methodik-buergerliches-recht.md` blieben **unverändert** (per `git diff` bestätigt); nur `ris_client.py` erhielt die verifizierten Gesetzesnummern MRG/RichtWG (Erweiterungspunkt). Motor/Rechtsschicht-Schnitt trägt.
 - [ ] Danach: weitere Gebiete (Arbeitsrecht AngG/ArbVG/ASGG, Gesellschaftsrecht UGB/GmbHG + Notariatsakt), Verfahrens-Plugins (öZPO/JN/EO, ERV), Berufsrecht.
 
 ## Wichtige Vorbehalte

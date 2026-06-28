@@ -1,0 +1,24 @@
+{
+  "name": "mietzins-mrg",
+  "version": "0.1.0",
+  "description": "Mietzinsrecht nach dem MRG aus anwaltlicher Sicht: Anwendungsbereich (Voll-/Teil-/Vollausnahme, § 1 MRG), Mietzinsbildung (Richtwert/Kategorie/angemessen, § 16 MRG + RichtWG), Mietzinsüberprüfung und Rückforderung (§ 16 Abs 8 MRG) sowie das Außerstreit-/Schlichtungsstellenverfahren (§ 37 MRG). Zweite Pilot-Vertikale; nutzt dieselben Grundlagen wie das Gewährleistungs-Plugin unverändert.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "RichardStahl99",
+    "email": "RichardStahl99@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/RichardStahl99/claude-fuer-oesterreichisches-recht",
+  "keywords": [
+    "mietrecht",
+    "mrg",
+    "mietzins",
+    "richtwert",
+    "richtwertgesetz",
+    "anwendungsbereich",
+    "befristung",
+    "mietzinsueberpruefung",
+    "schlichtungsstelle",
+    "ausserstreit",
+    "oesterreich"
+  ]
+}

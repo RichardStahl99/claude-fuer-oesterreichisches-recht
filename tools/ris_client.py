@@ -47,6 +47,8 @@ VALID_PAGE_SIZES = ("Ten", "Twenty", "Fifty", "OneHundred")
 GESETZESNUMMER = {
     "ABGB": "10001622",   # Allgemeines bürgerliches Gesetzbuch — verifiziert (HTTP 200)
     "VGG": "20011654",    # Verbrauchergewährleistungsgesetz (BGBl I 175/2021) — verifiziert (§11/§12 HTTP 200)
+    "MRG": "10002531",    # Mietrechtsgesetz (BGBl 520/1981) — verifiziert (§1/§16/§37 HTTP 200)
+    "RICHTWG": "10003166",  # Richtwertgesetz (BGBl 800/1993) — verifiziert (§1/§5 HTTP 200)
 }
 
 # Organe ausländischer/überstaatlicher Gerichte, die bei reiner OGH-Recherche
