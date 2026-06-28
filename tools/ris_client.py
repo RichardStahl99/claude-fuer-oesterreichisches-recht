@@ -46,6 +46,7 @@ VALID_PAGE_SIZES = ("Ten", "Twenty", "Fifty", "OneHundred")
 # IMMER über die Web-Permalink-Prüfung verifizieren, nie raten.
 GESETZESNUMMER = {
     "ABGB": "10001622",   # Allgemeines bürgerliches Gesetzbuch — verifiziert (HTTP 200)
+    "VGG": "20011654",    # Verbrauchergewährleistungsgesetz (BGBl I 175/2021) — verifiziert (§11/§12 HTTP 200)
 }
 
 # Organe ausländischer/überstaatlicher Gerichte, die bei reiner OGH-Recherche

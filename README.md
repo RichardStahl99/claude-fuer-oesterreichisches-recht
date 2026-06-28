@@ -49,7 +49,7 @@ Bewusst klein gewählte erste Vertikale (`gewaehrleistung-konsumentenschutz/`): 
 
 - [x] **Phase 0 — Gerüst.** Frisches Repository, Marketplace-Manifest, Pilot-Plugin-Skelett.
 - [x] **Phase 1 — Grundlagen.** AT-Zitierweise + RIS-Client (live geprüft) und ABGB-Methodik.
-- [ ] **Phase 2 — Pilot-Vertikale** end-to-end inkl. einer realen Test-Akte.
+- [x] **Phase 2 — Pilot-Vertikale** `gewaehrleistung-konsumentenschutz`: 6 Skills (Triage → Regimewahl → Mangel → Behelf → Frist → Routing), schnellstart/werkstatt und die Test-Akte `testakten/geschirrspueler-mangel/`. Alle zitierten Norm-Permalinks (VGG §§ 10–13, ABGB §§ 922/924/928/932/933/933a/1489) und Rechtssätze lösen live in RIS auf; Regimezuordnung (VGG) korrekt.
 - [ ] **Phase 3 — Zweite Vertikale**, die beide Grundlagen **unverändert** wiederverwendet (Beweis, dass der Schnitt Motor/Rechtsschicht trägt).
 - [ ] Danach: weitere Gebiete (Arbeitsrecht AngG/ArbVG/ASGG, Gesellschaftsrecht UGB/GmbHG + Notariatsakt), Verfahrens-Plugins (öZPO/JN/EO, ERV), Berufsrecht.
 

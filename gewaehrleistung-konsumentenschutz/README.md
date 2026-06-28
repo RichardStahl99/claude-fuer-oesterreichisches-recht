@@ -1,20 +1,28 @@
-# gewaehrleistung-konsumentenschutz (Skelett)
+# gewaehrleistung-konsumentenschutz
 
-Pilot-Vertikale dieses Repositorys. **Noch ohne Skills** — dieses Plugin ist in Phase 0 als Skelett angelegt, damit der Marketplace lädt. Die Skill-Inhalte entstehen in **Phase 2**.
+Pilot-Vertikale dieses Repositorys: **Gewährleistung bei Waren** in Österreich, mit der Regimewahl **VGG vs. §§ 922 ff ABGB** als Kernkompetenz.
 
-## Geplanter Zuschnitt (Phase 2)
+## Skills (Pipeline)
 
-Eng begrenzt auf **Gewährleistung bei Waren**, eine Regimewahl als Kernkompetenz:
+| Skill | Aufgabe |
+|---|---|
+| `einstieg-gewaehrleistung` | Anwalts-Dashboard / Sofort-Triage (Rolle, Regime, Mangel, Behelf, Frist) |
+| `regimewahl-vgg-vs-abgb` | **Kern:** VGG (B2C, ab 1.1.2022) als lex specialis vs. §§ 922 ff ABGB |
+| `mangel-und-vermutung` | Mangelbegriff + Vermutung (§ 924 ABGB 6 Mon. / § 11 VGG 1 J.) |
+| `behelfshierarchie` | Verbesserung/Austausch → Preisminderung/Wandlung (§ 932 ABGB / §§ 12 f VGG) |
+| `verjaehrung-und-fristen` | § 933 ABGB (2/3 J.) / § 10 VGG; Fristbeginn = Übergabe |
+| `anschluss-routing` | Router zwischen den obigen Skills |
 
-- **VGG** (Verbrauchergewährleistungsgesetz, ab 1.1.2022) als *lex specialis* für B2C-Warenkauf — verdrängt die §§ 922 ff ABGB; Vermutung der Mangelhaftigkeit **1 Jahr** (§ 11 VGG), Behelfshierarchie §§ 12–13 VGG.
-- **§§ 922 ff ABGB** als Auffangregime (B2B, C2C, Liegenschaften): Mangelbegriff § 922, Vermutung § 924, Behelfshierarchie § 932, Verjährung § 933 (2/3 Jahre).
-- **Kein FAGG/Rücktrittsrecht im Piloten** — bewusst ausgeklammert (eigene Doktrin, testet den Kern nicht).
+Dazu `…-schnellstart.md` (Kurzfassung zum Einkopieren in beliebige LLMs) und `…-werkstatt.md` (ausführlich).
 
-Geplante Skills (Arbeitstitel): `einstieg-gewaehrleistung` (Anwalts-Dashboard-Triage), `regimewahl-vgg-vs-abgb`, `mangel-pruefung`, `behelfshierarchie`, `verjaehrung-fristen`.
+## Zuschnitt
+
+Bewusst eng: nur Warenkauf. **Nicht** abgedeckt (nur Verweis): Werkvertrag, Liegenschaft/WEG, Miete (MRG), FAGG-Rücktrittsrecht, Produkthaftung (PHG), vertragliche Garantie.
 
 ## Grundlagen
 
-Dieses Plugin baut zwingend auf den geteilten Referenzen auf:
-`references/methodik-buergerliches-recht.md`, `references/zitierweise.md`, `references/ris-quellen.md`, `references/quellenhygiene.md`, `references/anwalts-dashboard-konvention.md`.
+Baut auf den geteilten Referenzen auf: `references/methodik-buergerliches-recht.md`, `zitierweise.md`, `ris-quellen.md`, `quellenhygiene.md`, `anwalts-dashboard-konvention.md`.
 
-Definition of Done (Phase 2): Eine reale österreichische Test-Akte (Verbraucher-Mangelfall) erzeugt ein Triage-Dashboard, dessen **jede** Norm- und Judikaturfundstelle live über RIS auflöst und dessen Regimezuordnung (VGG vs. ABGB) korrekt ist.
+## Verifikation
+
+Regressionsfall: `testakten/geschirrspueler-mangel/`. Definition of Done: Aus der Test-Akte entsteht ein Triage-Dashboard, dessen **jede** Norm-/Judikaturfundstelle live über RIS auflöst und dessen Regimezuordnung (VGG vs. ABGB) korrekt ist.
