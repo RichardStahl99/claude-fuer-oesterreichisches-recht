@@ -43,7 +43,9 @@ Bei **Geldforderungen bis 75.000 €** ist das **automatische Mahnverfahren zwin
 - `§ 244 ZPO` — Mahnverfahren/Zahlungsbefehl · `§ 248 ZPO` — Einspruch (4 Wochen)
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-- Zahlungsbefehl/Einspruch: `judikatur "Zahlungsbefehl" --gericht OGH` (u. a. RIS-Justiz RS0007143, RS0043986 — live prüfen).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Zahlungsbefehl/Einspruch: `python3 tools/ris_client.py linie "Zahlungsbefehl" --gericht OGH --gesetz ZPO --paragraf 244` — OGH-Linie nach Linientiefe + Leitsätze. Vorhandene RS-Nummern (RS0007143, RS0043986) über `linie`/`leit` zu bestätigen; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
+- Aktualität vor Stützung auf eine ältere Entscheidung: `aktualitaet ZPO 248 --seit <Entscheidungsdatum>` — flaggt eine Änderung der Einspruchsregelung nach der Entscheidung.
 
 ### Anwendung im Skill
-Wertgrenze (≤ 75.000 €) → Mahnklage (ERV) → Zahlungsbefehl → Einspruch (4 Wo.) entscheidet: streitig oder vollstreckbarer Titel.
+Wertgrenze (≤ 75.000 €) → Mahnklage (ERV) → Zahlungsbefehl → Einspruch (4 Wo.) entscheidet: streitig oder vollstreckbarer Titel. Vor Stützung auf ältere Judikatur die Aktualität (`aktualitaet`) prüfen.

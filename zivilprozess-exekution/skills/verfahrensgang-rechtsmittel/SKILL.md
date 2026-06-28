@@ -44,8 +44,10 @@ Nach Einspruch (oder bei direkter Klage) läuft das **streitige Verfahren**: Kla
 - `§ 396 ZPO` — Versäumungsurteil · `§ 482 ZPO` — Neuerungsverbot · `§ 464 ZPO` — Berufungsfrist · `§ 502 ZPO` — Revision (erhebliche Rechtsfrage) · `§ 505 ZPO` — Revisionsfrist · `§ 521 ZPO` — Rekursfrist
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-- Neuerungsverbot: `judikatur "Neuerungsverbot" --gericht OGH` (u. a. RIS-Justiz RS0042274, RS0042493 — civil, live prüfen).
-- Eventualmaxime: `judikatur "Eventualmaxime" --gericht OGH` (u. a. RIS-Justiz RS0074226 — live prüfen).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Neuerungsverbot: `python3 tools/ris_client.py linie "Neuerungsverbot" --gericht OGH --gesetz ZPO --paragraf 482` — OGH-Linie nach Linientiefe + Leitsätze. Vorhandene RS-Nummern (RS0042274, RS0042493) über `linie`/`leit` zu bestätigen.
+- Eventualmaxime: `python3 tools/ris_client.py linie "Eventualmaxime" --gericht OGH` — Linie + Leitsätze; RS0074226 über `linie`/`leit` zu bestätigen; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm?).
+- Aktualität vor Stützung auf eine ältere Entscheidung: `aktualitaet ZPO 482 --seit <Entscheidungsdatum>` — flaggt eine ZPO-Änderung nach der Entscheidung.
 
 ### Anwendung im Skill
-Vollständiges Vorbringen erster Instanz (Neuerungsverbot) → Urteil → Rechtsmittel mit der richtigen Frist (4 Wochen / 14 Tage).
+Vollständiges Vorbringen erster Instanz (Neuerungsverbot) → Urteil → Rechtsmittel mit der richtigen Frist (4 Wochen / 14 Tage). Vor Stützung auf ältere Judikatur die Aktualität (`aktualitaet`) prüfen.

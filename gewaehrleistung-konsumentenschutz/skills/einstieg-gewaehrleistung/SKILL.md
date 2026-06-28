@@ -58,11 +58,13 @@ Trägt die Akte 80 % der Triage: kein Vorab-Fragenkatalog, sondern Dashboard mit
 
 ## Judikatur-Anker (Such-Wegweiser, kein Blindzitat)
 
-Über RIS (`tools/ris_client.py judikatur "<Stichworte>" --gericht OGH`) zu verifizieren, **keine GZ behaupten**:
+Zur Laufzeit ausführen (nicht nur verweisen) — **keine GZ behaupten**, nur live Geliefertes übernehmen:
 
-- Behelfshierarchie § 932 — OGH-Linie, Suchworte „Verbesserung Gewährleistung".
-- Wandlung/Preisminderung — Suchworte „Wandlung Preisminderung".
-- Verjährung Gewährleistung — Suchworte „Verjährung Gewährleistung".
+- Behelfshierarchie § 932 — `python3 tools/ris_client.py linie "Verbesserung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 932` (OGH-Linie mit Leitsätzen nach Linientiefe).
+- Wandlung/Preisminderung — `python3 tools/ris_client.py linie "Wandlung Preisminderung" --gericht OGH --gesetz ABGB --paragraf 932`.
+- Verjährung Gewährleistung — `python3 tools/ris_client.py linie "Verjährung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 933`.
+- Gewicht einer konkret genannten Geschäftszahl: `python3 tools/ris_client.py leit <GZ>` (Leitentscheidung/Stamm + Linientiefe).
+- **Aktualität (Pflicht vor Übernahme älterer Entscheidungen):** § 932 ABGB wurde durch das VGG (ab 1.1.2022) neu gefasst — Alt-Judikatur (vor 2022) vor Verwendung flaggen mit `python3 tools/ris_client.py aktualitaet ABGB 932 --seit <Entscheidungsdatum>` bzw. `python3 tools/ris_client.py aktualitaet VGG 11 --seit <Entscheidungsdatum>`.
 
 ## Hinweis
 

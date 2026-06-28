@@ -46,6 +46,6 @@
 - Wandlung/Preisminderung — `RIS-Justiz RS0126731` (OGH 2 Ob 135/10g)
 - Gewährleistung jüngere Linie — `RIS-Justiz RS0134544` (OGH 6 Ob 158/22m, 2023)
 
-Reproduzieren: `python3 tools/ris_client.py judikatur "Verbesserung Gewährleistung" --gericht OGH` bzw. `"Wandlung Preisminderung"`.
+Reproduzieren: `python3 tools/ris_client.py linie "Verbesserung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 932` bzw. `"Wandlung Preisminderung"` (OGH-Linie mit Leitsätzen). Aktualität der Alt-Judikatur zu § 932 ABGB gegen die VGG-Neufassung (ab 1.1.2022) flaggen: `python3 tools/ris_client.py aktualitaet ABGB 932 --seit <Entscheidungsdatum>` bzw. im B2C-Fall `python3 tools/ris_client.py aktualitaet VGG 11 --seit <Entscheidungsdatum>`.
 
 > Hinweis: Diese Triage ist Vorbereitung, nicht Entscheidung. Der Anwalt führt das Mandat.

@@ -56,13 +56,13 @@ Gesetzesnummern (`GNR`) sind RIS-intern und **werden nie geraten**, sondern veri
 
 ## 3. Grounding-Protokoll für Skills
 
-Jeder Skill, der eine österreichische Rechtsaussage trifft, folgt dieser Reihenfolge:
+Jeder Skill, der eine österreichische Rechtsaussage trifft, **führt diese Schritte zur Laufzeit aus** (nicht nur darauf verweisen) — und gibt nur aus, was die Tools live liefern:
 
-1. **Norm zuerst.** Einschlägige(n) Paragrafen bestimmen, Permalink über `ris_client.norm_permalink(...)` bilden, Existenz (HTTP 200) belegen.
-2. **Dann Judikatur.** Mit `ris_client.search_judikatur(suchworte=…, gericht="OGH", von=…)` einen einschlägigen **Rechtssatz** oder eine Entscheidung holen. Ausgegeben werden nur: führende GZ, RS-Nummer, ECLI, Permalink — alles aus der Live-Antwort.
-3. **Regime/Aktualität prüfen.** Z. B. VGG (ab 1.1.2022) vs. §§ 922 ff ABGB: reine Alt-Judikatur zu § 932 nicht unbesehen auf Verbraucher-Sachverhalte übertragen.
-4. **Formatieren** nach `references/zitierweise.md` (`ris_client.format_citation(...)`).
-5. **Unsicheres als Prüfpunkt** ausweisen, nicht als gesichertes Zitat.
+1. **Norm zuerst.** Einschlägige(n) Paragrafen bestimmen; Permalink über `norm` / `ris_client.norm_permalink(...)` bilden, Existenz (HTTP 200) belegen.
+2. **Linie holen.** `python3 tools/ris_client.py linie "<Stichworte>" --gericht OGH [--gesetz <G> --paragraf <§>]` — liefert die OGH-Rechtssätze nach Linientiefe mit den vom Gericht formulierten **Leitsätzen** (Rohmaterial der Doktrin) und dem Fassungsstand. Nur die so gelieferten RS-Nummern/GZ/Leitsätze verwenden.
+3. **Gewicht prüfen.** Für eine konkret herangezogene Geschäftszahl `leit <GZ>` aufrufen: Ist sie **Leitentscheidung** (Stamm) und wie tief ist die Linie? Eine isolierte Einzelentscheidung anders gewichten als gefestigte stRsp.
+4. **Aktualität prüfen (Pflicht bei älteren Entscheidungen).** `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` — wurde die Norm **nach** der Entscheidung geändert (⚠️)? Dann nicht unbesehen übertragen (z. B. VGG ab 1.1.2022 vs. Alt-Judikatur zu § 932 ABGB).
+5. **Formatieren** nach `references/zitierweise.md` (`format_citation(...)`); **Unsicheres als Prüfpunkt** ausweisen. Leitsätze sind Rohmaterial, keine geprüfte Doktrin — Bewertung bleibt anwaltliche Aufgabe.
 
 ## 4. CLI
 

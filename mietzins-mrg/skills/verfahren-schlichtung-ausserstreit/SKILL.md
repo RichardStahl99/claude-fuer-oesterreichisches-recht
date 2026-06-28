@@ -50,7 +50,9 @@ zuerst Schlichtungsstelle (§ 39) --Entscheidung--> ggf. binnen 4 Wo. an BG abzi
 - `§ 37 MRG` — Außerstreitverfahren/Zuständigkeit BG · `§ 39 MRG` — Schlichtungsstelle · `§ 40 MRG` — Abziehen an das Gericht
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; 5. Senat)
-- Sukzessive Zuständigkeit/Abziehen: `judikatur "Schlichtungsstelle Zuständigkeit" --gericht OGH` (live prüfen, keine GZ behaupten).
+**Zur Laufzeit ausführen (nicht nur verweisen):**
+- Sukzessive Zuständigkeit/Abziehen: `python3 tools/ris_client.py linie "Schlichtungsstelle Zuständigkeit" --gericht OGH --gesetz MRG --paragraf 39` — die gelieferten 5-Ob-Leitsätze verwenden, keine GZ behaupten.
+- Für eine konkret benannte Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie tief die Linie?); vor dem Stützen auf eine ältere Entscheidung `aktualitaet MRG 37 --seit <Entscheidungsdatum>` (flaggt eine Novellierung nach dem Entscheidungsdatum).
 
 ### Anwendung im Skill
 Zuerst Außerstreit-Qualifikation (§ 37 Abs 1 taxativ), dann Schlichtungsstelle-vorhanden-Prüfung, dann Fristen (4 Wochen Abziehen) sichern.

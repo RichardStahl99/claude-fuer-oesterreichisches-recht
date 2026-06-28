@@ -58,11 +58,12 @@ Trägt die Akte 80 %: Dashboard mit `[noch zu klären: …]`. Sonst die **eine**
 
 ## Judikatur-Anker (Such-Wegweiser, kein Blindzitat)
 
-Über RIS (`tools/ris_client.py judikatur "<Stichworte>" --gericht OGH`) zu verifizieren, **keine GZ behaupten**:
+Zur Laufzeit ausführen (nicht nur verweisen), **keine GZ behaupten** — nur Geliefertes übernehmen:
 
-- Zuständigkeit/Gerichtsstandsvereinbarung — Suchworte „Gerichtsstandsvereinbarung Zuständigkeit".
-- Exekutionstitel/Bestimmtheit — Suchworte „Exekutionstitel".
-- Neuerungsverbot — Suchworte „Neuerungsverbot".
+- Zuständigkeit/Gerichtsstandsvereinbarung — `python3 tools/ris_client.py linie "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH --gesetz JN --paragraf 104`.
+- Exekutionstitel/Bestimmtheit — `python3 tools/ris_client.py linie "Exekutionstitel" --gericht OGH --gesetz EO --paragraf 1`.
+- Neuerungsverbot — `python3 tools/ris_client.py linie "Neuerungsverbot" --gericht OGH --gesetz ZPO --paragraf 482`.
+- Gewicht/Aktualität: für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? Linientiefe?); vor Stützung auf eine ältere Entscheidung `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` (Verfahrensnormen JN/ZPO/EO ändern sich, vgl. EO-Reform 2021).
 
 ## Hinweis
 

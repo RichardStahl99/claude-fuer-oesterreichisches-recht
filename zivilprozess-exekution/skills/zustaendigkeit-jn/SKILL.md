@@ -51,7 +51,9 @@ Anwaltspflicht: BG > 5.000 € relativ | LG absolut (§ 27 ZPO)
 - `§ 49 JN` — BG (Wert/Eigenzuständigkeit) · `§ 50 JN` — LG · `§ 66 JN` — allgemeiner Gerichtsstand · `§ 104 JN` — Gerichtsstandsvereinbarung · `§ 27 ZPO` — Anwaltspflicht
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-- Gerichtsstandsvereinbarung/Zuständigkeit: `judikatur "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH` (u. a. RIS-Justiz RS0118239, RS0018023 — live prüfen).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Gerichtsstandsvereinbarung/Zuständigkeit: `python3 tools/ris_client.py linie "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH --gesetz JN --paragraf 104` — OGH-Linie nach Linientiefe + Leitsätze. Vorhandene RS-Nummern (RS0118239, RS0018023) über `linie`/`leit` zu bestätigen; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
+- Aktualität vor Stützung auf eine ältere Entscheidung: `aktualitaet JN 104 --seit <Entscheidungsdatum>` — flaggt, ob die JN nach der Entscheidung geändert wurde (Verfahrensnormen ändern sich).
 
 ### Anwendung im Skill
-Sachlich (Eigenzuständigkeit vor Wert) → örtlich → Anwaltspflicht. Ergebnis festhalten und weitergeben.
+Sachlich (Eigenzuständigkeit vor Wert) → örtlich → Anwaltspflicht. Ergebnis festhalten und weitergeben. Vor Stützung auf ältere Judikatur die Aktualität (`aktualitaet`) prüfen.

@@ -54,7 +54,10 @@ AG/AN ?  --> Probezeit (§19, ≤1 Monat) ? --ja--> jederzeit lösbar
 - `§ 19 AngG` — Probezeit/Befristung · `§ 20 AngG` — Kündigung · `§ 26 AngG` — Austritt · `§ 27 AngG` — Entlassung · `§ 29 AngG` — Kündigungsentschädigung · `§ 105 ArbVG` — Anfechtung
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; ObA-Senat)
-- Entlassungsgründe/Austritt: `judikatur "Entlassung wichtiger Grund" --gericht OGH` — live prüfen, keine GZ behaupten.
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Entlassungsgründe/Austritt: `python3 tools/ris_client.py linie "Entlassung wichtiger Grund" --gericht OGH --gesetz ANGG --paragraf 27` — OGH-Linie + Leitsätze nach Linientiefe; keine GZ aus Modellwissen.
+- Eine konkret herangezogene Geschäftszahl mit `leit <GZ>` prüfen (Leitentscheidung/Stamm? wie gefestigt die Linie?).
+- Vor Übernahme älterer Entscheidungen Aktualität prüfen: `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` — für Arbeiter besonders `aktualitaet ABGB 1159 --seit <Datum>` (Angleichung seit 1.10.2021).
 
 ### Anwendung im Skill
-Art zuerst (Probezeit/Befristung/einvernehmlich → Kündigung/Entlassung/Austritt), Ergebnis festhalten und an die Folge-Skills weitergeben. Bei AG-Kündigung sofort die Anfechtungsfrist im Blick behalten.
+Art zuerst (Probezeit/Befristung/einvernehmlich → Kündigung/Entlassung/Austritt), Ergebnis festhalten und an die Folge-Skills weitergeben. Bei AG-Kündigung sofort die Anfechtungsfrist im Blick behalten; bei Arbeitern Alt-Judikatur per `aktualitaet ABGB 1159 --seit <Datum>` gegen die Angleichung (1.10.2021) prüfen.

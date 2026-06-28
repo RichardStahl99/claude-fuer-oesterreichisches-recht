@@ -48,7 +48,10 @@ Zwei Fragen: **(1)** Liegt überhaupt ein Mangel vor? **(2)** Lag er **bei Über
 - `§ 11 VGG` — Vermutung 1 Jahr · `§§ 4 ff VGG` — Vertragsmäßigkeit
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-- OGH zur Soll-Ist-Abweichung und zum Übergabezeitpunkt: `tools/ris_client.py judikatur "Mangel Übergabe Gewährleistung" --gericht OGH`.
+Zur Laufzeit ausführen (nicht nur verweisen):
+- OGH zur Soll-Ist-Abweichung und zum Übergabezeitpunkt — OGH-Linie samt Leitsätzen holen: `python3 tools/ris_client.py linie "Mangel Übergabe Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 922`.
+- Für eine konkret herangezogene Geschäftszahl `python3 tools/ris_client.py leit <GZ>` — Leitentscheidung (Stamm) oder Folgeentscheidung, wie gefestigt die Linie.
+- **Aktualität (Pflicht vor Übernahme älterer Entscheidungen):** Die Vermutungsregel wurde im B2C-Bereich durch das VGG (ab 1.1.2022) neu geordnet (§ 11 VGG: 1 Jahr statt § 924 ABGB: 6 Monate). Alt-Judikatur zur 6-Monats-Vermutung vor Verwendung flaggen: `python3 tools/ris_client.py aktualitaet ABGB 924 --seit <Entscheidungsdatum>` bzw. im B2C-Fall `python3 tools/ris_client.py aktualitaet VGG 11 --seit <Entscheidungsdatum>`.
 - Keine Geschäftszahl behaupten, die nicht live aufgelöst wurde.
 
 ### Anwendung im Skill

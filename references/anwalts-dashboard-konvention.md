@@ -63,7 +63,13 @@ Trägt die Akte 80 % der Triage: keine Rückfrage, sondern ein erster Entwurf mi
 
 ### Block 6 — Judikatur-Anker (Such-Wegweiser, kein Blindzitat)
 
-Maximal 3–4 Themen-Anker. Format pro Zeile: *Thema/Linie — wahrscheinlicher Spruchkörper (OGH-Senat) — RIS*. **Keine Geschäftszahl behaupten**, sondern auf live über RIS zu verifizierende Quellen verweisen (`tools/ris_client.py`, `references/ris-quellen.md`). So sieht der Anwalt die Linien sofort, ohne Halluzinationsrisiko.
+Maximal 3–4 Themen-Anker. **Keine Geschäftszahl aus Modellwissen behaupten** — stattdessen **zur Laufzeit** die RIS-Tools aufrufen (`tools/ris_client.py`, Protokoll in `references/ris-quellen.md` Abschnitt 3 und 6) und nur Geliefertes übernehmen:
+
+- `linie "<Stichworte>" --gericht OGH` → OGH-Linie mit Leitsätzen, nach Linientiefe;
+- `leit <GZ>` → ist die Entscheidung Leitentscheidung (Stamm) und wie gefestigt die Linie;
+- `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` → wurde die Norm seither geändert (⚠️ ggf. überholt).
+
+Format pro Zeile: *Thema/Linie — Leitsatz/RS-Nummer (live) — OGH-Senat — Aktualität*. So sieht der Anwalt die Linien sofort, ohne Halluzinationsrisiko.
 
 ### Block 7 — Driver-Seat-Reminder
 

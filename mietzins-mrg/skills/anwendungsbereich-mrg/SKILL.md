@@ -66,7 +66,9 @@ Teilausnahme (§1 Abs4: Neubau n. 30.6.1953 / Dachausbau n. 31.12.2001 / Zubau) 
 - `§ 1 Abs 1 MRG` — Grundsatz (Vollanwendung) · `§ 1 Abs 2 MRG` — Vollausnahmen · `§ 1 Abs 4 MRG` — Teilausnahmen · `§§ 1090 ff ABGB` — Bestandrecht (Vollausnahme)
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; Wohnrecht = 5. Senat)
-- Vollausnahme/Anwendungsbereich: `tools/ris_client.py judikatur "Ein- oder Zweifamilienhaus" --gericht OGH` bzw. `"Vollausnahme"` — den einschlägigen **5-Ob**-Rechtssatz live abrufen und Leitsatz lesen; **keine GZ aus Modellwissen** behaupten (Wohnrecht entscheidet der 5. Senat, nicht der 4. Senat).
+**Zur Laufzeit ausführen (nicht nur verweisen):**
+- Vollausnahme/Anwendungsbereich: `python3 tools/ris_client.py linie "Ein- oder Zweifamilienhaus" --gericht OGH --gesetz MRG --paragraf 1` bzw. `python3 tools/ris_client.py linie "Vollausnahme" --gericht OGH --gesetz MRG --paragraf 1` — liefert die **5-Ob**-Rechtssätze nach Linientiefe samt Leitsätzen; nur das so Gelieferte verwenden, **keine GZ aus Modellwissen** behaupten (Wohnrecht entscheidet der 5. Senat, nicht der 4. Senat).
+- Für eine konkret benannte Geschäftszahl `leit <GZ>` — ist sie Leitentscheidung (Stamm) und wie gefestigt die Linie? Vor dem Stützen auf eine ältere Entscheidung `aktualitaet MRG 1 --seit <Entscheidungsdatum>` (flaggt eine Novellierung nach dem Entscheidungsdatum).
 - Reichweite der §§ 16 ff nur in Vollanwendung: am Gesetzestext argumentieren.
 
 ### Anwendung im Skill

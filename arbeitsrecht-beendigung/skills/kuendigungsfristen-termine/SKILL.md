@@ -47,7 +47,10 @@ Die ordentliche Kündigung ist nur wirksam, wenn **Frist und Termin** eingehalte
 - `§ 20 AngG` — Fristen/Termine Angestellte · `§ 1159 ABGB` — Fristen Arbeiter (angeglichen)
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; ObA-Senat)
-- Kündigungstermin/Konversion: `judikatur "Kündigungstermin Angestelltengesetz" --gericht OGH` — live prüfen.
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Kündigungstermin/Konversion: `python3 tools/ris_client.py linie "Kündigungstermin Angestelltengesetz" --gericht OGH --gesetz ANGG --paragraf 20` — OGH-Linie + Leitsätze nach Linientiefe; keine GZ aus Modellwissen.
+- Eine konkret herangezogene Geschäftszahl mit `leit <GZ>` als Leitentscheidung (Stamm) und nach Linientiefe gewichten.
+- **Pflicht bei Arbeitern:** vor Übernahme älterer Judikatur `aktualitaet ABGB 1159 --seit <Entscheidungsdatum>` — die Arbeiter-Kündigungsfristen sind erst seit 1.10.2021 an die Angestellten angeglichen, Alt-Entscheidungen können überholt sein; für Angestellte analog `aktualitaet ANGG 20 --seit <Entscheidungsdatum>`.
 
 ### Anwendung im Skill
-Dienstjahre → Frist (§ 20 / § 1159) → richtiger Kündigungstermin (Quartalsende) → KV gegenprüfen.
+Dienstjahre → Frist (§ 20 / § 1159) → richtiger Kündigungstermin (Quartalsende) → KV gegenprüfen. Bei Arbeitern Alt-Judikatur stets per `aktualitaet ABGB 1159 --seit <Datum>` auf die Angleichung (1.10.2021) gegenprüfen.

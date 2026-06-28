@@ -33,6 +33,6 @@ Wählt nach dem ersten Ergebnis die passende Vertiefung, Fristensicherung oder A
 
 ## Qualitätsanker
 
-- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen; KV/Beträge stets live.
+- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen. Linie/Leitsätze **zur Laufzeit ausführen (nicht nur verweisen):** `python3 tools/ris_client.py linie "<Stichworte>" --gericht OGH`, eine konkret benannte GZ mit `leit <GZ>` als Leitentscheidung (Stamm) prüfen und ältere Entscheidungen vor Übernahme per `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` auf Aktualität gegenprüfen (z. B. `aktualitaet ABGB 1159 --seit <Datum>` für die Arbeiter-Angleichung seit 1.10.2021). Arbeitsrecht: 8./9. Senat (ObA); KV/Beträge stets live.
 - Bei Zeitdruck zuerst die **Anfechtungsfrist (2 Wochen)** und das Verfahren (ASG) sichern.
 - Eine Empfehlung ist eine Empfehlung; der Anwalt entscheidet.

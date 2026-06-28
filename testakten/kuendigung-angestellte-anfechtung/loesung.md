@@ -46,6 +46,6 @@
 - Sozialwidrigkeit (Interessenabwägung) — `RIS-Justiz RS0029457` (OGH 9 ObA 74/88)
 - Abfertigung — `RIS-Justiz RS0047428` (OGH 7 Ob 550/93)
 
-Reproduzieren: `python3 tools/ris_client.py judikatur "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH` bzw. `"Abfertigung Beendigung"`.
+Reproduzieren (zur Laufzeit ausführen, nicht nur verweisen): `python3 tools/ris_client.py linie "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH --gesetz ARBVG --paragraf 105` bzw. `linie "Abfertigung Beendigung" --gericht OGH --gesetz BMSVG --paragraf 14`. Die oben genannten Rechtssätze/GZ mit `leit <GZ>` als Leitentscheidung (Stamm) bestätigen und ältere Entscheidungen vor Übernahme mit `aktualitaet ARBVG 105 --seit <Entscheidungsdatum>` auf Aktualität prüfen.
 
 > Hinweis: Diese Triage ist Vorbereitung, nicht Entscheidung. Der Anwalt führt das Mandat.

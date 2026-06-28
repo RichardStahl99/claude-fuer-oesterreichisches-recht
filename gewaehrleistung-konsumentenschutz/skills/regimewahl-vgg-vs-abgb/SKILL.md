@@ -75,10 +75,12 @@ Ware / digitale Leistung (§4 VGG) ? --nein--> §§ 922 ff ABGB
 - `§ 1 KSchG` — Unternehmer-/Verbraucherbegriff
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-
-- VGG-Korpus ist noch jung (in Kraft seit 1.1.2022) und in RIS dünn — vorrangig am **Gesetzestext** und an den Materialien (ErläutRV zum GRUG) argumentieren, OGH-Judikatur live über `tools/ris_client.py judikatur "Verbrauchergewährleistung" --gericht OGH` prüfen.
-- Altrechtliche OGH-Linien zu §§ 922 ff (Suchworte „Verbesserung Gewährleistung", „Wandlung Preisminderung") nur heranziehen, soweit das VGG die Wertung übernimmt — nicht ungeprüft übertragen.
+Zur Laufzeit ausführen (nicht nur verweisen):
+- VGG-Korpus ist noch jung (in Kraft seit 1.1.2022) und in RIS dünn — vorrangig am **Gesetzestext** und an den Materialien (ErläutRV zum GRUG) argumentieren, OGH-Judikatur live über `python3 tools/ris_client.py linie "Verbrauchergewährleistung" --gericht OGH --gesetz VGG --paragraf 11` prüfen.
+- Altrechtliche OGH-Linien zu §§ 922 ff — `python3 tools/ris_client.py linie "Verbesserung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 932` bzw. `"Wandlung Preisminderung"` — nur heranziehen, soweit das VGG die Wertung übernimmt; nicht ungeprüft übertragen.
+- Gewicht einer konkret genannten Geschäftszahl: `python3 tools/ris_client.py leit <GZ>` (Leitentscheidung/Stamm + Linientiefe).
+- **Aktualität ist hier zentral:** § 932 ABGB wurde durch das VGG (ab 1.1.2022) neu gefasst. Vor jeder Übernahme einer Alt-Entscheidung (vor 2022) zu § 932 die Änderung flaggen: `python3 tools/ris_client.py aktualitaet ABGB 932 --seit <Entscheidungsdatum>`; das VGG-Pendant prüfen mit `python3 tools/ris_client.py aktualitaet VGG 11 --seit <Entscheidungsdatum>` (erkennt die Änderung, beurteilt sie nicht).
 
 ### Anwendung im Skill
 
-Regime zuerst, dann erst Mangel/Behelf/Frist. Das Ergebnis (VGG oder ABGB) ausdrücklich festhalten und an die Folge-Skills weitergeben.
+Regime zuerst, dann erst Mangel/Behelf/Frist. Das Ergebnis (VGG oder ABGB) ausdrücklich festhalten und an die Folge-Skills weitergeben. Reine ABGB-Alt-Judikatur zu § 932 vor Übernahme per `aktualitaet ABGB 932 --seit <Entscheidungsdatum>` gegen die VGG-Neufassung (ab 1.1.2022) flaggen.

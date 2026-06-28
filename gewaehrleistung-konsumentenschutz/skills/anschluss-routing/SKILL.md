@@ -32,6 +32,6 @@ Wählt nach dem ersten Ergebnis die passende Vertiefung, Fristensicherung oder D
 
 ## Qualitätsanker
 
-- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen.
+- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen. **Zur Laufzeit ausführen (nicht nur verweisen):** die OGH-Linie über `python3 tools/ris_client.py linie "<Stichworte>" --gericht OGH [--gesetz <G> --paragraf <§>]` holen, eine genannte Geschäftszahl mit `python3 tools/ris_client.py leit <GZ>` gewichten und vor Übernahme älterer Entscheidungen die Aktualität prüfen — § 932 ABGB wurde durch das VGG (ab 1.1.2022) neu gefasst: `python3 tools/ris_client.py aktualitaet ABGB 932 --seit <Entscheidungsdatum>` bzw. `python3 tools/ris_client.py aktualitaet VGG 11 --seit <Entscheidungsdatum>`.
 - Bei Zeitdruck zuerst Frist, Zuständigkeit (BG/LG, JN), Form (ERV) und Beweislast sichern.
 - Eine Empfehlung ist eine Empfehlung; der Anwalt entscheidet.

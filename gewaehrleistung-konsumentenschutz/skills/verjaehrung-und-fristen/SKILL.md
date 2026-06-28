@@ -49,7 +49,10 @@ description: "Berechnet und sichert die Fristen der Gewährleistung bei Waren: G
 - `§ 933 ABGB` — Gewährleistungsfrist 2/3 J. · `§ 933a ABGB` — Schadenersatz wegen Mangels · `§ 1489 ABGB` — Verjährung Schadenersatz · `§ 10 VGG` — Gewährleistungsfrist 2 J. + 3-Monats-Verjährungsfrist
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-- Verjährung der Gewährleistung: `tools/ris_client.py judikatur "Verjährung Gewährleistung" --gericht OGH` (u. a. RIS-Justiz RS0042948, RS0042940, RS0134544 — Leitsatz live prüfen, nicht ungeprüft zitieren).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Verjährung der Gewährleistung — OGH-Linie samt Leitsätzen nach Linientiefe holen: `python3 tools/ris_client.py linie "Verjährung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 933` (vormals RIS-Justiz RS0042948, RS0042940, RS0134544 — über `linie`/`leit` zu bestätigen, Leitsatz live prüfen).
+- Für eine konkret herangezogene Geschäftszahl `python3 tools/ris_client.py leit <GZ>` — Leitentscheidung (Stamm) + Linientiefe.
+- **Aktualität (Pflicht vor Übernahme älterer Entscheidungen):** Die Gewährleistungsfristen wurden im B2C-Bereich durch § 10 VGG (ab 1.1.2022) neu gefasst. Alt-Judikatur zu § 933 ABGB vor Verwendung flaggen: `python3 tools/ris_client.py aktualitaet ABGB 933 --seit <Entscheidungsdatum>` bzw. im B2C-Fall `python3 tools/ris_client.py aktualitaet VGG 10 --seit <Entscheidungsdatum>`.
 
 ### Anwendung im Skill
 Drei Fristen getrennt halten; Fristbeginn = Übergabe; die gesonderte 3-Monats-Verjährungsfrist des § 10 VGG beachten; Schadenersatz (§ 933a) als zweite Schiene mitdenken.

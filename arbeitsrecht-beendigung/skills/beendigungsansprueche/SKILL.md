@@ -43,8 +43,10 @@ Am Ende des Arbeitsverhältnisses sind die Geldansprüche zu klären. Welche bes
 - `§ 6 BMSVG` — Beitrag (1,53 %) · `§ 14 BMSVG` — Abfertigungsanspruch neu · `§ 23 AngG` — Abfertigung alt · `§ 10 UrlG` — Urlaubsersatzleistung · `§ 29 AngG` — Kündigungsentschädigung
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; ObA-Senat)
-- Abfertigung: `judikatur "Abfertigung Beendigung" --gericht OGH` (u. a. RIS-Justiz RS0047428 — live prüfen).
-- Kündigungsentschädigung: `judikatur "Kündigungsentschädigung" --gericht OGH` (u. a. RIS-Justiz RS0039036 — live prüfen).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Abfertigung: `python3 tools/ris_client.py linie "Abfertigung Beendigung" --gericht OGH --gesetz BMSVG --paragraf 14` — OGH-Linie + Leitsätze nach Linientiefe (bereits gesichtet: RIS-Justiz RS0047428 — über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
+- Kündigungsentschädigung: `python3 tools/ris_client.py linie "Kündigungsentschädigung" --gericht OGH --gesetz ANGG --paragraf 29` (bereits gesichtet: RIS-Justiz RS0039036 — über `linie`/`leit` zu bestätigen).
+- Gewicht einer konkret benannten GZ mit `leit <GZ>` prüfen; ältere Entscheidungen vor Übernahme per `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` auf Aktualität prüfen (z. B. `aktualitaet BMSVG 14 --seit <Datum>` oder `aktualitaet URLG 10 --seit <Datum>`).
 
 ### Anwendung im Skill
 Abfertigungssystem (Stichtag 2003) → Urlaubsersatz → Kündigungsentschädigung (nur bei unberechtigter Entlassung/berechtigtem Austritt) → KV-Verfallsfristen prüfen.

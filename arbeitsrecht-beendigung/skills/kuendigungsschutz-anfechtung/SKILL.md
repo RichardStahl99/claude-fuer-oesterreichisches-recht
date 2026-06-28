@@ -46,8 +46,10 @@ description: "Prüft den allgemeinen Kündigungsschutz und die Anfechtung einer 
 - `§ 105 ArbVG` — Anfechtung (Sozialwidrigkeit/verpöntes Motiv), Betriebsrat, Fristen · `§ 120 ArbVG` — Schutz BR-Mitglieder
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; ObA-Senat)
-- Sozialwidrigkeit: `judikatur "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH` (u. a. RIS-Justiz RS0116698, RS0029457 — live prüfen).
-- Verpöntes Motiv: `judikatur "verpöntes Motiv Kündigung" --gericht OGH` (u. a. RIS-Justiz RS0052037 — live prüfen).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Sozialwidrigkeit: `python3 tools/ris_client.py linie "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH --gesetz ARBVG --paragraf 105` — OGH-Linie + Leitsätze nach Linientiefe (bereits gesichtet: RIS-Justiz RS0116698, RS0029457 — über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
+- Verpöntes Motiv: `python3 tools/ris_client.py linie "verpöntes Motiv Kündigung" --gericht OGH --gesetz ARBVG --paragraf 105` (bereits gesichtet: RIS-Justiz RS0052037 — über `linie`/`leit` zu bestätigen).
+- Gewicht einer konkret benannten GZ mit `leit <GZ>` prüfen (Stamm/Leitentscheidung? Linientiefe?); ältere Entscheidungen vor Übernahme per `aktualitaet ARBVG 105 --seit <Entscheidungsdatum>` auf Aktualität prüfen.
 
 ### Anwendung im Skill
 BR-Vorverfahren → Anfechtungsgrund (Motiv/Sozialwidrigkeit + Schwellen) → Befugnis/**2-Wochen-Frist** → ASG. Frist zuerst sichern.

@@ -45,11 +45,11 @@
 - RichtWG § 5 — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003166&Paragraf=5
 
 **Judikatur (Existenz/Permalink über RIS geprüft; Leitsatz vor Verwendung lesen; 5. Senat):**
-- Anwendungsbereich/Vollausnahme — über RIS **live** suchen (`judikatur "Ein- oder Zweifamilienhaus" --gericht OGH`); on-point **5-Ob**-Rechtssatz vor Verwendung prüfen, keine GZ aus Modellwissen behaupten
-- Richtwert/Zuschläge — `RIS-Justiz RS0117876` (OGH 5 Ob 296/02v)
-- Unzulässige Mietzinsvereinbarung — `RIS-Justiz RS0083814` (OGH 5 Ob 149/95)
-- Befristungsabschlag — `RIS-Justiz RS0131441` (OGH 5 Ob 18/17h)
+- Anwendungsbereich/Vollausnahme — über RIS **live** holen (`python3 tools/ris_client.py linie "Ein- oder Zweifamilienhaus" --gericht OGH --gesetz MRG --paragraf 1`); on-point **5-Ob**-Rechtssatz vor Verwendung prüfen, keine GZ aus Modellwissen behaupten
+- Richtwert/Zuschläge — `RIS-Justiz RS0117876` (OGH 5 Ob 296/02v) — über `linie`/`leit` zu bestätigen
+- Unzulässige Mietzinsvereinbarung — `RIS-Justiz RS0083814` (OGH 5 Ob 149/95) — über `linie`/`leit` zu bestätigen
+- Befristungsabschlag — `RIS-Justiz RS0131441` (OGH 5 Ob 18/17h) — über `linie`/`leit` zu bestätigen
 
-Reproduzieren: `python3 tools/ris_client.py judikatur "Richtwert Zuschlag" --gericht OGH` bzw. `"unzulässige Mietzinsvereinbarung"`, `"Befristungsabschlag"`, `"Vollausnahme"`.
+Reproduzieren: `python3 tools/ris_client.py linie "Richtwert Zuschlag" --gericht OGH --gesetz MRG --paragraf 16` bzw. `linie "unzulässige Mietzinsvereinbarung" --gericht OGH --gesetz MRG --paragraf 16`, `linie "Befristungsabschlag" --gericht OGH --gesetz MRG --paragraf 16`, `linie "Vollausnahme" --gericht OGH --gesetz MRG --paragraf 1`. Benannte Geschäftszahlen mit `leit <GZ>` gewichten; vor dem Stützen auf eine ältere Entscheidung (die oben notierten betreffen § 16) die Aktualität prüfen: `python3 tools/ris_client.py aktualitaet MRG 16 --seit <Entscheidungsdatum>` (§ 16 MRG zuletzt 2026 novelliert).
 
 > Hinweis: Diese Triage ist Vorbereitung, nicht Entscheidung. Der Anwalt führt das Mandat.

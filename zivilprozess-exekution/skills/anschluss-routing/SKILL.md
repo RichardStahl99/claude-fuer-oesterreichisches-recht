@@ -32,6 +32,6 @@ Wählt nach dem ersten Ergebnis die passende Vertiefung, Fristensicherung oder d
 
 ## Qualitätsanker
 
-- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen; Existenzminimum-Werte stets live.
+- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen; Existenzminimum-Werte stets live. Judikatur zur Laufzeit ausführen (nicht nur verweisen): `python3 tools/ris_client.py linie "<Stichworte>" --gericht OGH` (Leitsätze nach Linientiefe), eine konkrete Geschäftszahl mit `leit <GZ>` gewichten und vor Stützung auf ältere Entscheidungen `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` prüfen (Verfahrensnormen JN/ZPO/EO, EO-Reform 2021).
 - Bei Zeitdruck zuerst Frist (Einspruch/Rechtsmittel), Zuständigkeit und Anwaltspflicht (§ 27 ZPO) sichern; ERV beachten.
 - Eine Empfehlung ist eine Empfehlung; der Anwalt entscheidet.

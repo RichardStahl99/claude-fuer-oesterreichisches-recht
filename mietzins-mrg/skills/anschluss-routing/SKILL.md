@@ -32,6 +32,6 @@ Wählt nach dem ersten Ergebnis die passende Vertiefung, Fristensicherung oder d
 
 ## Qualitätsanker
 
-- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen; Richtwerte stets live.
+- Normen und Judikatur nach `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` behandeln — keine GZ aus Modellwissen; Richtwerte stets live. **Zur Laufzeit ausführen (nicht nur verweisen):** die OGH-Linie über `python3 tools/ris_client.py linie "<Stichworte>" --gericht OGH --gesetz MRG --paragraf <§>` holen, eine benannte Geschäftszahl mit `leit <GZ>` gewichten und ältere Judikatur vor Verwendung mit `aktualitaet MRG <§> --seit <Entscheidungsdatum>` auf zwischenzeitliche Novellen prüfen (§ 16 MRG zuletzt 2026 novelliert).
 - Bei Zeitdruck zuerst Frist (§ 16 Abs 8, § 40 MRG), Zuständigkeit (Schlichtungsstelle/BG) und Verfahrensart (Außerstreit) sichern.
 - Eine Empfehlung ist eine Empfehlung; der Anwalt entscheidet.

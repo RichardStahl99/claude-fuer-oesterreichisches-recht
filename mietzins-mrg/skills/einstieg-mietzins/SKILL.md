@@ -58,11 +58,13 @@ Trägt die Akte 80 %: Dashboard mit `[noch zu klären: …]`. Sonst die **eine**
 
 ## Judikatur-Anker (Such-Wegweiser, kein Blindzitat)
 
-Über RIS (`tools/ris_client.py judikatur "<Stichworte>" --gericht OGH`) zu verifizieren, **keine GZ behaupten** — das Wohnrecht entscheidet der **5. Senat (5 Ob)**:
+**Zur Laufzeit ausführen (nicht nur verweisen):** die OGH-Linie live holen, **keine GZ behaupten** — das Wohnrecht entscheidet der **5. Senat (5 Ob)**:
 
-- Anwendungsbereich/Vollausnahme — Suchworte „Vollausnahme".
-- Richtwert/Zuschläge — Suchworte „Richtwert Zuschlag".
-- Unzulässige Mietzinsvereinbarung — Suchworte „unzulässige Mietzinsvereinbarung".
+- Anwendungsbereich/Vollausnahme — `python3 tools/ris_client.py linie "Vollausnahme" --gericht OGH --gesetz MRG --paragraf 1`
+- Richtwert/Zuschläge — `python3 tools/ris_client.py linie "Richtwert Zuschlag" --gericht OGH --gesetz MRG --paragraf 16`
+- Unzulässige Mietzinsvereinbarung — `python3 tools/ris_client.py linie "unzulässige Mietzinsvereinbarung" --gericht OGH --gesetz MRG --paragraf 16`
+
+Für eine konkret benannte Geschäftszahl `leit <GZ>` (ist sie Leitentscheidung/Stamm, wie gefestigt die Linie?). Vor dem Stützen auf eine ältere Entscheidung die Aktualität prüfen — `aktualitaet MRG 16 --seit <Entscheidungsdatum>` (§ 16 MRG zuletzt 2026 novelliert; flaggt eine Änderung nach dem Entscheidungsdatum).
 
 ## Hinweis
 

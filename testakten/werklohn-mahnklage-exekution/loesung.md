@@ -49,6 +49,6 @@
 - Zahlungsbefehl — `RIS-Justiz RS0007143` (OGH 5 Ob 592/90)
 - Exekutionstitel/Bestimmtheit — `RIS-Justiz RS0001979` (OGH 3 Ob 142/64)
 
-Reproduzieren: `python3 tools/ris_client.py judikatur "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH` bzw. `"Zahlungsbefehl"`, `"Exekutionstitel"`.
+Reproduzieren: `python3 tools/ris_client.py linie "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH --gesetz JN --paragraf 104` bzw. `linie "Zahlungsbefehl" --gericht OGH --gesetz ZPO --paragraf 244` und `linie "Exekutionstitel" --gericht OGH --gesetz EO --paragraf 1` (Leitsätze nach Linientiefe). Gewicht der oben genannten Geschäftszahlen je mit `leit "4 Nc 32/03y"`, `leit "5 Ob 592/90"`, `leit "3 Ob 142/64"` bestätigen. Aktualität vor Stützung auf diese älteren Entscheidungen (Verfahrensnormen, EO-Reform 2021): `aktualitaet EO 1 --seit <Entscheidungsdatum aus leit/linie>`, ebenso `aktualitaet JN 104` bzw. `aktualitaet ZPO 248`.
 
 > Hinweis: Diese Triage ist Vorbereitung, nicht Entscheidung. Der Anwalt führt das Mandat.

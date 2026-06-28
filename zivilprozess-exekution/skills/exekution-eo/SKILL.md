@@ -44,7 +44,9 @@ Mit einem **vollstreckbaren Titel** wird die Geldforderung zwangsweise hereingeb
 - `§ 1 EO` — Exekutionstitel · `§ 7 EO` — Vollstreckbarkeit/Bestimmtheit · `§ 249 EO` — Fahrnisexekution · `§ 290 EO` — Gehalts-/Forderungsexekution
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-- Exekutionstitel/Bestimmtheit: `judikatur "Exekutionstitel" --gericht OGH` (u. a. RIS-Justiz RS0001979, RS0001674 — 3.-Senat/Exekution, live prüfen).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Exekutionstitel/Bestimmtheit: `python3 tools/ris_client.py linie "Exekutionstitel" --gericht OGH --gesetz EO --paragraf 1` — OGH-Linie (3.-Senat/Exekution) nach Linientiefe + Leitsätze. Vorhandene RS-Nummern (RS0001979, RS0001674) über `linie`/`leit` zu bestätigen; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
+- Aktualität vor Stützung auf eine ältere Entscheidung (Pflicht — EO-Reform 2021): `aktualitaet EO 1 --seit <Entscheidungsdatum>` bzw. `aktualitaet EO 7 --seit <Entscheidungsdatum>` — flaggt, ob die EO nach der Entscheidung geändert wurde; Alt-Judikatur vor 2021 nicht unbesehen übertragen.
 
 ### Anwendung im Skill
-Titel (§ 1) → Vollstreckbarkeit (§ 7) → Exekutionsantrag (BG) → passendes Exekutionsmittel (Existenzminimum beachten).
+Titel (§ 1) → Vollstreckbarkeit (§ 7) → Exekutionsantrag (BG) → passendes Exekutionsmittel (Existenzminimum beachten). Vor Stützung auf ältere Judikatur die Aktualität (`aktualitaet`, EO-Reform 2021) prüfen.

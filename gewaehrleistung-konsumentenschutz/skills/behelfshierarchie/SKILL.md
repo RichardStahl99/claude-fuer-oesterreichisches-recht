@@ -55,8 +55,11 @@ Mangel (+) --> Stufe 1: Verbesserung / Austausch
 - `§ 932 ABGB` — Behelfe und Stufen · `§ 12 VGG` — primäre/sekundäre Behelfe · `§ 13 VGG` — Preisminderung/Vertragsauflösung
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
-- Behelfshierarchie/Verbesserung: `tools/ris_client.py judikatur "Verbesserung Gewährleistung" --gericht OGH` (u. a. RIS-Justiz **RS0018921**, RS0018699 — vor Verwendung Leitsatz in RIS lesen).
-- Wandlung/Preisminderung: `judikatur "Wandlung Preisminderung" --gericht OGH` (u. a. RS0126731, RS0127994 — live prüfen).
+Zur Laufzeit ausführen (nicht nur verweisen):
+- Behelfshierarchie/Verbesserung — OGH-Linie samt Leitsätzen nach Linientiefe holen: `python3 tools/ris_client.py linie "Verbesserung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 932` (vormals RIS-Justiz **RS0018921**, RS0018699 — über `linie`/`leit` zu bestätigen, Leitsatz vor Verwendung lesen).
+- Wandlung/Preisminderung — `python3 tools/ris_client.py linie "Wandlung Preisminderung" --gericht OGH --gesetz ABGB --paragraf 932` (vormals RS0126731, RS0127994 — über `linie`/`leit` zu bestätigen).
+- Für eine konkret herangezogene Geschäftszahl `python3 tools/ris_client.py leit <GZ>` — ist sie Leitentscheidung (Stamm) und wie tief/gefestigt die Linie.
+- **Aktualität (Pflicht vor Übernahme älterer Entscheidungen):** § 932 ABGB wurde durch das VGG (ab 1.1.2022) neu gefasst; Alt-Judikatur (vor 2022) vor Verwendung flaggen mit `python3 tools/ris_client.py aktualitaet ABGB 932 --seit <Entscheidungsdatum>` bzw. im B2C-Fall `python3 tools/ris_client.py aktualitaet VGG 11 --seit <Entscheidungsdatum>` (erkennt die Gesetzesänderung nach dem Entscheidungsdatum, beurteilt sie nicht).
 
 ### Anwendung im Skill
-Stufe 1 vor Stufe 2; Sprung nur mit Grund; Wandlung nicht bei Geringfügigkeit. Regime (VGG/ABGB) durchhalten.
+Stufe 1 vor Stufe 2; Sprung nur mit Grund; Wandlung nicht bei Geringfügigkeit. Regime (VGG/ABGB) durchhalten. Alt-Judikatur zu § 932 ABGB vor Übernahme per `aktualitaet ABGB 932 --seit <Entscheidungsdatum>` gegen die VGG-Neufassung prüfen.

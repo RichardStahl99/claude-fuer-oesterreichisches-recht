@@ -43,7 +43,9 @@ description: "Prüft, ob der vereinbarte Hauptmietzins den zulässigen Höchstbe
 - `§ 16 Abs 8 MRG` — Unwirksamkeit/Rückforderung/Frist · `§ 37 Abs 1 MRG` — Verfahren · `§ 1431 ABGB` — Rückforderung
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; 5. Senat)
-- Unzulässige Mietzinsvereinbarung/Überschreitung: `judikatur "unzulässige Mietzinsvereinbarung" --gericht OGH` (u. a. RIS-Justiz RS0083814, RS0069831 — live prüfen).
+**Zur Laufzeit ausführen (nicht nur verweisen):**
+- Unzulässige Mietzinsvereinbarung/Überschreitung: `python3 tools/ris_client.py linie "unzulässige Mietzinsvereinbarung" --gericht OGH --gesetz MRG --paragraf 16` — die gelieferten Leitsätze/RS-Nummern verwenden (notierte RS0083814, RS0069831 über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
+- Für eine konkret benannte Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie tief die Linie?). § 16 MRG zuletzt 2026 novelliert — vor dem Stützen auf eine ältere Entscheidung `aktualitaet MRG 16 --seit <Entscheidungsdatum>` als Currency-Check.
 
 ### Anwendung im Skill
-Vergleich → Teilunwirksamkeit → Rückforderung → Frist (3 J. / befristet: Sonderregel). Stets den aktuellen zulässigen Höchstmietzins zugrunde legen.
+Vergleich → Teilunwirksamkeit → Rückforderung → Frist (3 J. / befristet: Sonderregel). Stets den aktuellen zulässigen Höchstmietzins zugrunde legen; ältere Judikatur vor Verwendung mit `aktualitaet MRG 16 --seit <Entscheidungsdatum>` auf zwischenzeitliche Novellen prüfen.

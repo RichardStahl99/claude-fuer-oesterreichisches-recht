@@ -58,11 +58,12 @@ Trägt die Akte 80 %: Dashboard mit `[noch zu klären: …]`. Sonst die **eine**
 
 ## Judikatur-Anker (Such-Wegweiser, kein Blindzitat)
 
-Über RIS (`tools/ris_client.py judikatur "<Stichworte>" --gericht OGH`) zu verifizieren, **keine GZ behaupten** — Arbeitsrecht entscheidet der **8./9. Senat (ObA)**:
+Zur Laufzeit ausführen (nicht nur verweisen) — **keine GZ aus Modellwissen behaupten**, nur Geliefertes übernehmen; Arbeitsrecht entscheidet der **8./9. Senat (ObA)**:
 
-- Sozialwidrigkeit — Suchworte „Kündigungsanfechtung Sozialwidrigkeit".
-- Verpöntes Motiv — Suchworte „verpöntes Motiv Kündigung".
-- Kündigungsentschädigung — Suchworte „Kündigungsentschädigung".
+- Sozialwidrigkeit — `python3 tools/ris_client.py linie "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH --gesetz ARBVG --paragraf 105` (OGH-Linie + Leitsätze nach Linientiefe).
+- Verpöntes Motiv — `python3 tools/ris_client.py linie "verpöntes Motiv Kündigung" --gericht OGH --gesetz ARBVG --paragraf 105`.
+- Kündigungsentschädigung — `python3 tools/ris_client.py linie "Kündigungsentschädigung" --gericht OGH --gesetz ANGG --paragraf 29`.
+- Eine konkret benannte Geschäftszahl mit `leit <GZ>` als Leitentscheidung (Stamm) und Linientiefe gewichten; ältere Entscheidungen vor Übernahme per `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` auf Aktualität prüfen — bei Arbeitern besonders `aktualitaet ABGB 1159 --seit <Datum>` (Angleichung seit 1.10.2021).
 
 ## Hinweis
 
