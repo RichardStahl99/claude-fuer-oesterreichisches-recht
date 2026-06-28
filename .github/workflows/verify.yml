@@ -1,0 +1,41 @@
+name: verify
+
+# CI-Link-Rot- und Integritätsprüfung.
+#
+# Läuft bei jedem Push und Pull Request sowie wöchentlich (Montag 06:00 UTC),
+# damit Link-Rot in den RIS-Permalinks auch ohne Code-Änderung früh auffällt.
+# Aufgabe: tools/verify.py
+#   - prüft jeden zitierten Norm-Permalink live gegen RIS (HTTP 200),
+#   - validiert marketplace.json + alle plugin.json,
+#   - lässt den RIS-Grounding-Smoke-Test laufen,
+#   - prüft die sha256-Integrität der geschützten Grundlagen.
+# Exit-Code != 0 lässt den Job fehlschlagen.
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # wöchentlich, Montag 06:00 UTC
+    - cron: "0 6 * * 1"
+
+# Konkurrierende Läufe pro Ref abbrechen (spart Minuten bei schnellen Pushes).
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run verify (Link-Rot, JSON, Smoke, Foundations)
+        run: python tools/verify.py
