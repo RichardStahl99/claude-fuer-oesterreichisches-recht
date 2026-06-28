@@ -32,6 +32,13 @@
       "description": "Forderungsdurchsetzung im Zivilverfahren: Zuständigkeit/Anwaltspflicht (JN, § 27 ZPO), Mahnverfahren (Zahlungsbefehl ≤ 75.000 €, § 248 ZPO), Verfahrensgang/Rechtsmittel (Neuerungsverbot, Fristen) und Exekution (EO). Dritte Pilot-Vertikale.",
       "version": "0.1.0",
       "author": "RichardStahl99"
+    },
+    {
+      "name": "arbeitsrecht-beendigung",
+      "source": "./arbeitsrecht-beendigung",
+      "description": "Beendigung des Arbeitsverhältnisses: Beendigungsart, Kündigungsfristen (§ 20 AngG, § 1159 ABGB), Kündigungsschutz/Anfechtung (§ 105 ArbVG, Betriebsrat, ASG, 2-Wochen-Frist) und Beendigungsansprüche (Abfertigung neu/alt, Urlaubsersatz, Kündigungsentschädigung). Vierte Pilot-Vertikale.",
+      "version": "0.1.0",
+      "author": "RichardStahl99"
     }
   ]
 }

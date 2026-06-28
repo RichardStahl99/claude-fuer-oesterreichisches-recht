@@ -52,6 +52,18 @@ GESETZESNUMMER = {
     "JN": "10001697",     # Jurisdiktionsnorm (RGBl 111/1895) — verifiziert (§49/§104 HTTP 200)
     "ZPO": "10001699",    # Zivilprozessordnung (RGBl 113/1895) — verifiziert (§27/§244/§464 HTTP 200)
     "EO": "10001700",     # Exekutionsordnung (RGBl 79/1896) — verifiziert (§1/§7 HTTP 200)
+    "ANGG": "10008069",   # Angestelltengesetz (BGBl 292/1921) — verifiziert (§20/§23 HTTP 200)
+    "ARBVG": "10008329",  # Arbeitsverfassungsgesetz (BGBl 22/1974) — verifiziert (§105 HTTP 200)
+    "BMSVG": "20002088",  # Betriebl. Mitarbeiter- u. Selbständigenvorsorgegesetz (BGBl I 100/2002) — verifiziert
+    "ASGG": "10000813",   # Arbeits- und Sozialgerichtsgesetz (BGBl 104/1985) — verifiziert
+    "URLG": "10008376",   # Urlaubsgesetz (BGBl 390/1976) — verifiziert (§10 HTTP 200)
+}
+
+# Gesetze, deren Paragrafen in RIS unter einem Artikel adressiert werden (sonst 404).
+# Das AngG wurde als "Artikel I" eines Stammgesetzes 1921 erlassen; seine §§ brauchen
+# in der NormDokument-URL zusätzlich &Artikel=1.
+LAW_ARTIKEL = {
+    "ANGG": "1",
 }
 
 # Organe ausländischer/überstaatlicher Gerichte, die bei reiner OGH-Recherche
@@ -208,9 +220,14 @@ def search_judikatur(
 # Normen (Permalinks)
 # --------------------------------------------------------------------------- #
 def norm_permalink(abbrev_or_gnr: str, paragraf: str | None = None) -> str:
-    """RIS-Permalink für eine Bundesnorm. 'ABGB' wird zur Gesetzesnummer aufgelöst."""
-    gnr = GESETZESNUMMER.get(abbrev_or_gnr.upper(), abbrev_or_gnr)
+    """RIS-Permalink für eine Bundesnorm. 'ABGB' wird zur Gesetzesnummer aufgelöst.
+    Gesetze in LAW_ARTIKEL (z.B. AngG) bekommen den nötigen &Artikel=-Parameter."""
+    key = abbrev_or_gnr.upper()
+    gnr = GESETZESNUMMER.get(key, abbrev_or_gnr)
     url = RIS_WEB + "NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=" + urllib.parse.quote(str(gnr))
+    artikel = LAW_ARTIKEL.get(key)
+    if artikel:
+        url += "&Artikel=" + urllib.parse.quote(artikel)
     if paragraf:
         url += "&Paragraf=" + urllib.parse.quote(str(paragraf))
     return url

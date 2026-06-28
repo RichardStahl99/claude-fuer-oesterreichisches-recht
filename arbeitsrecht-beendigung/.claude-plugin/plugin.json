@@ -1,0 +1,25 @@
+{
+  "name": "arbeitsrecht-beendigung",
+  "version": "0.1.0",
+  "description": "Beendigung des Arbeitsverhältnisses nach österreichischem Recht aus anwaltlicher Sicht: Beendigungsart (Kündigung/Entlassung/einvernehmlich/Zeitablauf), Kündigungsfristen und -termine (§ 20 AngG, § 1159 ABGB), Kündigungsschutz und Anfechtung (§ 105 ArbVG, Betriebsrat, ASG) sowie Beendigungsansprüche (Abfertigung neu/alt, Urlaubsersatzleistung, Kündigungsentschädigung). Vierte Pilot-Vertikale; nutzt dieselben Grundlagen unverändert.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "RichardStahl99",
+    "email": "RichardStahl99@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/RichardStahl99/claude-fuer-oesterreichisches-recht",
+  "keywords": [
+    "arbeitsrecht",
+    "kuendigung",
+    "entlassung",
+    "angg",
+    "arbvg",
+    "kuendigungsschutz",
+    "sozialwidrigkeit",
+    "betriebsrat",
+    "abfertigung",
+    "bmsvg",
+    "asgg",
+    "oesterreich"
+  ]
+}
