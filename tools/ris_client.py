@@ -59,6 +59,10 @@ GESETZESNUMMER = {
     "BMSVG": "20002088",  # Betriebl. Mitarbeiter- u. Selbständigenvorsorgegesetz (BGBl I 100/2002) — verifiziert
     "ASGG": "10000813",   # Arbeits- und Sozialgerichtsgesetz (BGBl 104/1985) — verifiziert
     "URLG": "10008376",   # Urlaubsgesetz (BGBl 390/1976) — verifiziert (§10 HTTP 200)
+    "AZG": "10008238",    # Arbeitszeitgesetz (BGBl 461/1969) — verifiziert (§19c HTTP 200)
+    "AVRAG": "10008872",  # Arbeitsvertragsrechts-AnpassungsG (BGBl 459/1993) — verifiziert (§2g HTTP 200)
+    "DHG": "10008209",    # Dienstnehmerhaftpflichtgesetz (BGBl 80/1965) — verifiziert (§2 HTTP 200, Artikel=1)
+    "PATG": "10002181",   # Patentgesetz 1970 (BGBl 259/1970) — verifiziert (§6 HTTP 200)
 }
 
 # Gesetze, deren Paragrafen in RIS unter einem Artikel adressiert werden (sonst 404).
@@ -66,6 +70,7 @@ GESETZESNUMMER = {
 # in der NormDokument-URL zusätzlich &Artikel=1.
 LAW_ARTIKEL = {
     "ANGG": "1",
+    "DHG": "1",  # Dienstnehmerhaftpflichtgesetz: §§ adressiert unter Artikel I des Stammgesetzes BGBl 80/1965
 }
 
 # Organe ausländischer/überstaatlicher Gerichte, die bei reiner OGH-Recherche
