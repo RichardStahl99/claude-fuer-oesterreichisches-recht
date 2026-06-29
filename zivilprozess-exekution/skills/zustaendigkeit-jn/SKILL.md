@@ -22,7 +22,7 @@ Bevor geklagt wird, müssen **drei** Fragen beantwortet sein: **sachliche** Zust
 2. **Örtliche Zuständigkeit:** **allgemeiner Gerichtsstand** des Beklagten (Wohnsitz/gewöhnlicher Aufenthalt natürlicher Personen, § 66 JN; Sitz juristischer Personen, § 75 JN). Daneben **Wahlgerichtsstände** (z. B. Gerichtsstand des Erfüllungsorts) und die **Gerichtsstandsvereinbarung** (§ 104 JN, Prorogation — schriftlich nachweisbar).
 3. **Anwaltspflicht (§ 27 ZPO):**
    - **Bezirksgericht – Wertstreitigkeiten:** **bis 5.000 €** kein Anwaltszwang (die Partei kann selbst auftreten); **über 5.000 €** **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
-   - **Bezirksgericht – Eigenzuständigkeitssachen** (wertunabhängig vor das BG, z. B. Bestand-/bestimmte Familiensachen): **keine** absolute Anwaltspflicht (§ 27 Abs 2 ZPO). Über **5.000 €** (an Orten mit ≥ 2 Rechtsanwälten) sowie in **Ehesachen** gilt **relative** Anwaltspflicht (§ 29 Abs 1 ZPO) — die Partei kann selbst auftreten, einen **Bevollmächtigten** muss sie dann aber durch einen Rechtsanwalt stellen; **bis 5.000 €** besteht kein Anwaltszwang (auch ein Nicht-Anwalt kann bevollmächtigt werden).
+   - **Bezirksgericht – Eigenzuständigkeitssachen** (wertunabhängig vor das BG, z. B. Bestand-/bestimmte Familiensachen): **keine** absolute Anwaltspflicht (§ 27 Abs 2 ZPO). In **Ehesachen** sowie in Sachen über **5.000 €** gilt — **nur an Orten mit mindestens zwei Rechtsanwälten** — die **relative** Anwaltspflicht (§ 29 Abs 1 ZPO): die Partei kann selbst auftreten, einen **Bevollmächtigten** muss sie dann aber durch einen Rechtsanwalt stellen. Sonst (Sachen bis 5.000 € außerhalb von Ehesachen oder Orte mit weniger als zwei Rechtsanwälten) besteht **kein Anwaltszwang** (auch ein Nicht-Anwalt kann bevollmächtigt werden).
    - **Landesgericht/höhere Gerichte:** stets **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
    - **Ausnahme bezirksgerichtliches Mahnverfahren:** Der **Einspruch** gegen einen Zahlungsbefehl des **BG** ist von der Anwaltspflicht ausgenommen (§ 448 Z 1 ZPO) — formfrei, sogar mündlich zu Protokoll (§ 448 Z 2). **Nicht** im LG-Mahnverfahren (> 15.000 €): dort Anwalt + Klagebeantwortungs-Inhalt (§ 248 Abs 1). Siehe `mahnverfahren`.
 4. **Ergebnis** (Gericht + Anwaltspflicht) festhalten und an `mahnverfahren`/`verfahrensgang-rechtsmittel` durchreichen.
@@ -32,7 +32,7 @@ Eigenzuständigkeit BG (§49 Abs2: Bestand, Familie ...) ? --ja--> BG (wertunabh
         | nein
 Streitwert ≤ 15.000 € ?  --ja--> BG     --nein--> LG (§ 50)
 Anwaltspflicht: BG-Wertstreit ≤ 5.000 € kein Zwang / > 5.000 € absolut (§ 27 Abs 1);
-                BG-Eigenzuständigkeit relativ über 5.000 € bzw. in Ehesachen (§ 29 Abs 1), sonst kein Zwang; LG absolut
+                BG-Eigenzuständigkeit relativ (§ 29 Abs 1) bei Ehesachen/Streitwert > 5.000 € nur an Orten mit ≥ 2 RA, sonst kein Zwang; LG absolut
 Örtlich: Wohnsitz/Sitz Beklagter (§§ 66, 75) | Gerichtsstandsvereinbarung (§ 104)
 ```
 
