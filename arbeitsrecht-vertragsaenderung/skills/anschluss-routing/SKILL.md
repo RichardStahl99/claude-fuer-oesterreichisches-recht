@@ -8,6 +8,7 @@ description: "Abschluss-Router: verweist je nach Fall auf die Beendigungs-Vertik
 ## Fachlicher Anker
 
 - **Normen (über RIS auflösen, `tools/ris_client.py`):** § 40 ArbVG (Betriebsrat-Gründung) — GNR 10008329; `python3 tools/ris_client.py norm ARBVG 40` → HTTP 200. Nur **prospektiv** relevant: § 40 ArbVG schafft die Rechtsgrundlage für die Gründung eines Betriebsrats, setzt aber Mindestbelegschaft (≥ 5 wahlberechtigte Arbeitnehmer) voraus.
+- **Laufzeit-Grounding (Pflicht):** Vor Empfehlung einer Betriebsrat-Gründung `aktualitaet ARBVG 40` ausführen — Fassungsstand des § 40 ArbVG (Wahlvoraussetzungen, Mindestbelegschaft) bestätigen, bevor die prospektive Handlungsempfehlung ausgegeben wird.
 - **Quellenhygiene:** `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md`. Keine GZ aus Modellwissen — nur RIS-verifizierte Fundstellen verwenden.
 - **EStG-Hinweis (Steuer):** Das EStG ist im RIS als Gesetzesnummer nicht eigenständig permalink-fähig abrufbar; steuerliche Fragen (Jahressechstel, Sonderzahlungsoptimierung) werden deshalb nur als Verweis zum Steuerberater ausgegeben — keine §-Zitation ohne verifizierbare Quelle.
 

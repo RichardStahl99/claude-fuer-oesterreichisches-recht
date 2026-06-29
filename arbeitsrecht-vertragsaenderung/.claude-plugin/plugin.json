@@ -1,7 +1,7 @@
 {
   "name": "arbeitsrecht-vertragsaenderung",
   "version": "0.1.0",
-  "description": "Vertragsänderung im aufrechten Dienstverhältnis nach österreichischem Recht: Änderungs-Regime-Triage (einvernehmlich / Änderungskündigung / konkludent § 863 ABGB), Klausel-Inhaltskontrolle (§ 879 Abs 3 ABGB: Bonus-Widerruf, Versetzung, All-in § 19c AZG/§ 2g AVRAG, Urlaub § 12 UrlG, Haftungsdeckel DHG), DE→AT-Falsche-Freunde-Audit und Austritts-Backstop (§ 26/§ 29 AngG). Fünfte Vertikale; Grundlagen unverändert.",
+  "description": "Vertragsänderung im aufrechten Dienstverhältnis nach österreichischem Recht: Änderungs-Regime-Triage (einvernehmlich / Änderungskündigung / konkludent § 863 ABGB), Klausel-Inhaltskontrolle (§ 879 Abs 3 ABGB: Bonus-Widerruf, Versetzung, All-in § 19c AZG/§ 2g AVRAG, Urlaub § 2/§ 12 UrlG, Haftungsdeckel DHG), DE→AT-Falsche-Freunde-Audit und Austritts-Backstop (§ 26/§ 29 AngG). Fünfte Vertikale; Grundlagen unverändert.",
   "license": "Apache-2.0 OR MIT",
   "author": {
     "name": "RichardStahl99",

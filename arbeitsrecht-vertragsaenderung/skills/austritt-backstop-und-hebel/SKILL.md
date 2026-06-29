@@ -62,8 +62,7 @@ Zur Laufzeit ausführen — **keine GZ aus Modellwissen behaupten**, nur RIS-gel
 
 - **Zeitnähe des Austritts / vorbehaltlose Weiterarbeit:** § 26 AngG verlangt, dass der vorzeitige Austritt ohne unnötigen Aufschub aus dem aktuellen wichtigen Grund erklärt wird; vorbehaltlose Weiterarbeit kann den Austrittsgrund verwirken. (9 ObA 164/07v ist eine Versetzungs-/Feststellungsklage ohne § 26/Austritt-Inhalt — kein Zitat.)
 - **Konkludente Bindung / Vorbehalt nach Zufluss:** Gestützt auf § 863 ABGB + RS0042828 (strenge Anforderungen an schlüssige Erklärungen) + RS0014154 (Empfängerhorizont) + RS0047273 [T2] (bloße Entgegennahme = kein Erklärungswert). — RS0124521 (9 ObA 113/08w) betrifft Unverbindlichkeitsvorbehalt für Sonderzahlungen, nicht diese Proposition.
-- **Aktualität § 26 AngG:** `python3 tools/ris_client.py aktualitaet ANGG 26 --seit 2008-06-05` → Fassung unverändert seit 1921-07-01; keine Gesetzesänderung nach dem Ankerbeschluss.
-- **Aktualität § 29 AngG:** `python3 tools/ris_client.py aktualitaet ANGG 29 --seit 2008-06-05` → Fassung unverändert seit 1971-08-01; keine Gesetzesänderung nach dem Ankerbeschluss.
+- **Aktualität § 26 / § 29 AngG:** `python3 tools/ris_client.py aktualitaet ANGG 26` / `aktualitaet ANGG 29` — Fassungsstand der Austritts-/Entschädigungsnormen prüfen; Änderung der Normen würde Austrittsvoraussetzungen oder Entschädigungsberechnung berühren.
 
 ## Hinweis
 

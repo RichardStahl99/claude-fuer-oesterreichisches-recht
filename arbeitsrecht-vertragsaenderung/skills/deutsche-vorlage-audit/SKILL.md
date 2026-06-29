@@ -18,6 +18,7 @@ description: "Systematischer Falsche-Freunde-Scanner: erkennt aus deutschen Vorl
   - § 126b BGB (DE) — Textform; in AT nicht kodifiziert.
   - EFZG (DE) — deutsches Entgeltfortzahlungsgesetz; in AT gilt § 8 AngG für Angestellte.
   - BAG-Stil (DE) — fixe 3-Monats-Haftungsdeckel nach deutschem Bundesarbeitsgericht-Muster; in AT: §§ 2, 5 DHG.
+- **Laufzeit-Grounding (Pflicht):** Vor Übernahme jeder Norm-Zuordnung (AT-Zielnorm für eine deutsche Vorlageversion) Permalink der AT-Zielnorm auflösen und `aktualitaet` ausführen — z.B. `aktualitaet ANGG 8` (Entgeltfortzahlung), `aktualitaet PATG 6` (Arbeitnehmererfindungen) — um sicherzustellen, dass die AT-Norm unverändert gilt, bevor die Mapping-Aussage ausgegeben wird.
 - **Quellenhygiene:** `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` (§ 3 Grounding-Protokoll). Keine GZ aus Modellwissen — nur RIS-verifizierte Fundstellen verwenden.
 
 ## Einsatzlage
@@ -56,7 +57,7 @@ Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wu
 | Wenn der Fall trägt … | dann Skill | Erwartung |
 |---|---|---|
 | Klausel ist nach AT-Recht identifiziert und inhaltlich zu kontrollieren (§ 879 Abs 3 ABGB, AZG, URLG, DHG) | `klausel-inhaltskontrolle` | Klauselweise Inhaltskontrolle nach österreichischem Maßstab |
-| Frage des Änderungsregimes (einvernehmlich, Änderungskündigung, konkludent) | `anschluss-routing` | Regime-Gate und Verschlechterungsschutz |
+| Frage des Änderungsregimes (einvernehmlich, Änderungskündigung, konkludent) | `aenderungsregime` | Regime-Gate und Verschlechterungsschutz |
 
 ## Hinweis
 

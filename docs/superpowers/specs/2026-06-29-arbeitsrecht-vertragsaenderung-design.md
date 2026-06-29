@@ -72,6 +72,8 @@ Layout wie bestehende Akten: **`sachverhalt.md`** (anonymisierte Lage + Klausel-
 - KV: IT-KV (UBIT), **illustrativer** KV-Mindestsatz (kein realer Personenbezug).
 - Die doktrinellen Verhältnisse (variable-lastige Aufteilung, ~⅓-Bonus-Widerruf, Fix/variabel-Asymmetrie der Erhöhung) bleiben erhalten — sie tragen die § 879/3- und All-in-Analyse.
 
+**Implementierungsnotiz:** Die gebaute Test-Akte verwendet Fix €119.000 / variabel €66.000 (= €185.000 Zielgehalt), +€4.000 Fix gesichert — abweichend von der Spec-Angabe €120.000, weil €120.000 mit der Anonymisierungs-Grep-Gate-Verbotsliste kollidiert hat.
+
 ## 5. Grounding & neue Gesetzesnummern
 
 **Bereits registriert:** ABGB, AngG, ArbVG, UrlG. **Neu im LAW-Dict von `ris_client.py`** (der Erweiterungspunkt — Grundlagen bleiben eingefroren), jede GNR live auf HTTP 200 verifiziert:
