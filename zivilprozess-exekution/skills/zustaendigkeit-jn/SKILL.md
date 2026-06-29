@@ -24,6 +24,7 @@ Bevor geklagt wird, müssen **drei** Fragen beantwortet sein: **sachliche** Zust
    - **Bezirksgericht – Wertstreitigkeiten:** **bis 5.000 €** kein Anwaltszwang (die Partei kann selbst auftreten); **über 5.000 €** **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
    - **Bezirksgericht – Eigenzuständigkeitssachen** (wertunabhängig vor das BG, z. B. Bestand-/bestimmte Familiensachen): **keine** absolute Anwaltspflicht (§ 27 Abs 2 ZPO). Über **5.000 €** (an Orten mit ≥ 2 Rechtsanwälten) sowie in **Ehesachen** gilt **relative** Anwaltspflicht (§ 29 Abs 1 ZPO) — die Partei kann selbst auftreten, einen **Bevollmächtigten** muss sie dann aber durch einen Rechtsanwalt stellen; **bis 5.000 €** besteht kein Anwaltszwang (auch ein Nicht-Anwalt kann bevollmächtigt werden).
    - **Landesgericht/höhere Gerichte:** stets **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
+   - **Ausnahme Mahnverfahren:** Der **Einspruch** gegen einen Zahlungsbefehl ist von der Anwaltspflicht ausgenommen (§ 448 Z 1 ZPO) — der Beklagte kann ihn auch unter absoluter Anwaltspflicht selbst und formfrei (sogar mündlich zu Protokoll, § 448 Z 2) erheben; siehe `mahnverfahren`.
 4. **Ergebnis** (Gericht + Anwaltspflicht) festhalten und an `mahnverfahren`/`verfahrensgang-rechtsmittel` durchreichen.
 
 ```text

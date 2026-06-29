@@ -19,7 +19,7 @@ Liegt schon ein **Exekutionstitel** (Urteil, rk. Zahlungsbefehl, Vergleich, voll
 ## 2. Mahnverfahren (§§ 244 ff ZPO)
 
 - Geldforderung **≤ 75.000 €** → zwingend **Mahnklage** → bedingter **Zahlungsbefehl**.
-- **Einspruch (§ 248): 4 Wochen.** Einspruch → streitiges Verfahren; kein Einspruch → **rechtskräftiger, vollstreckbarer Titel**.
+- **Einspruch (§ 248): 4 Wochen.** Einspruch → streitiges Verfahren; kein Einspruch → **rechtskräftiger, vollstreckbarer Titel**. Der **Einspruch braucht keinen Anwalt** (§ 448 Z 1 ZPO), auch bei absoluter Anwaltspflicht — formfrei, notfalls mündlich zu Protokoll (§ 448 Z 2).
 
 ## 3. Streitiges Verfahren & Rechtsmittel
 
