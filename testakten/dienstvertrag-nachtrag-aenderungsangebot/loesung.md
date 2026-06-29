@@ -69,7 +69,7 @@ Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfäll
 
 ### §4.10 All-in (neu eingefügt) (🟠)
 
-§ 2g AVRAG (GNR 10008872) schreibt Transparenz vor: Die Überstundenkomponente muss vom Grundentgelt trennbar ausgewiesen sein. Der Durchrechnungszeitraum ist das Kalenderjahr — das folgt aus AZG § 19 (RS0131677, OGH 27.09.2017, 9 ObA 28/17h). Fehlt diese Trennbarkeit oder wird eine Pauschalabgeltung ohne Nachweis der tatsächlichen Deckung vereinbart, ist § 2g AVRAG verletzt — Folge: Einzelverrechnung aller tatsächlich geleisteten Überstunden, Sonn-/Feiertags- und Nachtarbeitszuschläge. AG trägt die Deckungsprüfungspflicht (RS0051519 [T4/T6], OGH 4 Ob 66/84; Norm: AZG § 10; 28 E): AG hat grundsätzlich zu überprüfen, ob geleistete Überstunden durch das Pauschale gedeckt waren; fehlende Deckung → AN kann über das Pauschale hinausgehende unabdingbare Ansprüche erheben; AG trägt das Deckungsrisiko. Zu prüfen: Deckt das Pauschalentgelt von € 119.000 (fiktiv/illustrativ) die prognostizierten Überstunden bei Führungsrolle Vertrieb tatsächlich ab?
+§ 2g AVRAG (GNR 10008872) schreibt Transparenz vor: Die Überstundenkomponente muss vom Grundentgelt trennbar ausgewiesen sein. Der Durchrechnungszeitraum ist das Kalenderjahr — das folgt aus AZG § 19 (RS0131677, OGH 27.09.2017, 9 ObA 28/17h). Fehlt die betragsmäßige Angabe des Grundgehalts (§ 2 Abs 2 Z 9), greift § 2g AVRAG als Berechnungsgrundlage: zwingender Anspruch auf das branchen-/ortsübliche Ist-Grundgehalt vergleichbarer Arbeitnehmer:innen, das der Abgeltung der Entgeltbestandteile zugrunde zu legen ist (keine Einzelverrechnung *aller* Überstunden). Zusätzlich verrechenbar bleiben nur die durch das Pauschale **nicht gedeckten** Überstunden samt Sonn-/Feiertags- und Nachtarbeitszuschlägen. AG trägt die Deckungsprüfungspflicht (RS0051519 [T4/T6], OGH 4 Ob 66/84; Norm: AZG § 10; 28 E): AG hat grundsätzlich zu überprüfen, ob geleistete Überstunden durch das Pauschale gedeckt waren; fehlende Deckung → AN kann über das Pauschale hinausgehende unabdingbare Ansprüche erheben; AG trägt das Deckungsrisiko. Zu prüfen: Deckt das Pauschalentgelt von € 119.000 (fiktiv/illustrativ) die prognostizierten Überstunden bei Führungsrolle Vertrieb tatsächlich ab?
 
 ### §14.5 Haftungsdeckel 3 Monatsgehälter (⚪ — DHG-Boden prüfen)
 
@@ -84,7 +84,7 @@ Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfäll
 | „Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | §§ 6–9 PatG (GNR 10002181): kein ex-lege-Erwerb; Rechtsübergang erfordert schriftliche Vereinbarung | 🔴 |
 | „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG (GNR 10008069, Artikel 1): Entlassung; demonstrativer Tatbestand, restriktiv ausgelegt (RIS: „insbesondere"); keine Abmahnpflicht nach deutschem Muster | 🔴 |
 | „in Textform" | § 126b BGB (DE) | In AT nicht kodifiziert; Schriftform = § 886 ABGB (GNR 10001622); Klausel muss klargestellt werden | 🟠 |
-| „§ 2 Entgeltfortzahlungsgesetz" | EFZG (DE) | § 8 AngG (GNR 10008069, Artikel 1): § 1 Abs 2 EFZG (DE) nimmt Angestellte aus; für AT gilt § 8 AngG eigenständig | 🔴 |
+| „§ 2 Entgeltfortzahlungsgesetz“ | EFZG (DE) | Nach Sachmaterie routen: dt. **§ 3 EFZG (DE)** (Entgeltfortzahlung im Krankheitsfall) → **§ 8 AngG** (GNR 10008069, Artikel 1; Angestellte); dt. **§ 2 EFZG (DE)** (Feiertagsentgelt) → **Arbeitsruhegesetz (ARG)**, für Angestellte deckt das laufende Monatsgehalt die Feiertage ohnehin — **nicht** § 8 AngG. Das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG aus (es gilt für Arbeiter) | 🔴 |
 | Fixer 3-Monats-Haftungsdeckel (BAG-Stil) | BAG-Muster (DE) | §§ 2, 5 DHG (GNR 10008209, Artikel 1): DHG-Boden zwingend; Vorsatz/grobe Fahrlässigkeit nicht ausschließbar | 🔴 |
 
 **Zwischenergebnis:** Der Nachtrag basiert in mehreren Klauseln auf einer deutschen Vertragsvorlage. Die betroffenen Klauseln sind im jeweiligen Umfang unwirksam oder leer. Nach Umstellung auf die AT-Norm schließt die vollständige Inhaltskontrolle nach § 879 Abs 3 ABGB an.
@@ -132,14 +132,18 @@ Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel
 - § 879 Abs 3 ABGB — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001622&Paragraf=879
 - § 886 ABGB — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001622&Paragraf=886
 - § 8 AngG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008069&Artikel=1&Paragraf=8
+- § 1 Abs 2 EFZG (österr. Entgeltfortzahlungsgesetz, BGBl 399/1974) — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008308&Artikel=1&Paragraf=1
 - § 26 AngG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008069&Artikel=1&Paragraf=26
 - § 27 AngG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008069&Artikel=1&Paragraf=27
 - § 29 AngG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008069&Artikel=1&Paragraf=29
 - § 36 ArbVG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008329&Paragraf=36
 - § 40 ArbVG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008329&Paragraf=40
 - § 19c AZG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008238&Paragraf=19c
+- § 19d Abs 2 AZG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008238&Paragraf=19d
+- § 10 AZG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008238&Paragraf=10
 - § 2g AVRAG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008872&Paragraf=2g
 - § 2 URLG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008376&Paragraf=2
+- § 4 Abs 5 URLG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008376&Paragraf=4
 - § 12 URLG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008376&Paragraf=12
 - §§ 2, 5 DHG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008209&Artikel=1&Paragraf=2
 - §§ 6–9 PatG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002181&Paragraf=6
