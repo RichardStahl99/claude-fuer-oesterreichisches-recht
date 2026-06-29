@@ -82,7 +82,7 @@ Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfäll
 | Klausel-Indiz | Deutsche Wurzel (DE) | Österreichische Folge | Ampel |
 |---|---|---|---|
 | „Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | §§ 6–9 PatG (GNR 10002181): kein ex-lege-Erwerb; Rechtsübergang erfordert schriftliche Vereinbarung | 🔴 |
-| „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG (GNR 10008069, Artikel 1): Entlassung; abschließender Tatbestandskatalog; keine Abmahnpflicht nach deutschem Muster, aber die Entlassungsgründe sind enumerativ | 🔴 |
+| „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG (GNR 10008069, Artikel 1): Entlassung; demonstrativer Tatbestand, restriktiv ausgelegt (RIS: „insbesondere"); keine Abmahnpflicht nach deutschem Muster | 🔴 |
 | „in Textform" | § 126b BGB (DE) | In AT nicht kodifiziert; Schriftform = § 886 ABGB (GNR 10001622); Klausel muss klargestellt werden | 🟠 |
 | „§ 2 Entgeltfortzahlungsgesetz" | EFZG (DE) | § 8 AngG (GNR 10008069, Artikel 1): § 1 Abs 2 EFZG (DE) nimmt Angestellte aus; für AT gilt § 8 AngG eigenständig | 🔴 |
 | Fixer 3-Monats-Haftungsdeckel (BAG-Stil) | BAG-Muster (DE) | §§ 2, 5 DHG (GNR 10008209, Artikel 1): DHG-Boden zwingend; Vorsatz/grobe Fahrlässigkeit nicht ausschließbar | 🔴 |

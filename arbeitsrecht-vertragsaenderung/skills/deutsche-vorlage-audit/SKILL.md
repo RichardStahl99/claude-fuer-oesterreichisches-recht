@@ -9,7 +9,7 @@ description: "Systematischer Falsche-Freunde-Scanner: erkennt aus deutschen Vorl
 
 - **Österreichische Zielnormen (alle HTTP 200 in RIS verifiziert):**
   - §§ 6–9 PatG (GNR 10002181) — Arbeitnehmererfindungen im österreichischen Patentrecht; Erwerb des Dienstgeberrechts nur durch schriftliche Vereinbarung.
-  - § 27 AngG (GNR 10008069, Artikel 1) — Entlassung des Angestellten (außerordentliche Beendigung durch den Dienstgeber); abschließende Tatbestandskatalog, keine Abmahnpflicht nach deutschem Muster.
+  - § 27 AngG (GNR 10008069, Artikel 1) — Entlassung des Angestellten (außerordentliche Beendigung durch den Dienstgeber); demonstrativer Tatbestand, der restriktiv ausgelegt wird (RIS-Text: „insbesondere"); keine Abmahnpflicht nach deutschem Muster.
   - § 8 AngG (GNR 10008069, Artikel 1) — Entgeltfortzahlung im Krankheitsfall für Angestellte; § 1 Abs 2 EFZG (DE) nimmt Angestellte vom deutschen Anwendungsbereich aus.
   - §§ 2, 5 DHG (GNR 10008209, Artikel 1) — Haftungsmaßstab und Mäßigungsrecht; zwingender DHG-Boden nicht durch Klausel unterschreitbar.
 - **Deutsche Kontrast-Normen (bewusste Anti-Muster, kein österreichisches Recht):**
@@ -30,7 +30,7 @@ Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wu
 | Klausel-Indiz (Wortlaut) | Deutsche Wurzel (DE) | Österreichische Folge |
 |---|---|---|
 | „nach dem Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | §§ 6–9 PatG — kein Erwerb ex lege; Schriftlichkeit der Vereinbarung zwingend |
-| „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung, abschließender Tatbestandskatalog |
+| „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; demonstrativer Tatbestand, restriktiv ausgelegt (RIS: „insbesondere") |
 | „in Textform" | § 126b BGB (DE) | in AT nicht kodifiziert; Schriftform = § 886 ABGB; Klarstellung erforderlich |
 | „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | § 8 AngG — § 1 Abs 2 EFZG (DE) nimmt Angestellte aus; österreichisches Entgeltfortzahlungsrecht gilt eigenständig |
 | fixer „3-Monats"-Haftungsdeckel ohne DHG-Bezug | BAG-Stil (DE) | §§ 2, 5 DHG — zwingender Mindestrahmen; Deckel darf DHG-Boden nicht unterschreiten |
@@ -48,7 +48,7 @@ Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wu
 ## Risiko-Ampel
 
 - 🔴 **Klausel beruht auf deutschem Recht ohne österreichische Entsprechung oder mit abweichendem Regelungsinhalt** — unmittelbare Korrekturbedarf: Norm auf AT-Äquivalent umstellen; Klausel ist im betroffenen Umfang unwirksam oder leer (z.B. ArbnErfG-Fiktion, EFZG-Verweis, BAG-Haftungsdeckel unter DHG-Boden).
-- 🔴 **Entlassungsklausel nach § 626 BGB (DE)-Muster** — § 27 AngG enthält abschließenden Tatbestandskatalog; deutsches Muster (außerordentliche Kündigung nach freiem Ermessen + Abmahnung) passt nicht; Klausel zwingend auf § 27 AngG umschreiben.
+- 🔴 **Entlassungsklausel nach § 626 BGB (DE)-Muster** — § 27 AngG enthält einen demonstrativen, restriktiv ausgelegten Tatbestand (RIS: „insbesondere"); deutsches Muster (außerordentliche Kündigung nach freiem Ermessen + Abmahnung) passt nicht; Klausel zwingend auf § 27 AngG umschreiben.
 - 🟠 **„Textform"-Klausel** — § 126b BGB (DE) hat kein direktes AT-Pendant; je nach Kontext Schriftform (§ 886 ABGB) oder bloße Schriftlichkeit klären; Grenzfall, wenn Zweck eindeutig.
 - 🟢 **Klausel ist terminologisch deutsch, aber inhaltlich AT-konform** — Korrektur des Wortlauts auf österreichisches Rechtsdeutsch (Jänner statt Januar, Rekurs statt Beschwerde), keine Nichtigkeitsfolge.
 

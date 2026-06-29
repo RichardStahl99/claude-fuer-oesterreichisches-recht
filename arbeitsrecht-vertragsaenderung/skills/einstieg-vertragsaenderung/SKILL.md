@@ -7,7 +7,7 @@ description: "Einstiegs-Triage für Vertragsänderungen im aufrechten Dienstverh
 
 ## Fachlicher Anker
 
-- **Normen (über RIS auflösen, `tools/ris_client.py`):** § 863, § 879 Abs 3 ABGB (konkludenter Konsens; sittenwidrige Klausel) — GNR 10001622; § 26, § 29 AngG (Austrittsrecht; Ansprüche) — GNR 10008069 (Artikel 1); § 36 Abs 2 Z 3, § 101, § 107 ArbVG (leitende:r Angestellte:r; Betriebsvereinbarung; Widerrufsvorbehalt) — GNR 10008329.
+- **Normen (über RIS auflösen, `tools/ris_client.py`):** § 863, § 879 Abs 3 ABGB (konkludenter Konsens; sittenwidrige Klausel) — GNR 10001622; § 26, § 29 AngG (Austrittsrecht; Ansprüche) — GNR 10008069 (Artikel 1); § 36 Abs 2 Z 3, § 101, § 107 ArbVG (leitende:r Angestellte:r [§ 36]; Mitwirkung bei Versetzungen/Versetzungsschutz [§ 101 — kollektiver Prong, setzt Betriebsrat voraus]; Anfechtung durch den Arbeitnehmer im betriebsratslosen Betrieb [§ 107 iVm § 105 Abs 4a]) — GNR 10008329.
 - **Quellenhygiene:** `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md`. Keine Geschäftszahl aus Modellwissen.
 - **Konvention:** Aufbau nach `references/anwalts-dashboard-konvention.md`.
 
@@ -53,8 +53,8 @@ Vorrangig **`aenderungsregime`** — der Änderungsweg ist die Weiche; bei Ände
 - `§ 26 AngG` — Austrittsrecht bei unzumutbarer Verschlechterung der Arbeitsbedingungen
 - `§ 29 AngG` — Ansprüche bei berechtigt erklärtem Austritt (Abfertigung, Kündigungsentschädigung)
 - `§ 36 Abs 2 Z 3 ArbVG` — Definition leitende:r Angestellte:r (Hire-&-Fire-/Gehaltskompetenz)
-- `§ 101 ArbVG` — Betriebsvereinbarung über Entgelt; Verhältnis zu Einzelvertrag
-- `§ 107 ArbVG` — Widerrufsvorbehalt in Betriebsvereinbarung; Schranken
+- `§ 101 ArbVG` — Mitwirkung des Betriebsrats bei Versetzungen (Versetzungsschutz; setzt Betriebsrat voraus — kollektiver Prong)
+- `§ 107 ArbVG` — Anfechtung durch den Arbeitnehmer im betriebsratspflichtigen, aber betriebsratslosen Betrieb (iVm § 105 Abs 4a; 2-Wochen-Frist ab Zugang der Kündigung)
 
 ## Genau eine Rückfrage (nur wenn nötig)
 
