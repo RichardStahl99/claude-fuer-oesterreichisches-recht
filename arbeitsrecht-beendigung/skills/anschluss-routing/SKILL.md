@@ -26,6 +26,7 @@ Wählt nach dem ersten Ergebnis die passende Vertiefung, Fristensicherung oder A
   - Kündigung, Frist/Termin fraglich → `kuendigungsfristen-termine`.
   - Kündigung anfechten → `kuendigungsschutz-anfechtung`.
   - Geld am Ende → `beendigungsansprueche`.
+  - Verhältnis läuft weiter, Bedingungen ändern sich (Nachtrag/Änderungsangebot) → Plugin `arbeitsrecht-vertragsaenderung`.
   - Außerhalb des Plugins (laufendes AV, Entgelt/Arbeitszeit, GlBG-Diskriminierung, Betriebsübergang AVRAG, Sozialversicherung, besonderer Kündigungsschutz im Detail) → ausdrücklich verweisen.
 - **Konkreten Folge-Skill mit Slug benennen** — nicht generisch „weitermachen".
 - **Fristen vorab markieren** (`[Frist prüfen: § 105 Abs 4 ArbVG — 2 Wochen]`), nie aus Modellwissen finalisieren.
