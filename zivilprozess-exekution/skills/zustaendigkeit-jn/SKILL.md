@@ -32,7 +32,7 @@ Eigenzuständigkeit BG (§49 Abs2: Bestand, Familie ...) ? --ja--> BG (wertunabh
         | nein
 Streitwert ≤ 15.000 € ?  --ja--> BG     --nein--> LG (§ 50)
 Anwaltspflicht: BG-Wertstreit ≤ 5.000 € kein Zwang / > 5.000 € absolut (§ 27 Abs 1);
-                BG-Eigenzuständigkeit > 5.000 € relativ (§ 29 Abs 1), darunter kein Zwang; LG absolut
+                BG-Eigenzuständigkeit relativ über 5.000 € bzw. in Ehesachen (§ 29 Abs 1), sonst kein Zwang; LG absolut
 Örtlich: Wohnsitz/Sitz Beklagter (§§ 66, 75) | Gerichtsstandsvereinbarung (§ 104)
 ```
 
