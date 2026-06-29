@@ -14,7 +14,7 @@ Liegt schon ein **Exekutionstitel** (Urteil, rk. Zahlungsbefehl, Vergleich, voll
 
 - **Sachlich:** Eigenzuständigkeit BG (Bestand/Familie, wertunabhängig, § 49 Abs 2 JN); sonst **≤ 15.000 € → BG**, **> 15.000 € → LG** (§§ 49, 50 JN).
 - **Örtlich:** Wohnsitz/Sitz des **Beklagten** (§§ 66, 75 JN); Gerichtsstandsvereinbarung (§ 104).
-- **Anwaltspflicht:** BG-Wertstreit **> 5.000 €** und **LG immer** absolut, **≤ 5.000 €** kein Zwang (§ 27 Abs 1 ZPO); BG-**Eigenzuständigkeit** (Bestand etc.) relativ (§ 29 Abs 1 ZPO).
+- **Anwaltspflicht:** BG-Wertstreit **> 5.000 €** und **LG immer** absolut, **≤ 5.000 €** kein Zwang (§ 27 Abs 1 ZPO); BG-**Eigenzuständigkeit** (Bestand etc.) **über 5.000 €** relativ (§ 29 Abs 1 ZPO), darunter kein Zwang.
 
 ## 2. Mahnverfahren (§§ 244 ff ZPO)
 

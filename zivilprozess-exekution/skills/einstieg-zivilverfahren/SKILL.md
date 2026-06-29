@@ -22,7 +22,7 @@ Erster Skill bei der Durchsetzung einer **Geldforderung**. Liefert die Triage, k
 | Rolle | Gläubiger (Kläger) oder Schuldner (Beklagter)? | Mandantenmail, Rechnung/Vertrag |
 | **Titel vorhanden?** | Liegt schon ein Exekutionstitel (Urteil, rk. Zahlungsbefehl, Vergleich, vollstreckbarer Notariatsakt) vor? | Akt → falls ja: Skill `exekution-eo` |
 | Streitwert / Zuständigkeit | BG (≤ 15.000 €) oder LG? Eigenzuständigkeit? Örtlich (Wohnsitz Beklagter)? | JN → Skill `zustaendigkeit-jn` |
-| Anwaltspflicht | BG-Wertstreit > 5.000 € + LG absolut, ≤ 5.000 € kein Zwang (§ 27 Abs 1); BG-Eigenzuständigkeit relativ (§ 29 Abs 1) | Streitwert → Skill `zustaendigkeit-jn` |
+| Anwaltspflicht | BG-Wertstreit > 5.000 € + LG absolut, ≤ 5.000 € kein Zwang (§ 27 Abs 1); BG-Eigenzuständigkeit > 5.000 € relativ (§ 29 Abs 1), darunter kein Zwang | Streitwert → Skill `zustaendigkeit-jn` |
 | Verfahrensweg | Geldforderung ≤ 75.000 € → Mahnverfahren (Zahlungsbefehl); sonst Klage | § 244 ZPO → Skill `mahnverfahren` |
 | Frist | Einspruch (4 Wochen, § 248), Rechtsmittel (4 Wochen / 14 Tage); Verjährung der Forderung? | Zustelldatum → Skill `verfahrensgang-rechtsmittel` |
 
@@ -47,7 +47,7 @@ Vorrangig: zuerst **Titel-Frage** klären — Titel vorhanden → Exekution; son
 
 - `§ 49 JN` — sachliche Zuständigkeit BG (≤ 15.000 € + Eigenzuständigkeiten)
 - `§ 50 JN` — Gerichtshof (LG)
-- `§ 27 ZPO` — Anwaltspflicht (BG-Wertstreit > 5.000 € + LG absolut; ≤ 5.000 € kein Zwang; BG-Eigenzuständigkeit relativ, § 29 ZPO)
+- `§ 27 ZPO` — Anwaltspflicht (BG-Wertstreit > 5.000 € + LG absolut; ≤ 5.000 € kein Zwang; BG-Eigenzuständigkeit > 5.000 € relativ § 29 ZPO)
 - `§ 244 ZPO` — Mahnverfahren / Zahlungsbefehl (≤ 75.000 €)
 - `§ 248 ZPO` — Einspruch (4 Wochen)
 - `§ 1 EO` — Exekutionstitel
