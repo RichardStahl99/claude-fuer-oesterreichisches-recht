@@ -32,7 +32,7 @@ Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wu
 | „nach dem Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | §§ 6–9 PatG — kein Erwerb ex lege; Schriftlichkeit der Vereinbarung zwingend |
 | „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; demonstrativer Tatbestand, restriktiv ausgelegt (RIS: „insbesondere") |
 | „in Textform" | § 126b BGB (DE) | in AT nicht kodifiziert; Schriftform = § 886 ABGB; Klarstellung erforderlich |
-| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | Nach Sachmaterie routen: dt. **§ 3 EFZG (DE)** (Entgeltfortzahlung im Krankheitsfall) → **§ 8 AngG** (Angestellte); dt. **§ 2 EFZG (DE)** (Feiertagsentgelt) → **Arbeitsruhegesetz (ARG)**, für Angestellte deckt das laufende Monatsgehalt die Feiertage ohnehin — **nicht** § 8 AngG. Das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter) |
+| „§ 2 Entgeltfortzahlungsgesetz“ / EFZG-Verweis | EFZG (DE) | Nach Sachmaterie routen: dt. **§ 3 EFZG (DE)** (Entgeltfortzahlung im Krankheitsfall) → **§ 8 AngG** (Angestellte); dt. **§ 2 EFZG (DE)** (Feiertagsentgelt) → **Arbeitsruhegesetz (ARG)**, für Angestellte deckt das laufende Monatsgehalt die Feiertage ohnehin — **nicht** § 8 AngG. Das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter) |
 | fixer „3-Monats"-Haftungsdeckel ohne DHG-Bezug | BAG-Stil (DE) | §§ 2, 5 DHG — zwingender Mindestrahmen; Deckel darf DHG-Boden nicht unterschreiten |
 
 ## Sofort-Triage
