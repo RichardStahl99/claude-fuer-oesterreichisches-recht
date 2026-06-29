@@ -23,7 +23,7 @@ Drei Wege — die Wahl bestimmt Formerfordernis, Fristlauf und verfügbare Hebel
 
 - **Einvernehmliche Vertragsänderung** — Konsens beider Seiten erforderlich; Schweigen ist keine Annahme (RS0047273). Ohne Unterschrift gilt der **Bestandsvertrag** vollständig.
 - **Änderungskündigung** — echte Kündigung + Angebot neuer Bedingungen im selben Akt; Anfechtbarkeit wegen Sozialwidrigkeit § 105 ArbVG; bei Ablehnung durch den Arbeitnehmer endet das Dienstverhältnis mit Fristablauf.
-- **Konkludente Änderung (§ 863 ABGB)** — vorbehaltlose Annahme einer Leistung (Auszahlung, Duldung) wirkt als schlüssige Zustimmung; **Verschlechterungen wirken nicht konkludent zurück** (RS0124521). **Vorbehalt schriftlich vor jeder Auszahlung sichern.**
+- **Konkludente Änderung (§ 863 ABGB)** — vorbehaltlose Annahme einer Leistung (Auszahlung, Duldung) wirkt als schlüssige Zustimmung; **Verschlechterungen wirken nicht konkludent zurück** (§ 863 ABGB + RS0042828 + RS0014154). **Vorbehalt schriftlich vor jeder Auszahlung sichern.**
 
 **Kernsatz (RS0109380, OGH 12.02.1998, 8 ObA 35/98z):** „Die einzige Möglichkeit, die Verschlechterung der Entgeltbedingungen rechtlich zulässig vorzunehmen, ist neben einer einvernehmlichen Vertragsänderung die Änderungskündigung."
 

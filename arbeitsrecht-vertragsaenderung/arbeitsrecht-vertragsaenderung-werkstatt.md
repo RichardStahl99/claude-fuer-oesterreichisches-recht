@@ -56,14 +56,14 @@ Der Nachtrag ist ein einvernehmliches Änderungsangebot — keine Änderungskün
 
 **Kernsatz (RS0109380, OGH 12.02.1998, 8 ObA 35/98z):** „Die einzige Möglichkeit, die Verschlechterung der Entgeltbedingungen rechtlich zulässig vorzunehmen, ist neben einer einvernehmlichen Vertragsänderung die Änderungskündigung." Da weder Konsens noch Änderungskündigung vorliegt, läuft der **Bestandsvertrag weiter**.
 
-**Konkludenz-Risiko Fix-Erhöhung:** Vorbehaltlose Annahme der ersten Gehaltszahlung auf € 119.000 Fix (fiktiv) → schlüssige Bindung an diesen Betrag (RS0014526). Die gleichzeitigen Verschlechterungen fließen dadurch **nicht** konkludent ein — Klauseln, die schlechter stellen, können nicht schlüssig akzeptiert werden (RS0124521, OGH 24.02.2009, 9 ObA 113/08w). **Handlung:** Schriftlichen Vorbehalt vor nächster Auszahlung setzen.
+**Konkludenz-Risiko Fix-Erhöhung:** Vorbehaltlose Annahme der ersten Gehaltszahlung auf € 119.000 Fix (fiktiv) → schlüssige Bindung an diesen Betrag (RS0014526). Die gleichzeitigen Verschlechterungen fließen dadurch **nicht** konkludent ein — Klauseln, die schlechter stellen, können nicht schlüssig akzeptiert werden (§ 863 ABGB + RS0042828 + RS0014154). **Handlung:** Schriftlichen Vorbehalt vor nächster Auszahlung setzen.
 
 | Aspekt | Ergebnis |
 |---|---|
 | Änderungsweg | Einvernehmliches Angebot, **nicht** Änderungskündigung |
 | Status ohne Unterschrift | Bestandsvertrag gilt vollständig |
 | Fix-Erhöhung konkludent | Möglich nach erster vorbehaltloser Auszahlung (§ 863 ABGB) |
-| Verschlechterungen konkludent | Nein — RS0124521 |
+| Verschlechterungen konkludent | Nein — § 863 ABGB + RS0042828 |
 
 ---
 
@@ -122,7 +122,7 @@ Nachtrag **nicht unterschrieben** → § 26 Z 2 AngG-Backstop erhalten. Eine zu 
 ## Fünf Merkpunkte (häufige Fehlerorte)
 
 1. **Kein Konsens ohne Unterschrift — aber Vorbehalt sofort.** Schweigen auf ein Änderungsangebot ist keine Annahme (RS0047273); trotzdem wirkt die vorbehaltlose Auszahlung des neuen Fixums konkludent bindend (§ 863 ABGB, RS0014526). Vorbehalt **vor** der ersten Auszahlung, nicht danach.
-2. **Verschlechterungen kommen nicht konkludent rein.** Wer das höhere Fixum ohne Vorbehalt annimmt, bindet sich daran; die gleichzeitigen Verschlechterungen (Widerrufsvorbehalt, All-in, Urlaubsverfall) gelten dabei **nicht** automatisch (RS0124521).
+2. **Verschlechterungen kommen nicht konkludent rein.** Wer das höhere Fixum ohne Vorbehalt annimmt, bindet sich daran; die gleichzeitigen Verschlechterungen (Widerrufsvorbehalt, All-in, Urlaubsverfall) gelten dabei **nicht** automatisch (§ 863 ABGB + RS0042828 + RS0014154).
 3. **DE-Vorlage ist kein Formfehler — sie ist inhaltlich leer oder unwirksam.** ArbnErfG-Klausel, EFZG-Verweis, § 626 BGB (DE)-Muster — diese Klauseln sind in Österreich entweder ohne Wirkung oder nach § 879 Abs 3 ABGB nichtig. Nach Umstellung auf die AT-Norm schließt die Inhaltskontrolle an.
 4. **Variabler Anteil ~35 % mit unbegrenztem Widerrufsrecht ist der wirtschaftliche Kern.** Nominelles Angebot € 185.000 (fiktiv), gesichertes Fixum nur € 119.000 (fiktiv); der Rest hängt an einem Widerrufsvorbehalt, der möglicherweise § 879 Abs 3 ABGB-widrig ist.
 5. **§ 19c AZG und § 12 URLG sind zwingend.** Einseitiger Arbeitszeitlagen-Vorbehalt ist unwirksam; Urlaubsverfall ohne Ersatzleistung tastet den gesetzlichen Mindestanspruch an, wenn die AG-Hinweispflicht fehlt (RS0134421, OGH 27.06.2023, 8 ObA 23/23z).
