@@ -60,17 +60,19 @@ GESETZESNUMMER = {
     "ASGG": "10000813",   # Arbeits- und Sozialgerichtsgesetz (BGBl 104/1985) — verifiziert
     "URLG": "10008376",   # Urlaubsgesetz (BGBl 390/1976) — verifiziert (§10 HTTP 200)
     "AZG": "10008238",    # Arbeitszeitgesetz (BGBl 461/1969) — verifiziert (§19c HTTP 200)
-    "AVRAG": "10008872",  # Arbeitsvertragsrechts-AnpassungsG (BGBl 459/1993) — verifiziert (§2g HTTP 200)
+    "AVRAG": "10008872",  # Arbeitsvertragsrechts-AnpassungsG (BGBl 459/1993) — verifiziert (§2/§2g/§7a HTTP 200)
     "DHG": "10008209",    # Dienstnehmerhaftpflichtgesetz (BGBl 80/1965) — verifiziert (§2 HTTP 200, Artikel=1)
     "PATG": "10002181",   # Patentgesetz 1970 (BGBl 259/1970) — verifiziert (§6 HTTP 200)
+    "EFZG": "10008308",   # Entgeltfortzahlungsgesetz (BGBl 399/1974) — verifiziert (§1 HTTP 200, Artikel=1); gilt für Arbeiter, § 1 Abs 2 nimmt Angestellte (AngG) aus
 }
 
 # Gesetze, deren Paragrafen in RIS unter einem Artikel adressiert werden (sonst 404).
 # Das AngG wurde als "Artikel I" eines Stammgesetzes 1921 erlassen; seine §§ brauchen
 # in der NormDokument-URL zusätzlich &Artikel=1.
 LAW_ARTIKEL = {
-    "ANGG": "1",
+    "ANGG": "1",  # Angestelltengesetz: §§ adressiert unter Artikel I des Stammgesetzes BGBl 292/1921
     "DHG": "1",  # Dienstnehmerhaftpflichtgesetz: §§ adressiert unter Artikel I des Stammgesetzes BGBl 80/1965
+    "EFZG": "1",  # Entgeltfortzahlungsgesetz: §§ adressiert unter Artikel I des Stammgesetzes BGBl 399/1974
 }
 
 # Organe ausländischer/überstaatlicher Gerichte, die bei reiner OGH-Recherche

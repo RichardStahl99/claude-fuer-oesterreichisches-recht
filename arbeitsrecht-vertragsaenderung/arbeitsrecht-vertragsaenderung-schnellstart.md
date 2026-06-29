@@ -25,7 +25,7 @@ Drei Wege — die Wahl bestimmt Formerfordernis, Fristlauf und verfügbare Hebel
 - **Änderungskündigung** — echte Kündigung + Angebot neuer Bedingungen im selben Akt; Anfechtbarkeit wegen Sozialwidrigkeit § 105 ArbVG; bei Ablehnung durch den Arbeitnehmer endet das Dienstverhältnis mit Fristablauf.
 - **Konkludente Änderung (§ 863 ABGB)** — vorbehaltlose Annahme einer Leistung (Auszahlung, Duldung) wirkt als schlüssige Zustimmung; **Verschlechterungen wirken nicht konkludent zurück** (§ 863 ABGB + RS0042828 + RS0014154). **Vorbehalt schriftlich vor jeder Auszahlung sichern.**
 
-**Kernsatz (RS0109380, OGH 12.02.1998, 8 ObA 35/98z):** „Die einzige Möglichkeit, die Verschlechterung der Entgeltbedingungen rechtlich zulässig vorzunehmen, ist neben einer einvernehmlichen Vertragsänderung die Änderungskündigung."
+**Kernsatz:** „Die einzige Möglichkeit, die Verschlechterung der Entgeltbedingungen rechtlich zulässig vorzunehmen, ist neben einer einvernehmlichen Vertragsänderung die Änderungskündigung." (Fundstelle/GZ über die Skills bzw. RIS auflösen.)
 
 ## 2. Klausel-Inhaltskontrolle (§ 879 Abs 3 ABGB — Leitdoktrin RS0016914)
 
@@ -43,7 +43,7 @@ Vorformulierte Klauseln sind nichtig, soweit sie den Vertragspartner gröblich b
 | Klausel-Indiz | Deutsche Wurzel | Österreichische Norm |
 |---|---|---|
 | „Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | § 6 PatG — kein Erwerb ex lege; schriftliche Vereinbarung zwingend |
-| „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; abschließender Tatbestandskatalog |
+| „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; demonstrativer Tatbestand („insbesondere"), restriktiv ausgelegt |
 | „in Textform" | § 126b BGB (DE) | in AT nicht kodifiziert; Schriftform = § 886 ABGB |
 | „§ 2 Entgeltfortzahlungsgesetz" | EFZG (DE) | § 8 AngG — Angestellte vom deutschen EFZG ausgenommen |
 | fixer 3-Monats-Haftungsdeckel (BAG-Stil) | BAG-Muster (DE) | § 2 DHG, § 5 DHG — DHG-Boden zwingend |
