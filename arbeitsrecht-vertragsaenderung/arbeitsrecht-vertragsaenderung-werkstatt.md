@@ -17,7 +17,7 @@ einstieg-vertragsaenderung         (Dashboard: Rolle, Änderungsweg, Klausel-Bew
 aenderungsregime                   (Gate: einvernehmlich / Änderungskündigung / konkludent § 863 ABGB)
         |
         |-- Klauseln prüfen -----> klausel-inhaltskontrolle (§ 879 Abs 3 ABGB; § 19c AZG; § 2g AVRAG; § 12 URLG; § 2 DHG)
-        |-- DE-Vorlage erkannt --> deutsche-vorlage-audit   (ArbnErfG→§ 6 PatG; § 626 BGB (DE)→§ 27 AngG; EFZG (DE)→§ 8 AngG)
+        |-- DE-Vorlage erkannt --> deutsche-vorlage-audit   (ArbnErfG→§ 6 PatG; § 626 BGB (DE)→§ 27 AngG; EFZG (DE): Krankheit→§ 8 AngG / Feiertag→ARG)
         |-- Austritt erwogen ----> austritt-backstop-und-hebel (§ 26 Z 2 AngG; § 29 AngG)
         v
 anschluss-routing                  (Router: Plugin arbeitsrecht-beendigung / AK / Betriebsrat § 40 ArbVG / Steuerberater)
@@ -89,7 +89,7 @@ Prüfmaßstab: § 879 Abs 3 ABGB, Leitdoktrin RS0016914.
 | „Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | § 6 PatG — kein Erwerb ex lege; Schriftlichkeit zwingend | 🔴 |
 | „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; abschließender Tatbestandskatalog | 🔴 |
 | „in Textform" | § 126b BGB (DE) | in AT nicht kodifiziert; Schriftform = § 886 ABGB | 🟠 |
-| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | § 8 AngG — das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter); für Angestellte gilt § 8 AngG | 🔴 |
+| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | Nach Sachmaterie routen: dt. **§ 3 EFZG (DE)** (Entgeltfortzahlung im Krankheitsfall) → **§ 8 AngG** (Angestellte); dt. **§ 2 EFZG (DE)** (Feiertagsentgelt) → **Arbeitsruhegesetz (ARG)**, für Angestellte deckt das laufende Monatsgehalt die Feiertage ohnehin — **nicht** § 8 AngG. Das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter) | 🔴 |
 | fixer 3-Monats-Haftungsdeckel (BAG-Stil) | BAG-Muster (DE) | § 2 DHG, § 5 DHG — DHG-Boden zwingend | 🔴 |
 
 **Zwischenergebnis:** Der Nachtrag basiert in mehreren Klauseln auf einer deutschen Vertragsvorlage. Die betroffenen Klauseln sind im jeweiligen Umfang unwirksam oder leer. Nach Umstellung auf die AT-Norm schließt die Inhaltskontrolle nach § 879 Abs 3 ABGB an.

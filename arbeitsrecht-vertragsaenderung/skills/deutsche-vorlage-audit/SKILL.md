@@ -16,7 +16,7 @@ description: "Systematischer Falsche-Freunde-Scanner: erkennt aus deutschen Vorl
   - § 6 ArbnErfG (DE) — deutsches Arbeitnehmererfindungsgesetz; 4-Monats-Fiktion; in AT nicht anwendbar.
   - § 626 BGB (DE) — außerordentliche Kündigung ohne Abmahnpflicht; in AT: § 27 AngG (Entlassung).
   - § 126b BGB (DE) — Textform; in AT nicht kodifiziert.
-  - EFZG (DE) — **deutsches** Entgeltfortzahlungsgesetz (nicht das gleichnamige österreichische EFZG). In Österreich gilt für Angestellte § 8 AngG, für Arbeiter das österreichische EFZG (BGBl 399/1974); ein aus einer DE-Vorlage übernommener EFZG-Verweis ist daher umzustellen.
+  - EFZG (DE) — **deutsches** Entgeltfortzahlungsgesetz (nicht das gleichnamige österreichische EFZG); dt. **§ 2 EFZG (DE)** regelt das Feiertagsentgelt, dt. **§ 3 EFZG (DE)** die Entgeltfortzahlung im Krankheitsfall. In Österreich gilt für Angestellte bei Krankheit § 8 AngG, beim Feiertagsentgelt das Arbeitsruhegesetz (ARG) bzw. das laufende Monatsgehalt; für Arbeiter das österreichische EFZG (BGBl 399/1974). Ein aus einer DE-Vorlage übernommener EFZG-Verweis ist daher nach Sachmaterie umzustellen.
   - BAG-Stil (DE) — fixe 3-Monats-Haftungsdeckel nach deutschem Bundesarbeitsgericht-Muster; in AT: §§ 2, 5 DHG.
 - **Laufzeit-Grounding (Pflicht):** Vor Übernahme jeder Norm-Zuordnung (AT-Zielnorm für eine deutsche Vorlageversion) Permalink der AT-Zielnorm auflösen und `aktualitaet` ausführen — z.B. `aktualitaet ANGG 8` (Entgeltfortzahlung), `aktualitaet PATG 6` (Arbeitnehmererfindungen) — um sicherzustellen, dass die AT-Norm unverändert gilt, bevor die Mapping-Aussage ausgegeben wird.
 - **Quellenhygiene:** `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` (§ 3 Grounding-Protokoll). Keine GZ aus Modellwissen — nur RIS-verifizierte Fundstellen verwenden.
@@ -32,7 +32,7 @@ Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wu
 | „nach dem Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | §§ 6–9 PatG — kein Erwerb ex lege; Schriftlichkeit der Vereinbarung zwingend |
 | „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; demonstrativer Tatbestand, restriktiv ausgelegt (RIS: „insbesondere") |
 | „in Textform" | § 126b BGB (DE) | in AT nicht kodifiziert; Schriftform = § 886 ABGB; Klarstellung erforderlich |
-| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | § 8 AngG — das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter); für Angestellte gilt § 8 AngG |
+| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | Nach Sachmaterie routen: dt. **§ 3 EFZG (DE)** (Entgeltfortzahlung im Krankheitsfall) → **§ 8 AngG** (Angestellte); dt. **§ 2 EFZG (DE)** (Feiertagsentgelt) → **Arbeitsruhegesetz (ARG)**, für Angestellte deckt das laufende Monatsgehalt die Feiertage ohnehin — **nicht** § 8 AngG. Das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter) |
 | fixer „3-Monats"-Haftungsdeckel ohne DHG-Bezug | BAG-Stil (DE) | §§ 2, 5 DHG — zwingender Mindestrahmen; Deckel darf DHG-Boden nicht unterschreiten |
 
 ## Sofort-Triage
@@ -42,7 +42,7 @@ Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wu
 | ArbnErfG-Klausel / 4-Monats-Fiktion | Liegt eine schriftliche Vereinbarung über den Rechtsübergang vor? Fehlt sie, besteht kein Erwerb. | 🔴 | §§ 6–9 PatG | § 6 ArbnErfG (DE) |
 | „außerordentliche Kündigung ohne Abmahnung" | Greift ein Entlassungsgrund nach § 27 AngG? Tatbestandsprüfung anhand österreichischer Judikatur — keine deutschen BAG-Linien übernehmen. | 🔴 | § 27 AngG | § 626 BGB (DE) |
 | „in Textform" | Welche Formvorschrift ist gemeint? Schriftform (§ 886 ABGB)? Keine Entsprechung in AT; Klausel muss klargestellt werden. | 🟠 | § 886 ABGB | § 126b BGB (DE) |
-| EFZG-Verweis / „Entgeltfortzahlungsgesetz" | Angestellte sind vom **österreichischen** EFZG ausgenommen (§ 1 Abs 2 EFZG, BGBl 399/1974); für sie gilt § 8 AngG. Vertragstext auf AT-Norm umstellen. | 🔴 | § 8 AngG | EFZG (DE) |
+| EFZG-Verweis / „Entgeltfortzahlungsgesetz" | Zuerst klären, OB Krankheit ODER Feiertag gemeint ist — nicht automatisch auf Krankenentgelt/§ 8 AngG routen. Krankheit (dt. § 3 EFZG (DE)) → § 8 AngG; Feiertag (dt. § 2 EFZG (DE)) → Arbeitsruhegesetz (ARG) bzw. für Angestellte laufendes Monatsgehalt. Angestellte sind vom **österreichischen** EFZG ausgenommen (§ 1 Abs 2 EFZG, BGBl 399/1974; es gilt für Arbeiter). Vertragstext auf die einschlägige AT-Norm umstellen. | 🔴 | § 8 AngG (Krankheit) / ARG (Feiertag) | EFZG (DE) |
 | Fixer 3-Monats-Haftungsdeckel (BAG-Muster) | DHG-Boden (§§ 2, 5 DHG) zwingend; Klausel darf Vorsatz/grobe Fahrlässigkeit nicht ausschließen und darf die DHG-Haftungsuntergrenze nicht unterschreiten. | 🔴 | §§ 2, 5 DHG | BAG-Stil (DE) |
 
 ## Risiko-Ampel

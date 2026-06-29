@@ -45,7 +45,7 @@ Vorformulierte Klauseln sind nichtig, soweit sie den Vertragspartner gröblich b
 | „Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | § 6 PatG — kein Erwerb ex lege; schriftliche Vereinbarung zwingend |
 | „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; demonstrativer Tatbestand („insbesondere"), restriktiv ausgelegt |
 | „in Textform" | § 126b BGB (DE) | in AT nicht kodifiziert; Schriftform = § 886 ABGB |
-| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | § 8 AngG — das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter); für Angestellte gilt § 8 AngG |
+| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | Nach Sachmaterie routen: dt. **§ 3 EFZG (DE)** (Entgeltfortzahlung im Krankheitsfall) → **§ 8 AngG** (Angestellte); dt. **§ 2 EFZG (DE)** (Feiertagsentgelt) → **Arbeitsruhegesetz (ARG)**, für Angestellte deckt das laufende Monatsgehalt die Feiertage ohnehin — **nicht** § 8 AngG. Das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter) |
 | fixer 3-Monats-Haftungsdeckel (BAG-Stil) | BAG-Muster (DE) | § 2 DHG, § 5 DHG — DHG-Boden zwingend |
 
 ## 4. Austritt-Backstop und Hebel (§ 26 AngG / § 29 AngG)
