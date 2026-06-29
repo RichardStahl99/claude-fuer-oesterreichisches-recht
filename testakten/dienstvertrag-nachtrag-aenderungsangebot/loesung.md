@@ -57,11 +57,11 @@ Das gesetzliche Urlaubsausmaß (§ 2 Abs 1 URLG) beträgt 30 Werktage (= 25 Arbe
 
 ### §4.2.3 Bonus-Widerruf „jederzeit gänzlich oder teilweise" (🟠)
 
-Widerrufsvorbehalt ohne sachliche Begrenzung ist nach § 879 Abs 3 ABGB-Linie (RS0016914; Grenzfall-Analyse RS0112269, OGH 8 ObA 16/03s) bedenklich, wenn er dem Arbeitgeber unbegrenzte Willkür erlaubt. Bereits verdiente Bonusanteile (Periode abgelaufen, Ziel erreicht) sind unwiderruflich — dieser Teilbereich ist 🔴. Für künftige variable Anteile: Klausel wohl § 879 Abs 3-widrig, wenn sie keine sachliche Schranke enthält. [Prüfpunkt: Volltext 8 ObA 33/21t via RIS abrufen — Sub-Proposition zur Toleranzschwelle bestätigen.]
+Widerrufsvorbehalt ohne sachliche Begrenzung ist nach § 879 Abs 3 ABGB-Linie (RS0016914; Grenzfall-Analyse RS0112269, OGH 8 ObA 16/03s) bedenklich, wenn er dem Arbeitgeber unbegrenzte Willkür erlaubt. Bereits verdiente Bonusanteile (Periode abgelaufen, Ziel erreicht) sind unwiderruflich — dieser Teilbereich ist 🔴 (RS0028333, OGH 9 ObA 101/90, 09.05.1990: nach Beginn des Erfolgszeitraums darf der DG die Prämie weder einseitig widerrufen noch an Bedingungen im alleinigen DG-Einflussbereich knüpfen; Norm: ABGB § 879 BIIh, AngG § 16 IV). Für künftige variable Anteile: Klausel wohl § 879 Abs 3-widrig, wenn sie keine sachliche Schranke enthält. [Prüfpunkt: Volltext 8 ObA 16/03s via RIS abrufen — Toleranzschwelle (~10 %) bestätigen.]
 
 ### §3 Versetzung auf „geringerwertige Tätigkeiten" (🟠)
 
-Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfällt. Als Individualschutz bleibt § 879 Abs 3 ABGB: Eine Klausel, die einseitig Versetzung auf geringerwertige Tätigkeiten nach „billigem Ermessen" erlaubt, ist bei fehlender sachlicher Begrenzung und Entgeltschmälerungsrisiko gröblich benachteiligend. **Ergebnis:** Klausel 🟠 — in dieser Pauschalformulierung wohl unwirksam; Bestandsschutz (gleichwertige Tätigkeit, keine Entgeltschmälerung) bleibt.
+Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfällt. Hinweis: § 101 ArbVG ist der **kollektive** Prong und setzt einen Betriebsrat voraus — die Mandantin/der Mandant erhält keinen § 101-Schutz. Der Verschlechterungsbegriff nach RS0051209 (OGH 4 Ob 79/85; Norm: ArbVG § 101; 17 E) — jede Änderung zum Nachteil des AN (materiell + immateriell; Entgelt im weitesten Sinn; T3: Wegfall Überstundenpauschale; T4: Entgeltverschlechterung) — dient als Referenz für den Schweregrad; das operative Kontrollinstrument ohne Betriebsrat bleibt § 879 Abs 3 ABGB (RS0016914). Als Individualschutz bleibt § 879 Abs 3 ABGB: Eine Klausel, die einseitig Versetzung auf geringerwertige Tätigkeiten nach „billigem Ermessen" erlaubt, ist bei fehlender sachlicher Begrenzung und Entgeltschmälerungsrisiko gröblich benachteiligend. **Ergebnis:** Klausel 🟠 — in dieser Pauschalformulierung wohl unwirksam; Bestandsschutz (gleichwertige Tätigkeit, keine Entgeltschmälerung) bleibt.
 
 ### §7 Arbeitszeit — AG ändert Lage „dauerhaft" (🟠 → 🔴)
 
@@ -69,7 +69,7 @@ Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfäll
 
 ### §4.10 All-in (neu eingefügt) (🟠)
 
-§ 2g AVRAG (GNR 10008872) schreibt Transparenz vor: Die Überstundenkomponente muss vom Grundentgelt trennbar ausgewiesen sein. Der Durchrechnungszeitraum ist das Kalenderjahr — das folgt aus AZG § 19 (RS0131677, OGH 27.09.2017, 9 ObA 28/17h). Fehlt diese Trennbarkeit oder wird eine Pauschalabgeltung ohne Nachweis der tatsächlichen Deckung vereinbart, ist § 2g AVRAG verletzt — Folge: Einzelverrechnung aller tatsächlich geleisteten Überstunden, Sonn-/Feiertags- und Nachtarbeitszuschläge. Zu prüfen: Deckt das Pauschalentgelt von € 119.000 (fiktiv/illustrativ) die prognostizierten Überstunden bei Führungsrolle Vertrieb tatsächlich ab?
+§ 2g AVRAG (GNR 10008872) schreibt Transparenz vor: Die Überstundenkomponente muss vom Grundentgelt trennbar ausgewiesen sein. Der Durchrechnungszeitraum ist das Kalenderjahr — das folgt aus AZG § 19 (RS0131677, OGH 27.09.2017, 9 ObA 28/17h). Fehlt diese Trennbarkeit oder wird eine Pauschalabgeltung ohne Nachweis der tatsächlichen Deckung vereinbart, ist § 2g AVRAG verletzt — Folge: Einzelverrechnung aller tatsächlich geleisteten Überstunden, Sonn-/Feiertags- und Nachtarbeitszuschläge. AG trägt die Deckungsprüfungspflicht (RS0051519 [T4/T6], OGH 4 Ob 66/84; Norm: AZG § 10; 28 E): AG hat grundsätzlich zu überprüfen, ob geleistete Überstunden durch das Pauschale gedeckt waren; fehlende Deckung → AN kann über das Pauschale hinausgehende unabdingbare Ansprüche erheben; AG trägt das Deckungsrisiko. Zu prüfen: Deckt das Pauschalentgelt von € 119.000 (fiktiv/illustrativ) die prognostizierten Überstunden bei Führungsrolle Vertrieb tatsächlich ab?
 
 ### §14.5 Haftungsdeckel 3 Monatsgehälter (⚪ — DHG-Boden prüfen)
 
@@ -104,9 +104,9 @@ Wer die Verschlechterungen (Versetzung auf geringerwertige Tätigkeit, Widerrufs
 
 ### Ansprüche im Austrittsfall (§ 29 AngG)
 
-Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel 1; Z 2 = Entgelt-Prong: erhebliche Entgeltschmälerung; bare Herabstufung ohne Entgelteinbuße = allgemeiner wichtiger Grund): **Kündigungsentschädigung** (§ 29 AngG) = voller Bezugsersatz für die fiktive Restlaufzeit der Kündigungsfrist; in den ersten drei Monaten keine Anrechnung anderweitiger Erwerbe. Abfertigung neu (BMSVG) — Auszahlungsanspruch gegen BV-Kasse bei Erfüllung der 3-Jahres-Schwelle (hier noch nicht erreicht; Anwartschaft läuft weiter).
+Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel 1; Z 2 = Entgelt-Prong: erhebliche Entgeltschmälerung; bare Herabstufung ohne Entgelteinbuße = allgemeiner wichtiger Grund): **Kündigungsentschädigung** (§ 29 AngG) — nicht als Entgelt, sondern als Schadenersatz zu qualifizieren (RS0028724 [T3], OGH 4 Ob 95/76; Norm: AngG § 29 Abs 1; 15 E) = voller Bezugsersatz für die fiktive Restlaufzeit der Kündigungsfrist; soweit der Zeitraum 3 Monate nicht übersteigt, sofort mit Beendigung des Arbeitsverhältnisses fällig [RS0028724 T2]; darüber hinaus Anrechnung anderweitigen Erwerbs. Abfertigung neu (BMSVG) — Auszahlungsanspruch gegen BV-Kasse bei Erfüllung der 3-Jahres-Schwelle (hier noch nicht erreicht; Anwartschaft läuft weiter).
 
-§ 26 AngG verlangt, dass der vorzeitige Austritt ohne unnötigen Aufschub aus dem aktuellen wichtigen Grund erklärt wird; vorbehaltlose Weiterarbeit kann den Austrittsgrund verwirken.
+§ 26 AngG verlangt, dass der vorzeitige Austritt ohne unnötigen Aufschub aus dem aktuellen wichtigen Grund erklärt wird — RS0028687 (OGH 14 Ob 215/86; Norm: AngG § 26 II; 10 E): Unverzüglichkeitsgrundsatz gilt auch für den Austritt; Zuwarten verwirkt das Austrittsrecht [T2]; nach OGH 9 ObA 22/03f [T4]: eine 6-tägige Verzögerung (inkl. Wochenende) ist im Allgemeinen verspätet, wenn zum Zeitpunkt des Austrittsgrundes Austrittsabsicht bestand und keine Erhebungen notwendig waren. Vorbehaltlose Weiterarbeit kann den Austrittsgrund ebenfalls verwirken.
 
 ---
 
@@ -157,6 +157,11 @@ Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel
 - All-in / Durchrechnungszeitraum Kalenderjahr (AZG § 19) — RS0131677 (OGH 27.09.2017, 9 ObA 28/17h)
 - § 19c AZG zwingend (Vollzeit-Lage) — RS0118331 (OGH 8 ObA 86/03k; 9 ObA 57/22f folgt RS0118331, Beisatz stützt sich auf § 19d Abs 2 AZG/Teilzeit)
 - Urlaubsrecht / Verjährung / AG-Hinweispflicht — RS0134421 (OGH 27.06.2023, 8 ObA 23/23z)
+- Bereits verdiente Prämie unwiderruflich nach Beginn des Erfolgszeitraums — RS0028333 (OGH 9 ObA 101/90, 09.05.1990; Norm: ABGB § 879 BIIh, AngG § 16 IV)
+- Austritt / Unverzüglichkeit / Zuwarten = Verlust / ~6-Tage-Grenze — RS0028687 (OGH 14 Ob 215/86; Norm: AngG § 26 II; 10 E)
+- Kündigungsentschädigung als Schadenersatz / erste 3 Monate sofort fällig — RS0028724 (OGH 4 Ob 95/76; Norm: AngG § 29 Abs 1; 15 E)
+- All-in / Deckungsprüfungspflicht AG / unabdingbare Mehransprüche AN — RS0051519 (OGH 4 Ob 66/84; Norm: AZG § 10; 28 E)
+- Versetzung / Verschlechterungsbegriff § 101 ArbVG (kollektiver Prong; kein Schutz ohne Betriebsrat — dort gilt § 879 Abs 3 ABGB) — RS0051209 (OGH 4 Ob 79/85; Norm: ArbVG § 101; 17 E)
 
 **Deutsche Kontrast-Normen (bewusste Anti-Muster, kein österreichisches Recht; von verify.py übersprungen):**
 - § 6 ArbnErfG (DE), § 626 BGB (DE), § 126b BGB (DE), EFZG (DE), BAG-Stil (DE)
