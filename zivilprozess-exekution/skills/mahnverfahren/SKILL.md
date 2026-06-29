@@ -20,7 +20,7 @@ Bei **Geldforderungen bis 75.000 €** ist das **automatische Mahnverfahren zwin
 1. **Anwendbarkeit prüfen:** reine **Geldforderung** in inländischer Währung, Betrag **≤ 75.000 €**, kein Ausnahmefall → Mahnverfahren. (Über 75.000 € oder Nicht-Geldforderung → normale Klage, Skill `verfahrensgang-rechtsmittel`.)
 2. **Mahnklage einbringen** (Anwälte zwingend per **ERV**), mit schlüssiger Darstellung von Forderung und Fälligkeit. Zuständigkeit nach JN (BG/LG, örtlich), Anwaltspflicht nach § 27 ZPO.
 3. **Bedingter Zahlungsbefehl** ergeht und wird dem Beklagten zugestellt.
-4. **Einspruch (§ 248 ZPO):** Der Beklagte kann binnen **vier Wochen** ab Zustellung Einspruch erheben. **Für den Einspruch (und seine Zurücknahme) braucht es keinen Anwalt** (§ 448 Z 1 ZPO) — auch im Bereich der absoluten Anwaltspflicht; es genügt, dass die Einspruchsabsicht deutlich hervorgeht (einfache Ausfertigung, ohne Rubriken). Ein nicht anwaltlich vertretener Beklagter kann den Einspruch auch beim BG seines Aufenthalts **mündlich zu Protokoll** geben (§ 448 Z 2 ZPO).
+4. **Einspruch (§ 248 ZPO):** Der Beklagte kann binnen **vier Wochen** ab Zustellung Einspruch erheben; der Einspruch hat grundsätzlich den **Inhalt einer Klagebeantwortung** (§ 248 Abs 1). **Im bezirksgerichtlichen Mahnverfahren** braucht der Einspruch (und seine Zurücknahme) **keinen Anwalt** (§ 448 Z 1 ZPO) — auch im Bereich der absoluten Anwaltspflicht; es genügt, dass die Einspruchsabsicht deutlich hervorgeht (einfache Ausfertigung, ohne Rubriken), notfalls **mündlich zu Protokoll** beim BG des Aufenthalts (§ 448 Z 2 ZPO). **Im Mahnverfahren vor dem Landesgericht** (Streitwert über 15.000 € bis 75.000 €) gilt diese Erleichterung **nicht**: dort bleibt es beim Klagebeantwortungs-Inhalt (§ 248 Abs 1) und der absoluten Anwaltspflicht (§ 27 ZPO).
    - **Einspruch erhoben:** Der Zahlungsbefehl tritt außer Kraft; die Sache wird ins **ordentliche (streitige) Verfahren** übergeleitet (die Mahnklage gilt als Klage) → weiter zu `verfahrensgang-rechtsmittel`.
    - **Kein/verspäteter Einspruch:** Der Zahlungsbefehl wird **rechtskräftig und vollstreckbar** = **Exekutionstitel** → weiter zu `exekution-eo`.
 5. **Frist sichern:** Die 4-Wochen-Einspruchsfrist (bzw. ihr Ablauf) ist der kritische Punkt; aus dem Zustelldatum rechnen.
@@ -29,7 +29,7 @@ Bei **Geldforderungen bis 75.000 €** ist das **automatische Mahnverfahren zwin
 
 - **Wertgrenze verkennen:** über 75.000 € kein Mahnverfahren.
 - **Einspruchsfrist (4 Wochen) versäumt** auf Schuldnerseite → vollstreckbarer Titel; auf Gläubigerseite verfrüht Exekution beantragt, obwohl Frist noch läuft.
-- **Annahme, der Einspruch brauche einen Anwalt:** falsch — § 448 Z 1 ZPO nimmt den Einspruch von der Anwaltspflicht aus; den Schuldner nicht von der fristgerechten, formfreien Einspruchserhebung abhalten.
+- **Einspruchs-Anwaltspflicht verwechseln:** Im **bezirksgerichtlichen** Mahnverfahren nimmt § 448 Z 1 ZPO den Einspruch von der Anwaltspflicht aus (formfrei) — den Schuldner nicht von der fristgerechten Einspruchserhebung abhalten. Im **LG-Mahnverfahren** (> 15.000 €) gilt das nicht: Anwalt + Klagebeantwortungs-Inhalt (§§ 248 Abs 1, 27 ZPO).
 - **ERV ignoriert:** anwaltliche Eingaben sind elektronisch einzubringen.
 - **Deutsches Recht:** kein „Mahnbescheid/Vollstreckungsbescheid nach §§ 688 ff ZPO (DE)", kein zentrales Mahngericht — in Österreich Zahlungsbefehl beim zuständigen BG/LG, Einspruch (nicht „Widerspruch").
 

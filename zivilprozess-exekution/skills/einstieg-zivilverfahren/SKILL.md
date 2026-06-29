@@ -24,7 +24,7 @@ Erster Skill bei der Durchsetzung einer **Geldforderung**. Liefert die Triage, k
 | Streitwert / Zuständigkeit | BG (≤ 15.000 €) oder LG? Eigenzuständigkeit? Örtlich (Wohnsitz Beklagter)? | JN → Skill `zustaendigkeit-jn` |
 | Anwaltspflicht | BG-Wertstreit > 5.000 € + LG absolut, ≤ 5.000 € kein Zwang (§ 27 Abs 1); BG-Eigenzuständigkeit > 5.000 € relativ (§ 29 Abs 1), darunter kein Zwang | Streitwert → Skill `zustaendigkeit-jn` |
 | Verfahrensweg | Geldforderung ≤ 75.000 € → Mahnverfahren (Zahlungsbefehl); sonst Klage | § 244 ZPO → Skill `mahnverfahren` |
-| Frist | Einspruch (4 Wochen, § 248; ohne Anwalt, § 448 Z 1), Rechtsmittel (4 Wochen / 14 Tage); Verjährung der Forderung? | Zustelldatum → Skill `verfahrensgang-rechtsmittel` |
+| Frist | Einspruch (4 Wochen, § 248; vor dem BG ohne Anwalt § 448 Z 1, vor dem LG mit Anwalt), Rechtsmittel (4 Wochen / 14 Tage); Verjährung der Forderung? | Zustelldatum → Skill `verfahrensgang-rechtsmittel` |
 
 ## Risiko-Ampel
 
