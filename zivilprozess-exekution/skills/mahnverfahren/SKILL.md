@@ -44,7 +44,7 @@ Bei **Geldforderungen bis 75.000 €** ist das **automatische Mahnverfahren zwin
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
 Zur Laufzeit ausführen (nicht nur verweisen):
-- Zahlungsbefehl/Einspruch: `python3 tools/ris_client.py linie "Zahlungsbefehl" --gericht OGH --gesetz ZPO --paragraf 244` — OGH-Linie nach Linientiefe + Leitsätze. Vorhandene RS-Nummern (RS0007143, RS0043986) über `linie`/`leit` zu bestätigen; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
+- Zahlungsbefehl/Einspruch: `python3 tools/ris_client.py linie "Zahlungsbefehl" --gericht OGH --gesetz ZPO --paragraf 244` — OGH-Linie nach Linientiefe + Leitsätze. Für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
 - Aktualität vor Stützung auf eine ältere Entscheidung: `aktualitaet ZPO 248 --seit <Entscheidungsdatum>` — flaggt eine Änderung der Einspruchsregelung nach der Entscheidung.
 
 ### Anwendung im Skill

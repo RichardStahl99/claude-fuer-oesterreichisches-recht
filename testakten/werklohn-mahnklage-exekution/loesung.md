@@ -9,7 +9,7 @@
 | Rolle | Gläubigerin (Klägerin), Unternehmerin | Rechnung |
 | Titel vorhanden? | **Nein** — Titel erst zu erwirken | Akt |
 | **Zuständigkeit** | Streitwert 8.500 € → **BG Graz** (≤ 15.000 €, keine Eigenzuständigkeit); örtlich Wohnsitz des Beklagten (Graz) | `zustaendigkeit-jn`, §§ 49, 66 JN |
-| Anwaltspflicht | 8.500 € > 5.000 € am BG → **relative Anwaltspflicht (ja)** | § 27 ZPO |
+| Anwaltspflicht | 8.500 € > 5.000 € am BG → **absolute Anwaltspflicht (ja)** | § 27 Abs 1 ZPO |
 | Verfahrensweg | Geldforderung ≤ 75.000 € → **Mahnverfahren** (Zahlungsbefehl) | `mahnverfahren`, § 244 ZPO |
 | Frist | **Einspruch 4 Wochen** (§ 248) nach Zustellung; danach vollstreckbar | `mahnverfahren` |
 
@@ -23,7 +23,7 @@
 
 1. **Kein Titel:** Es ist zunächst ein Exekutionstitel zu erwirken.
 2. **Zuständigkeit (JN):** Streitwert 8.500 €, keine Eigenzuständigkeit (kein Bestand-/Familienfall) → **sachlich BG** (≤ 15.000 €, § 49 JN). Örtlich der allgemeine Gerichtsstand des Beklagten (Wohnsitz Graz, § 66 JN); keine Gerichtsstandsvereinbarung. → **BG Graz**.
-3. **Anwaltspflicht:** Am BG besteht ab einem Streitwert über 5.000 € **relative Anwaltspflicht** (§ 27 ZPO) — hier (8.500 €) also **Anwaltspflicht**.
+3. **Anwaltspflicht:** Am BG besteht ab einem Streitwert über 5.000 € **absolute Anwaltspflicht** (§ 27 Abs 1 ZPO) — hier (8.500 €) also **Anwaltspflicht**.
 4. **Verfahrensweg:** Reine Geldforderung ≤ 75.000 € → zwingend **automatisches Mahnverfahren**: Mahnklage (per ERV) → bedingter **Zahlungsbefehl** (§§ 244 ff ZPO).
 5. **Einspruch (§ 248):** Erhebt Herr Novak binnen **vier Wochen** Einspruch, wird ins streitige Verfahren übergeleitet (`verfahrensgang-rechtsmittel`; dort Neuerungsverbot/Fristen beachten). Andernfalls wird der Zahlungsbefehl **rechtskräftig und vollstreckbar**.
 6. **Exekution (EO):** Mit dem vollstreckbaren Zahlungsbefehl (Titel § 1 EO, Vollstreckbarkeit § 7) Exekutionsantrag beim BG; angesichts unselbständiger Erwerbstätigkeit ist die **Gehaltsexekution** (§§ 290 ff EO) das naheliegende Mittel — **Existenzminimum** bleibt unpfändbar (§ 291a EO).
@@ -44,11 +44,9 @@
 - § 1 EO — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001700&Paragraf=1
 - § 290 EO — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001700&Paragraf=290
 
-**Judikatur (Existenz/Permalink über RIS geprüft; Leitsatz vor Verwendung lesen):**
-- Zuständigkeit/Gerichtsstandsvereinbarung — `RIS-Justiz RS0118239` (OGH 4 Nc 32/03y)
-- Zahlungsbefehl — `RIS-Justiz RS0007143` (OGH 5 Ob 592/90)
-- Exekutionstitel/Bestimmtheit — `RIS-Justiz RS0001979` (OGH 3 Ob 142/64)
+**Judikatur (zur Laufzeit über RIS auflösen — Leitsatz vor Verwendung lesen; keine Geschäftszahl/Rechtssatz aus Modellwissen):**
+- Einschlägige OGH-Judikatur zu Gerichtsstandsvereinbarung/Zuständigkeit (§ 104 JN), Zahlungsbefehl (§ 244 ZPO) und Exekutionstitel/Bestimmtheit (§§ 1, 7 EO) erst zur Laufzeit über die folgenden `linie`-Befehle beziehen; den Leitsatz vor Verwendung lesen und eine konkret herangezogene Geschäftszahl mit `leit <GZ>` (Leitentscheidung/Stamm? Linientiefe?) absichern.
 
-Reproduzieren: `python3 tools/ris_client.py linie "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH --gesetz JN --paragraf 104` bzw. `linie "Zahlungsbefehl" --gericht OGH --gesetz ZPO --paragraf 244` und `linie "Exekutionstitel" --gericht OGH --gesetz EO --paragraf 1` (Leitsätze nach Linientiefe). Gewicht der oben genannten Geschäftszahlen je mit `leit "4 Nc 32/03y"`, `leit "5 Ob 592/90"`, `leit "3 Ob 142/64"` bestätigen. Aktualität vor Stützung auf diese älteren Entscheidungen (Verfahrensnormen, EO-Reform 2021): `aktualitaet EO 1 --seit <Entscheidungsdatum aus leit/linie>`, ebenso `aktualitaet JN 104` bzw. `aktualitaet ZPO 248`.
+Reproduzieren: `python3 tools/ris_client.py linie "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH --gesetz JN --paragraf 104` bzw. `linie "Zahlungsbefehl" --gericht OGH --gesetz ZPO --paragraf 244` und `linie "Exekutionstitel" --gericht OGH --gesetz EO --paragraf 1` (Leitsätze nach Linientiefe; die je herangezogene Geschäftszahl mit `leit <GZ>` bestätigen). Aktualität vor Stützung auf ältere Entscheidungen (Verfahrensnormen, EO-Reform 2021): `aktualitaet EO 1 --seit <Entscheidungsdatum aus leit/linie>`, ebenso `aktualitaet JN 104` bzw. `aktualitaet ZPO 248`.
 
 > Hinweis: Diese Triage ist Vorbereitung, nicht Entscheidung. Der Anwalt führt das Mandat.
