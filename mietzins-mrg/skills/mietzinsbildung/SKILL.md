@@ -46,7 +46,7 @@ Nur in der **Vollanwendung** ist der Hauptmietzins beschränkt. Dann ist das ric
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; 5. Senat)
 **Zur Laufzeit ausführen (nicht nur verweisen):**
-- Richtwert/Zuschläge: `python3 tools/ris_client.py linie "Richtwert Zuschlag" --gericht OGH --gesetz MRG --paragraf 16` — die so gelieferten Leitsätze/RS-Nummern verwenden (bereits notierte RS0117876, RS0047403 über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
+- Richtwert/Zuschläge: `python3 tools/ris_client.py linie "Richtwert Zuschlag" --gericht OGH --gesetz MRG --paragraf 16` — die so gelieferten Leitsätze/RS-Nummern verwenden (bereits notierte RS0117876 über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
 - Befristungsabschlag: `python3 tools/ris_client.py linie "Befristungsabschlag" --gericht OGH --gesetz MRG --paragraf 16` (notierte RS0131441 über `linie`/`leit` zu bestätigen).
 - Für eine konkret benannte Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie tief die Linie?). § 16 MRG wird häufig novelliert (zuletzt 2026) — vor dem Stützen auf eine ältere Entscheidung zwingend `aktualitaet MRG 16 --seit <Entscheidungsdatum>` als Currency-Check (flaggt eine Novelle nach dem Entscheidungsdatum).
 

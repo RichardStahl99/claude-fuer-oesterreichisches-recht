@@ -47,7 +47,7 @@ description: "Prüft den allgemeinen Kündigungsschutz und die Anfechtung einer 
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; ObA-Senat)
 Zur Laufzeit ausführen (nicht nur verweisen):
-- Sozialwidrigkeit: `python3 tools/ris_client.py linie "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH --gesetz ARBVG --paragraf 105` — OGH-Linie + Leitsätze nach Linientiefe (bereits gesichtet: RIS-Justiz RS0116698, RS0029457 — über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
+- Sozialwidrigkeit: `python3 tools/ris_client.py linie "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH --gesetz ARBVG --paragraf 105` — OGH-Linie + Leitsätze nach Linientiefe (bereits gesichtet: RIS-Justiz RS0116698 — über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
 - Verpöntes Motiv: `python3 tools/ris_client.py linie "verpöntes Motiv Kündigung" --gericht OGH --gesetz ARBVG --paragraf 105` (bereits gesichtet: RIS-Justiz RS0052037 — über `linie`/`leit` zu bestätigen).
 - Gewicht einer konkret benannten GZ mit `leit <GZ>` prüfen (Stamm/Leitentscheidung? Linientiefe?); ältere Entscheidungen vor Übernahme per `aktualitaet ARBVG 105 --seit <Entscheidungsdatum>` auf Aktualität prüfen.
 

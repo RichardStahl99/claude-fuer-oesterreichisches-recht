@@ -22,11 +22,11 @@ Die **Art** der Beendigung entscheidet alles Weitere: Fristen/Termine, Anfechtba
 4. **Einvernehmliche Auflösung?** Beidseitige Vereinbarung — kein Anfechtungsschutz, aber Beratungs-/Übereilungsschutz beachten.
 5. **Sonst Beendigung durch einseitige Erklärung:**
    - **Kündigung (ordentlich):** Beendigung **mit** Frist und Termin (§ 20 AngG / § 1159 ABGB). AG-Kündigung **ohne Begründungspflicht**, aber **anfechtbar** (§ 105 ArbVG) → `kuendigungsschutz-anfechtung`.
-   - **Entlassung (außerordentlich, fristlos durch AG):** nur bei **wichtigem Grund** (§ 27 AngG, taxativ — z. B. Vertrauensunwürdigkeit, beharrliche Pflichtverletzung). **Unberechtigte** Entlassung → **Kündigungsentschädigung** (§ 29 AngG).
+   - **Entlassung (außerordentlich, fristlos durch AG):** nur bei **wichtigem Grund** (§ 27 AngG, demonstrativ [„insbesondere"] — z. B. Vertrauensunwürdigkeit, beharrliche Pflichtverletzung). **Unberechtigte** Entlassung → **Kündigungsentschädigung** (§ 29 AngG).
    - **Vorzeitiger Austritt (durch AN, fristlos):** nur bei **wichtigem Grund** (§ 26 AngG — z. B. Entgeltvorenthaltung, Gesundheitsgefährdung). Berechtigter Austritt → Ansprüche wie bei AG-Kündigung; unberechtigter Austritt → Schadenersatz des AG.
 6. **Ergebnis** (Beendigungsart + Datum + Rolle) festhalten und an `kuendigungsfristen-termine` / `kuendigungsschutz-anfechtung` / `beendigungsansprueche` durchreichen.
 
-```
+```text
 AG/AN ?  --> Probezeit (§19, ≤1 Monat) ? --ja--> jederzeit lösbar
                 | nein
         befristet ? --ja--> Zeitablauf      einvernehmlich ? --ja--> Vereinbarung

@@ -21,15 +21,18 @@ Bevor geklagt wird, müssen **drei** Fragen beantwortet sein: **sachliche** Zust
    - Sonst **Wertzuständigkeit:** Streitwert **bis 15.000 € → BG**; **über 15.000 € → Landesgericht** (Gerichtshof, § 50 JN). Eigenzuständigkeiten des LG (z. B. Amtshaftung, gewerblicher Rechtsschutz) beachten.
 2. **Örtliche Zuständigkeit:** **allgemeiner Gerichtsstand** des Beklagten (Wohnsitz/gewöhnlicher Aufenthalt natürlicher Personen, § 66 JN; Sitz juristischer Personen, § 75 JN). Daneben **Wahlgerichtsstände** (z. B. Gerichtsstand des Erfüllungsorts) und die **Gerichtsstandsvereinbarung** (§ 104 JN, Prorogation — schriftlich nachweisbar).
 3. **Anwaltspflicht (§ 27 ZPO):**
-   - **Bezirksgericht:** **relative** Anwaltspflicht — Anwaltszwang erst bei Streitwert **über 5.000 €**; darunter kann die Partei selbst auftreten.
-   - **Landesgericht:** **absolute** Anwaltspflicht in allen Verfahren.
+   - **Bezirksgericht – Wertstreitigkeiten:** **bis 5.000 €** kein Anwaltszwang (die Partei kann selbst auftreten); **über 5.000 €** **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
+   - **Bezirksgericht – Eigenzuständigkeitssachen** (wertunabhängig vor das BG, z. B. Bestand-/bestimmte Familiensachen): **keine** absolute Anwaltspflicht (§ 27 Abs 2 ZPO). In **Ehesachen** sowie in Sachen über **5.000 €** gilt — **nur an Orten mit mindestens zwei Rechtsanwälten** — die **relative** Anwaltspflicht (§ 29 Abs 1 ZPO): die Partei kann selbst auftreten, einen **Bevollmächtigten** muss sie dann aber durch einen Rechtsanwalt stellen. Sonst (Sachen bis 5.000 € außerhalb von Ehesachen oder Orte mit weniger als zwei Rechtsanwälten) besteht **kein Anwaltszwang** (auch ein Nicht-Anwalt kann bevollmächtigt werden).
+   - **Landesgericht/höhere Gerichte:** stets **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
+   - **Ausnahme bezirksgerichtliches Mahnverfahren:** Der **Einspruch** gegen einen Zahlungsbefehl des **BG** ist von der Anwaltspflicht ausgenommen (§ 448 Z 1 ZPO) — formfrei, sogar mündlich zu Protokoll (§ 448 Z 2). **Nicht** im LG-Mahnverfahren (> 15.000 €): dort Anwalt + Klagebeantwortungs-Inhalt (§ 248 Abs 1). Siehe `mahnverfahren`.
 4. **Ergebnis** (Gericht + Anwaltspflicht) festhalten und an `mahnverfahren`/`verfahrensgang-rechtsmittel` durchreichen.
 
-```
+```text
 Eigenzuständigkeit BG (§49 Abs2: Bestand, Familie ...) ? --ja--> BG (wertunabhängig)
         | nein
 Streitwert ≤ 15.000 € ?  --ja--> BG     --nein--> LG (§ 50)
-Anwaltspflicht: BG > 5.000 € relativ | LG absolut (§ 27 ZPO)
+Anwaltspflicht: BG-Wertstreit ≤ 5.000 € kein Zwang / > 5.000 € absolut (§ 27 Abs 1);
+                BG-Eigenzuständigkeit relativ (§ 29 Abs 1) bei Ehesachen/Streitwert > 5.000 € nur an Orten mit ≥ 2 RA, sonst kein Zwang; LG absolut
 Örtlich: Wohnsitz/Sitz Beklagter (§§ 66, 75) | Gerichtsstandsvereinbarung (§ 104)
 ```
 
@@ -52,7 +55,7 @@ Anwaltspflicht: BG > 5.000 € relativ | LG absolut (§ 27 ZPO)
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
 Zur Laufzeit ausführen (nicht nur verweisen):
-- Gerichtsstandsvereinbarung/Zuständigkeit: `python3 tools/ris_client.py linie "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH --gesetz JN --paragraf 104` — OGH-Linie nach Linientiefe + Leitsätze. Vorhandene RS-Nummern (RS0118239, RS0018023) über `linie`/`leit` zu bestätigen; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
+- Gerichtsstandsvereinbarung/Zuständigkeit: `python3 tools/ris_client.py linie "Gerichtsstandsvereinbarung Zuständigkeit" --gericht OGH --gesetz JN --paragraf 104` — OGH-Linie nach Linientiefe + Leitsätze. Für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
 - Aktualität vor Stützung auf eine ältere Entscheidung: `aktualitaet JN 104 --seit <Entscheidungsdatum>` — flaggt, ob die JN nach der Entscheidung geändert wurde (Verfahrensnormen ändern sich).
 
 ### Anwendung im Skill

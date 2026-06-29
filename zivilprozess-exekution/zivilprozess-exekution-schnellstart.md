@@ -14,12 +14,12 @@ Liegt schon ein **Exekutionstitel** (Urteil, rk. Zahlungsbefehl, Vergleich, voll
 
 - **Sachlich:** Eigenzuständigkeit BG (Bestand/Familie, wertunabhängig, § 49 Abs 2 JN); sonst **≤ 15.000 € → BG**, **> 15.000 € → LG** (§§ 49, 50 JN).
 - **Örtlich:** Wohnsitz/Sitz des **Beklagten** (§§ 66, 75 JN); Gerichtsstandsvereinbarung (§ 104).
-- **Anwaltspflicht:** BG **> 5.000 €** relativ; **LG immer** (§ 27 ZPO).
+- **Anwaltspflicht:** BG-Wertstreit **> 5.000 €** und **LG immer** absolut, **≤ 5.000 €** kein Zwang (§ 27 Abs 1 ZPO); BG-**Eigenzuständigkeit** (Bestand etc.) nur relativ in Ehesachen und in Sachen über 5.000 € **an Orten mit ≥ 2 Rechtsanwälten** (§ 29 Abs 1 ZPO), sonst kein Zwang.
 
 ## 2. Mahnverfahren (§§ 244 ff ZPO)
 
 - Geldforderung **≤ 75.000 €** → zwingend **Mahnklage** → bedingter **Zahlungsbefehl**.
-- **Einspruch (§ 248): 4 Wochen.** Einspruch → streitiges Verfahren; kein Einspruch → **rechtskräftiger, vollstreckbarer Titel**.
+- **Einspruch (§ 248): 4 Wochen.** Einspruch → streitiges Verfahren; kein Einspruch → **rechtskräftiger, vollstreckbarer Titel**. **Vor dem BG** braucht der Einspruch keinen Anwalt (§ 448 Z 1 ZPO, formfrei/zu Protokoll); **vor dem LG** (> 15.000 €) dagegen Anwalt + Klagebeantwortungs-Inhalt (§ 248 Abs 1).
 
 ## 3. Streitiges Verfahren & Rechtsmittel
 

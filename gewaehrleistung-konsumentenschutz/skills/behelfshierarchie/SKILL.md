@@ -25,10 +25,10 @@ Der Übernehmer kann nicht frei wählen. Die Behelfe stehen in einer **zweistufi
    - der Übergeber verweigert sie / führt sie **nicht in angemessener Frist** durch; **oder**
    - Verbesserung/Austausch mit **erheblichen Unannehmlichkeiten** verbunden; **oder**
    - Unzumutbarkeit aus triftigen, in der Person des Übergebers liegenden Gründen.
-3. **Sekundärbehelf (Stufe 2): Preisminderung** (relative Berechnungsmethode) **oder Wandlung** (Vertragsaufhebung; im VGG heißt sie **Vertragsauflösung**, § 13; ausgeschlossen bei bloß **geringfügigem** Mangel).
+3. **Sekundärbehelf (Stufe 2): Preisminderung** (relative Berechnungsmethode) **oder Wandlung** (Vertragsaufhebung; im VGG heißt sie **Vertragsauflösung**, § 15 VGG; ausgeschlossen bei bloß **geringfügigem** Mangel, § 12 Abs 5 VGG).
 4. **Ergebnis** mit Begründung der Stufe dokumentieren und an `verjaehrung-und-fristen` übergeben (Behelf muss fristgerecht geltend gemacht werden).
 
-```
+```text
 Mangel (+) --> Stufe 1: Verbesserung / Austausch
                    | (unmöglich / unverhältnismäßig / verweigert /
                    |  nicht fristgerecht / erhebliche Unannehmlichkeiten)
@@ -52,12 +52,12 @@ Mangel (+) --> Stufe 1: Verbesserung / Austausch
 ## Normen und Rechtsprechung
 
 ### Normen-Bibliothek (RIS-Permalinks verifizierbar)
-- `§ 932 ABGB` — Behelfe und Stufen · `§ 12 VGG` — primäre/sekundäre Behelfe · `§ 13 VGG` — Preisminderung/Vertragsauflösung
+- `§ 932 ABGB` — Behelfe und Stufen · `§ 12 VGG` — primäre/sekundäre Behelfe (Stufenfolge) · `§ 13 VGG` — Verbesserung/Austausch · `§ 14 VGG` — Preisminderung · `§ 15 VGG` — Vertragsauflösung
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
 Zur Laufzeit ausführen (nicht nur verweisen):
-- Behelfshierarchie/Verbesserung — OGH-Linie samt Leitsätzen nach Linientiefe holen: `python3 tools/ris_client.py linie "Verbesserung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 932` (vormals RIS-Justiz **RS0018921**, RS0018699 — über `linie`/`leit` zu bestätigen, Leitsatz vor Verwendung lesen).
-- Wandlung/Preisminderung — `python3 tools/ris_client.py linie "Wandlung Preisminderung" --gericht OGH --gesetz ABGB --paragraf 932` (vormals RS0126731, RS0127994 — über `linie`/`leit` zu bestätigen).
+- Behelfshierarchie/Verbesserung — OGH-Linie samt Leitsätzen nach Linientiefe holen: `python3 tools/ris_client.py linie "Verbesserung Gewährleistung" --gericht OGH --gesetz ABGB --paragraf 932` (Leitsatz vor Verwendung lesen; keine RS-Nummer aus Modellwissen übernehmen — die Hierarchie folgt primär aus § 932 ABGB / §§ 12 f VGG).
+- Wandlung/Preisminderung — `python3 tools/ris_client.py linie "Wandlung Preisminderung" --gericht OGH --gesetz ABGB --paragraf 932` (Leitsatz vor Verwendung lesen; keine RS-Nummer aus Modellwissen übernehmen).
 - Für eine konkret herangezogene Geschäftszahl `python3 tools/ris_client.py leit <GZ>` — ist sie Leitentscheidung (Stamm) und wie tief/gefestigt die Linie.
 - **Aktualität (Pflicht vor Übernahme älterer Entscheidungen):** § 932 ABGB wurde durch das VGG (ab 1.1.2022) neu gefasst; Alt-Judikatur (vor 2022) vor Verwendung flaggen mit `python3 tools/ris_client.py aktualitaet ABGB 932 --seit <Entscheidungsdatum>` bzw. im B2C-Fall `python3 tools/ris_client.py aktualitaet VGG 11 --seit <Entscheidungsdatum>` (erkennt die Gesetzesänderung nach dem Entscheidungsdatum, beurteilt sie nicht).
 

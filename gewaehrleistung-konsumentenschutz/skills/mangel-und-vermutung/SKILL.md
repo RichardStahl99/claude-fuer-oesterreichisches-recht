@@ -26,7 +26,7 @@ Zwei Fragen: **(1)** Liegt überhaupt ein Mangel vor? **(2)** Lag er **bei Über
 5. **Vermutungsregel anwenden:**
    - Mangel kommt binnen **6 Monaten** (ABGB § 924) bzw. **1 Jahr** (VGG § 11, B2C) ab Übergabe hervor → es wird **vermutet**, dass er schon bei Übergabe vorlag. Beweislast für das Gegenteil trägt der **Übergeber/Unternehmer**.
    - Danach: Käufer/Übernehmer trägt die Beweislast, dass der Mangel bei Übergabe vorlag.
-   - Grenze der Vermutung: Unvereinbarkeit mit Art der Sache oder des Mangels (§ 924 Satz 2 ABGB; § 11 VGG).
+   - Grenze der Vermutung: Unvereinbarkeit mit Art der Sache oder des Mangels (§ 924 Satz 3 ABGB; § 11 Abs 1 VGG).
 6. **Offenkundige Mängel** (§ 928 ABGB): in die Augen fallende Mängel sind grundsätzlich nicht zu gewährleisten, wenn der Käufer sie kannte/kennen musste.
 
 ## Typische Fehler / Kritik

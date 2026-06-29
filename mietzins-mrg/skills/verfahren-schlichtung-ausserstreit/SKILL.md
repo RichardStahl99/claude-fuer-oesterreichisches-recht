@@ -20,14 +20,14 @@ Mietrechtssachen — darunter die **Überprüfung des Hauptmietzinses** — werd
 1. **Ist es eine Mietrechtssache iSd § 37 Abs 1 MRG?** Der Katalog ist **taxativ** (u. a. Angemessenheit/Höhe des Hauptmietzinses, Betriebskosten, Erhaltung, Kaution). Wenn ja → **Außerstreitverfahren**. Wenn nein → streitiges Verfahren (z. B. reine Räumungsklage außerhalb § 37).
 2. **Schlichtungsstelle vorhanden?**
    - Gemeinde **mit** Schlichtungsstelle (insb. **Wien**, Graz, einige weitere): Der Antrag ist **zuerst bei der Schlichtungsstelle** einzubringen (§ 39 MRG, **sukzessive Zuständigkeit**). Das Gericht darf erst nach Abschluss/„Abziehen" angerufen werden.
-   - Gemeinde **ohne** Schlichtungsstelle: **direkt** zum **Bezirksgericht** (§ 37 Abs 3 MRG), in dessen Sprengel der Mietgegenstand liegt.
+   - Gemeinde **ohne** Schlichtungsstelle: **direkt** zum **Bezirksgericht** (§ 37 Abs 1 MRG; Direktweg mangels betrauter Gemeinde aus § 39 Abs 1 e contrario), in dessen Sprengel der Mietgegenstand liegt.
 3. **„Abziehen" an das Gericht (§ 40 MRG):** Nach der Entscheidung der Schlichtungsstelle kann jede Partei die Sache binnen **vier Wochen** ab Zustellung **bei Gericht** anhängig machen; damit tritt die Entscheidung der Schlichtungsstelle außer Kraft und das BG entscheidet neu.
 4. **Vertretung/Form:** Im wohnrechtlichen Außerstreitverfahren vor dem BG besteht **keine absolute Anwaltspflicht** (Parteien können selbst auftreten); anwaltliche Vertretung ist dennoch üblich. ERV für Anwälte beachten.
 
-```
+```text
 Mietrechtssache § 37 Abs 1 MRG ? --nein--> streitiges Verfahren
         | ja  -> AUSSERSTREIT
-Schlichtungsstelle in der Gemeinde ? --nein--> direkt BG (§ 37 Abs 3)
+Schlichtungsstelle in der Gemeinde ? --nein--> direkt BG (§ 37 Abs 1)
         | ja
 zuerst Schlichtungsstelle (§ 39) --Entscheidung--> ggf. binnen 4 Wo. an BG abziehen (§ 40)
 ```

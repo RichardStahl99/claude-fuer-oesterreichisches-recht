@@ -30,12 +30,12 @@ Diese Weiche steuert alles Weitere: Vermutungsfrist, Behelfshierarchie, Fristen.
 3. **Vertragsgegenstand?** **Ware** (bewegliche körperliche Sache, § 1 Abs 1 Z 1 VGG) oder **digitale Leistung**? Liegenschaft, reine Dienstleistung außerhalb des VGG → **§§ 922 ff ABGB**. Ware/digitale Leistung → **VGG**.
 4. **Ergebnis festhalten** und an die Folge-Skills durchreichen: Bei **VGG** gelten § 11 (Vermutung 1 Jahr) und §§ 12 f (Behelfe); bei **ABGB** §§ 924 (6 Monate), 932, 933.
 
-```
+```text
 Vertrag ab 1.1.2022 ? --nein--> §§ 922 ff ABGB
         | ja
 Unternehmer -> Verbraucher (§1 KSchG) ? --nein--> §§ 922 ff ABGB
         | ja
-Ware / digitale Leistung (§4 VGG) ? --nein--> §§ 922 ff ABGB
+Ware / digitale Leistung (§ 1 Abs 1 VGG) ? --nein--> §§ 922 ff ABGB
         | ja
       VGG  (lex specialis, §§ 11–13)
 ```
@@ -46,7 +46,7 @@ Ware / digitale Leistung (§4 VGG) ? --nein--> §§ 922 ff ABGB
 |---|---|---|
 | Vermutung der Mangelhaftigkeit | **1 Jahr** (§ 11 VGG; dauernde Bereitstellung: gesamte Dauer) | **6 Monate** (§ 924 ABGB) |
 | Behelfe | §§ 12 f VGG (Verbesserung/Austausch → Preisminderung/Vertragsauflösung) | § 932 ABGB (idem, eigene Voraussetzungen) |
-| Gewährleistungsfrist | 2 J. + gesonderte 3-Monats-Verjährungsfrist (§ 10 VGG) | § 933: 2 J. beweglich / 3 J. unbeweglich |
+| Gewährleistungsfrist | 2-J-Gewährleistungsfrist (§ 10) + 3-Monats-Verjährungsfrist (§ 28 VGG) | § 933: 2 J. beweglich / 3 J. unbeweglich (Abs 1) + 3-Monats-Verjährungsfrist (Abs 3) — gleiche Struktur |
 | Zwingend zugunsten Verbraucher | ja (§ 3 VGG) | dispositiv, Grenze § 9 KSchG |
 
 ## Typische Fehler / Kritik
@@ -68,7 +68,7 @@ Ware / digitale Leistung (§4 VGG) ? --nein--> §§ 922 ff ABGB
 ### Normen-Bibliothek (RIS-Permalinks verifizierbar)
 
 - `§ 1 VGG` — Anwendungsbereich (Verbraucher/Unternehmer, Ware/digitale Leistung)
-- `§ 2 VGG` — Begriffsbestimmungen (Warenbegriff)
+- `§ 2 VGG` — Begriffsbestimmungen (digitale Leistungen, Waren mit digitalen Elementen)
 - `§ 11 VGG` — Vermutung der Mangelhaftigkeit (1 Jahr)
 - `§§ 12, 13 VGG` — Behelfshierarchie
 - `§ 922 ABGB` — Mangelbegriff (Auffangregime)

@@ -42,9 +42,8 @@
 - § 10 UrlG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008376&Paragraf=10
 
 **Judikatur (Existenz/Permalink über RIS geprüft; Leitsatz vor Verwendung lesen; ObA-Senat):**
-- Kündigungsanfechtung/Sozialwidrigkeit — `RIS-Justiz RS0116698` (OGH 8 ObA 1/02h)
-- Sozialwidrigkeit (Interessenabwägung) — `RIS-Justiz RS0029457` (OGH 9 ObA 74/88)
-- Abfertigung — `RIS-Justiz RS0047428` (OGH 7 Ob 550/93)
+- Kündigungsanfechtung/Sozialwidrigkeit (inkl. Interessenabwägung) — `RIS-Justiz RS0116698` (OGH 8 ObA 1/02h)
+- Sozialwidrigkeit (weitere Interessenabwägungs-/Abfertigungs-Rechtssätze) erst zur Laufzeit über die unten genannten `linie`-Befehle beziehen und mit `leit <GZ>` (ObA-Senat) absichern — keine GZ aus Modellwissen.
 
 Reproduzieren (zur Laufzeit ausführen, nicht nur verweisen): `python3 tools/ris_client.py linie "Kündigungsanfechtung Sozialwidrigkeit" --gericht OGH --gesetz ARBVG --paragraf 105` bzw. `linie "Abfertigung Beendigung" --gericht OGH --gesetz BMSVG --paragraf 14`. Die oben genannten Rechtssätze/GZ mit `leit <GZ>` als Leitentscheidung (Stamm) bestätigen und ältere Entscheidungen vor Übernahme mit `aktualitaet ARBVG 105 --seit <Entscheidungsdatum>` auf Aktualität prüfen.
 

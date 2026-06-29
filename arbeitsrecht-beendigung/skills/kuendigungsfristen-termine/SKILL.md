@@ -24,7 +24,7 @@ Die ordentliche Kündigung ist nur wirksam, wenn **Frist und Termin** eingehalte
    - ab 15 Jahren: **4 Monate**
    - ab 25 Jahren: **5 Monate**
    **Kündigungstermin:** zum **Quartalsende** (31. 3. / 30. 6. / 30. 9. / 31. 12.); zulässig vereinbar ist der **15.** oder **Letzte** jedes Kalendermonats (§ 20 Abs 3 AngG).
-2. **Arbeitnehmerkündigung (Angestellte, § 20 Abs 4 AngG):** Frist **1 Monat** zum **Monatsletzten** (vertragliche Verlängerung möglich, höchstens auf das Maß der AG-Frist).
+2. **Arbeitnehmerkündigung (Angestellte, § 20 Abs 4 AngG):** Frist **1 Monat** zum **Monatsletzten** (vertragliche Verlängerung bis zu einem halben Jahr möglich; die AG-Frist darf dann nicht kürzer sein als die vereinbarte AN-Frist).
 3. **Arbeiter (§ 1159 ABGB):** **seit 1. 10. 2021** weitgehend **an die Angestellten angeglichen** (gleiche gestaffelte Fristen und Quartalstermine). Achtung: Für bestimmte **Saisonbranchen** kann der Kollektivvertrag abweichende (kürzere) Regelungen vorsehen.
 4. **Kollektivvertrag/Einzelvertrag prüfen:** KV kann die gesetzlichen Fristen modifizieren; günstigere Einzelvereinbarungen zulässig.
 5. **Rechnen:** Frist ab Zugang der Kündigung; Endtermin auf den nächsten zulässigen Kündigungstermin legen. Wird Frist/Termin **nicht** gewahrt, verschiebt sich die Beendigung auf den nächsten korrekten Termin (Konversion) — keine fristlose Wirkung.

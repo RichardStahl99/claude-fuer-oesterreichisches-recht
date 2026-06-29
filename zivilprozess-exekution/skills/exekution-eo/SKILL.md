@@ -45,7 +45,7 @@ Mit einem **vollstreckbaren Titel** wird die Geldforderung zwangsweise hereingeb
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
 Zur Laufzeit ausführen (nicht nur verweisen):
-- Exekutionstitel/Bestimmtheit: `python3 tools/ris_client.py linie "Exekutionstitel" --gericht OGH --gesetz EO --paragraf 1` — OGH-Linie (3.-Senat/Exekution) nach Linientiefe + Leitsätze. Vorhandene RS-Nummern (RS0001979, RS0001674) über `linie`/`leit` zu bestätigen; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
+- Exekutionstitel/Bestimmtheit: `python3 tools/ris_client.py linie "Exekutionstitel" --gericht OGH --gesetz EO --paragraf 1` — OGH-Linie (3.-Senat/Exekution) nach Linientiefe + Leitsätze. Für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm? wie gefestigt die Linie?).
 - Aktualität vor Stützung auf eine ältere Entscheidung (Pflicht — EO-Reform 2021): `aktualitaet EO 1 --seit <Entscheidungsdatum>` bzw. `aktualitaet EO 7 --seit <Entscheidungsdatum>` — flaggt, ob die EO nach der Entscheidung geändert wurde; Alt-Judikatur vor 2021 nicht unbesehen übertragen.
 
 ### Anwendung im Skill
