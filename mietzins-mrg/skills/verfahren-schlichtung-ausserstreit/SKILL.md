@@ -24,7 +24,7 @@ Mietrechtssachen — darunter die **Überprüfung des Hauptmietzinses** — werd
 3. **„Abziehen" an das Gericht (§ 40 MRG):** Nach der Entscheidung der Schlichtungsstelle kann jede Partei die Sache binnen **vier Wochen** ab Zustellung **bei Gericht** anhängig machen; damit tritt die Entscheidung der Schlichtungsstelle außer Kraft und das BG entscheidet neu.
 4. **Vertretung/Form:** Im wohnrechtlichen Außerstreitverfahren vor dem BG besteht **keine absolute Anwaltspflicht** (Parteien können selbst auftreten); anwaltliche Vertretung ist dennoch üblich. ERV für Anwälte beachten.
 
-```
+```text
 Mietrechtssache § 37 Abs 1 MRG ? --nein--> streitiges Verfahren
         | ja  -> AUSSERSTREIT
 Schlichtungsstelle in der Gemeinde ? --nein--> direkt BG (§ 37 Abs 1)

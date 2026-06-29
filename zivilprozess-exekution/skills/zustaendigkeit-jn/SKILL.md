@@ -21,15 +21,17 @@ Bevor geklagt wird, müssen **drei** Fragen beantwortet sein: **sachliche** Zust
    - Sonst **Wertzuständigkeit:** Streitwert **bis 15.000 € → BG**; **über 15.000 € → Landesgericht** (Gerichtshof, § 50 JN). Eigenzuständigkeiten des LG (z. B. Amtshaftung, gewerblicher Rechtsschutz) beachten.
 2. **Örtliche Zuständigkeit:** **allgemeiner Gerichtsstand** des Beklagten (Wohnsitz/gewöhnlicher Aufenthalt natürlicher Personen, § 66 JN; Sitz juristischer Personen, § 75 JN). Daneben **Wahlgerichtsstände** (z. B. Gerichtsstand des Erfüllungsorts) und die **Gerichtsstandsvereinbarung** (§ 104 JN, Prorogation — schriftlich nachweisbar).
 3. **Anwaltspflicht (§ 27 ZPO):**
-   - **Bezirksgericht:** bei Streitwert **bis 5.000 €** kein Anwaltszwang (die Partei kann selbst auftreten); **über 5.000 €** besteht **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
+   - **Bezirksgericht – Wertstreitigkeiten:** **bis 5.000 €** kein Anwaltszwang (die Partei kann selbst auftreten); **über 5.000 €** **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
+   - **Bezirksgericht – Eigenzuständigkeitssachen** (wertunabhängig vor das BG, z. B. Bestand-/bestimmte Familiensachen): **keine** absolute Anwaltspflicht (§ 27 Abs 2 ZPO) — es gilt **relative** Anwaltspflicht (§ 29 Abs 1 ZPO): Selbstvertretung möglich, ein **Bevollmächtigter** muss aber bei Streitwert über 5.000 € (an Orten mit ≥ 2 Rechtsanwälten) Rechtsanwalt sein.
    - **Landesgericht/höhere Gerichte:** stets **absolute** Anwaltspflicht (§ 27 Abs 1 ZPO).
 4. **Ergebnis** (Gericht + Anwaltspflicht) festhalten und an `mahnverfahren`/`verfahrensgang-rechtsmittel` durchreichen.
 
-```
+```text
 Eigenzuständigkeit BG (§49 Abs2: Bestand, Familie ...) ? --ja--> BG (wertunabhängig)
         | nein
 Streitwert ≤ 15.000 € ?  --ja--> BG     --nein--> LG (§ 50)
-Anwaltspflicht: BG ≤ 5.000 € kein Anwaltszwang | BG > 5.000 € und LG absolut (§ 27 Abs 1 ZPO)
+Anwaltspflicht: BG-Wertstreit ≤ 5.000 € kein Zwang / > 5.000 € absolut (§ 27 Abs 1);
+                BG-Eigenzuständigkeit (Bestand etc.) relativ (§ 29 Abs 1); LG absolut
 Örtlich: Wohnsitz/Sitz Beklagter (§§ 66, 75) | Gerichtsstandsvereinbarung (§ 104)
 ```
 

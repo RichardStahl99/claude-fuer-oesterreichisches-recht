@@ -28,7 +28,7 @@ Der Übernehmer kann nicht frei wählen. Die Behelfe stehen in einer **zweistufi
 3. **Sekundärbehelf (Stufe 2): Preisminderung** (relative Berechnungsmethode) **oder Wandlung** (Vertragsaufhebung; im VGG heißt sie **Vertragsauflösung**, § 15 VGG; ausgeschlossen bei bloß **geringfügigem** Mangel, § 12 Abs 5 VGG).
 4. **Ergebnis** mit Begründung der Stufe dokumentieren und an `verjaehrung-und-fristen` übergeben (Behelf muss fristgerecht geltend gemacht werden).
 
-```
+```text
 Mangel (+) --> Stufe 1: Verbesserung / Austausch
                    | (unmöglich / unverhältnismäßig / verweigert /
                    |  nicht fristgerecht / erhebliche Unannehmlichkeiten)

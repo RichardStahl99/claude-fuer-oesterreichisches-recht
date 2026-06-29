@@ -24,7 +24,7 @@ Erster Skill bei jedem Gewährleistungs-Mandat zu **Waren** (Kauf beweglicher Sa
 | Mangel | Liegt ein Sach-/Rechtsmangel vor? Lag er bei Übergabe (vor)? | Fotos, Gutachten, Übergabedatum → Skill `mangel-und-vermutung` |
 | Behelf | Primär (Verbesserung/Austausch) oder sekundär (Preisminderung/Wandlung)? | Mängelsachverhalt → Skill `behelfshierarchie` |
 | Frist | Gewährleistungsfrist (2 J. beweglich) gewahrt? Verjährung? | Übergabedatum → Skill `verjaehrung-und-fristen` |
-| Zuständigkeit | Streitwert → BG (≤ 15.000 €) / LG; Anwaltspflicht: BG > 5.000 € und LG absolut, BG ≤ 5.000 € kein Anwaltszwang (§ 27 Abs 1 ZPO) | JN, Gerichtsstandsvereinbarung |
+| Zuständigkeit | Streitwert → BG (≤ 15.000 €) / LG; Anwaltspflicht (Wertstreit): BG > 5.000 € und LG absolut, ≤ 5.000 € kein Anwaltszwang (§ 27 Abs 1 ZPO) | JN, Gerichtsstandsvereinbarung |
 
 ## Risiko-Ampel
 

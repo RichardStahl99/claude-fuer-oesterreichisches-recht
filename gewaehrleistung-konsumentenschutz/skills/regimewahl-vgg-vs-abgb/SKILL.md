@@ -30,7 +30,7 @@ Diese Weiche steuert alles Weitere: Vermutungsfrist, Behelfshierarchie, Fristen.
 3. **Vertragsgegenstand?** **Ware** (bewegliche körperliche Sache, § 1 Abs 1 Z 1 VGG) oder **digitale Leistung**? Liegenschaft, reine Dienstleistung außerhalb des VGG → **§§ 922 ff ABGB**. Ware/digitale Leistung → **VGG**.
 4. **Ergebnis festhalten** und an die Folge-Skills durchreichen: Bei **VGG** gelten § 11 (Vermutung 1 Jahr) und §§ 12 f (Behelfe); bei **ABGB** §§ 924 (6 Monate), 932, 933.
 
-```
+```text
 Vertrag ab 1.1.2022 ? --nein--> §§ 922 ff ABGB
         | ja
 Unternehmer -> Verbraucher (§1 KSchG) ? --nein--> §§ 922 ff ABGB

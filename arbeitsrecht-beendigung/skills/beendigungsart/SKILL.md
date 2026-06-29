@@ -26,7 +26,7 @@ Die **Art** der Beendigung entscheidet alles Weitere: Fristen/Termine, Anfechtba
    - **Vorzeitiger Austritt (durch AN, fristlos):** nur bei **wichtigem Grund** (§ 26 AngG — z. B. Entgeltvorenthaltung, Gesundheitsgefährdung). Berechtigter Austritt → Ansprüche wie bei AG-Kündigung; unberechtigter Austritt → Schadenersatz des AG.
 6. **Ergebnis** (Beendigungsart + Datum + Rolle) festhalten und an `kuendigungsfristen-termine` / `kuendigungsschutz-anfechtung` / `beendigungsansprueche` durchreichen.
 
-```
+```text
 AG/AN ?  --> Probezeit (§19, ≤1 Monat) ? --ja--> jederzeit lösbar
                 | nein
         befristet ? --ja--> Zeitablauf      einvernehmlich ? --ja--> Vereinbarung

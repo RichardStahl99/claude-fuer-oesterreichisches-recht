@@ -45,7 +45,7 @@ Nach Einspruch (oder bei direkter Klage) läuft das **streitige Verfahren**: Kla
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen)
 Zur Laufzeit ausführen (nicht nur verweisen):
-- Neuerungsverbot: `python3 tools/ris_client.py linie "Neuerungsverbot" --gericht OGH --gesetz ZPO --paragraf 482` — OGH-Linie nach Linientiefe + Leitsätze. Vorhandene RS-Nummer (RS0042274) über `linie`/`leit` zu bestätigen.
+- Neuerungsverbot: `python3 tools/ris_client.py linie "Neuerungsverbot" --gericht OGH --gesetz ZPO --paragraf 482` — OGH-Linie nach Linientiefe + Leitsätze. Die RIS-verifizierte RS-Nummer (RS0042274 — Norm ZPO § 482, Neuerungsverbot) über `linie`/`leit` aktuell halten.
 - Eventualmaxime: `python3 tools/ris_client.py linie "Eventualmaxime" --gericht OGH` — Linie + Leitsätze; für eine konkret herangezogene Geschäftszahl `leit <GZ>` (Leitentscheidung/Stamm?).
 - Aktualität vor Stützung auf eine ältere Entscheidung: `aktualitaet ZPO 482 --seit <Entscheidungsdatum>` — flaggt eine ZPO-Änderung nach der Entscheidung.
 
