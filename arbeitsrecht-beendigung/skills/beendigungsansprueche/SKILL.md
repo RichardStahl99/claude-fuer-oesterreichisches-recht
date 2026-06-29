@@ -44,8 +44,8 @@ Am Ende des Arbeitsverhältnisses sind die Geldansprüche zu klären. Welche bes
 
 ### Judikatur (über RIS zu verifizieren — Leitsatz vor Verwendung lesen; ObA-Senat)
 Zur Laufzeit ausführen (nicht nur verweisen):
-- Abfertigung: `python3 tools/ris_client.py linie "Abfertigung Beendigung" --gericht OGH --gesetz BMSVG --paragraf 14` — OGH-Linie + Leitsätze nach Linientiefe (bereits gesichtet: RIS-Justiz RS0047428 — über `linie`/`leit` zu bestätigen, nicht aus Modellwissen).
-- Kündigungsentschädigung: `python3 tools/ris_client.py linie "Kündigungsentschädigung" --gericht OGH --gesetz ANGG --paragraf 29` (bereits gesichtet: RIS-Justiz RS0039036 — über `linie`/`leit` zu bestätigen).
+- Abfertigung: `python3 tools/ris_client.py linie "Abfertigung Beendigung" --gericht OGH --gesetz BMSVG --paragraf 14` — OGH-Linie + Leitsätze nach Linientiefe; den Leitsatz vor Verwendung lesen und die GZ mit `leit <GZ>` (ObA-Senat) bestätigen — keine RS-Nummer aus Modellwissen.
+- Kündigungsentschädigung: `python3 tools/ris_client.py linie "Kündigungsentschädigung" --gericht OGH --gesetz ANGG --paragraf 29` — Leitsatz vor Verwendung lesen; keine RS-Nummer aus Modellwissen.
 - Gewicht einer konkret benannten GZ mit `leit <GZ>` prüfen; ältere Entscheidungen vor Übernahme per `aktualitaet <Gesetz> <§> --seit <Entscheidungsdatum>` auf Aktualität prüfen (z. B. `aktualitaet BMSVG 14 --seit <Datum>` oder `aktualitaet URLG 10 --seit <Datum>`).
 
 ### Anwendung im Skill
