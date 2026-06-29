@@ -32,9 +32,9 @@ Der Nachtrag ist ein **einvernehmliches Änderungsangebot** — keine Änderungs
 
 ### Konkludenz-Risiko: Fix-Erhöhung (§ 863 ABGB)
 
-Wird die Fix-Erhöhung auf € 119.000 (fiktiv/illustrativ) erstmals ausbezahlt und von der Mandantin/dem Mandanten vorbehaltlos angenommen, entsteht durch schlüssiges Verhalten eine Bindung an diesen (günstigeren) Betrag — RS0014526 (konkludente Bindung durch wiederholte Annahme). **Nicht** damit verbunden wird die gleichzeitige Annahme der Verschlechterungen: Klauseln, die schlechter stellen, können nach RS0124521 (OGH 24.02.2009, 9 ObA 113/08w) **nicht konkludent** in das Vertragsverhältnis einfließen. Vorbehaltlose Annahme des höheren Fixums bedeutet also: Fix-Bindung ja, Verschlechterungen nein — aber der Hebel für den Gesamtvorbehalt schwindet.
+Wird die Fix-Erhöhung auf € 119.000 (fiktiv/illustrativ) erstmals ausbezahlt und von der Mandantin/dem Mandanten vorbehaltlos angenommen, entsteht durch schlüssiges Verhalten eine Bindung an diesen (günstigeren) Betrag — RS0014526 (konkludente Bindung durch wiederholte Annahme). **Nicht** damit verbunden wird die gleichzeitige Annahme der Verschlechterungen: Klauseln, die schlechter stellen, können nach § 863 ABGB (RS0042828 — strenge Anforderungen an schlüssige Erklärungen; RS0014154 — Empfängerhorizont) **nicht konkludent** in das Vertragsverhältnis einfließen; bloße Entgegennahme hat keinen Erklärungswert (RS0047273 [T2]). Vorbehaltlose Annahme des höheren Fixums bedeutet also: Fix-Bindung ja, Verschlechterungen nein — aber der Hebel für den Gesamtvorbehalt schwindet.
 
-**Handlung:** Vor nächster Auszahlung schriftlichen Vorbehalt setzen: „Ich nehme die Auszahlung unter ausdrücklichem Vorbehalt aller Rechte entgegen und lehne den 1. Nachtrag in seiner vorliegenden Form ab." [Prüfpunkt: Proposition „schriftlich unter Protest" anhand Volltext OGH 05.06.2008, 9 ObA 164/07v via RIS bestätigen — RS0112755, RS0029509, RS0021252.]
+**Handlung:** Vor nächster Auszahlung schriftlichen Vorbehalt setzen: „Ich nehme die Auszahlung unter ausdrücklichem Vorbehalt aller Rechte entgegen und lehne den 1. Nachtrag in seiner vorliegenden Form ab."
 
 ### Zwischenergebnis Regime
 
@@ -43,7 +43,7 @@ Wird die Fix-Erhöhung auf € 119.000 (fiktiv/illustrativ) erstmals ausbezahlt 
 | Änderungsweg | Einvernehmliches Angebot, **nicht** Änderungskündigung |
 | Status ohne Unterschrift | Bestandsvertrag gilt vollständig |
 | Fix-Erhöhung konkludent | Möglich nach erster vorbehaltloser Auszahlung (§ 863 ABGB) |
-| Verschlechterungen konkludent | Nein — RS0124521 |
+| Verschlechterungen konkludent | Nein — § 863 ABGB + RS0042828 + RS0014154 |
 
 ---
 
@@ -53,7 +53,7 @@ Die Klauselkontrolle erfolgt nach § 879 Abs 3 ABGB (GNR 10001622; Leitdoktrin R
 
 ### §8 Urlaub — 30 Tage → 25 + 5 verfallende Tage (🔴)
 
-Der gesetzliche Mindesturlaubsanspruch nach § 12 URLG (GNR 10008376) beträgt 25 Arbeitstage (5 Wochen) ab dem 25. Dienstjahr; für kürzere Dienstzeiten 20 Arbeitstage. Auf den gesetzlichen Teil ist nicht abdingbar. Der Bestandsvertrag gewährt 30 Tage — der übergesetzliche Teil (Tage über dem gesetzlichen Minimum) ist grundsätzlich modifizierbar. Soweit die 5 „verfallenden" Tage zum gesetzlichen Mindestanspruch gehören oder eine Ersatzleistung bei Nichtkonsumation entfällt, ist die Klausel unzulässig: Der Verfall ohne Ersatzleistung tastet den gesetzlichen Mindestanspruch an (RS0134421, OGH 27.06.2023, 8 ObA 23/23z — AG-Aufforderungs- und Hinweispflicht). **Ergebnis:** Klausel im gesetzlichen Teil unwirksam; übergesetzlicher Teil gesondert prüfen (Verschlechterungsschutz nach Regime-Triage).
+Das gesetzliche Urlaubsausmaß (§ 2 Abs 1 URLG) beträgt 30 Werktage (= 25 Arbeitstage / 5 Wochen) bei Dienstzeit unter 25 Jahren und 36 Werktage (= 30 Arbeitstage / 6 Wochen) ab dem vollendeten 25. Dienstjahr; die Unabdingbarkeit folgt aus § 12 URLG, der Verjährungs-/Hinweisschutz aus § 4 Abs 5 URLG (RS0134421). Der Bestandsvertrag gewährt 30 Tage — der übergesetzliche Teil (Tage über dem gesetzlichen Minimum) ist grundsätzlich modifizierbar. Soweit die 5 „verfallenden" Tage zum gesetzlichen Mindestanspruch gehören oder eine Ersatzleistung bei Nichtkonsumation entfällt, ist die Klausel unzulässig: Der Verfall ohne Ersatzleistung tastet den gesetzlichen Mindestanspruch an (RS0134421, OGH 27.06.2023, 8 ObA 23/23z — AG-Aufforderungs- und Hinweispflicht). **Ergebnis:** Klausel im gesetzlichen Teil unwirksam; übergesetzlicher Teil gesondert prüfen (Verschlechterungsschutz nach Regime-Triage).
 
 ### §4.2.3 Bonus-Widerruf „jederzeit gänzlich oder teilweise" (🟠)
 
@@ -65,11 +65,11 @@ Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfäll
 
 ### §7 Arbeitszeit — AG ändert Lage „dauerhaft" (🟠 → 🔴)
 
-§ 19c AZG (GNR 10008238) ist zwingend: Lage und Ausmaß der Arbeitszeit können nicht einseitig durch Arbeitgeber-Vorbehalt geändert werden (RS0118331, OGH 9 ObA 57/22f). Eine Klausel, die dem Arbeitgeber das dauerhafte einseitige Festlegen der Arbeitszeitlage erlaubt, ist insoweit **unwirksam**.
+§ 19c AZG (GNR 10008238) ist für Vollzeitkräfte die zwingende Norm für die Lage der Arbeitszeit (RS0118331, OGH 8 ObA 86/03k). OGH 9 ObA 57/22f folgt RS0118331, sein Beisatz stützt sich jedoch auf § 19d Abs 2 AZG (Teilzeit/Schriftform). Eine Klausel, die dem Arbeitgeber das dauerhafte einseitige Festlegen der Arbeitszeitlage erlaubt, ist nach § 19c AZG insoweit **unwirksam**.
 
 ### §4.10 All-in (neu eingefügt) (🟠)
 
-§ 2g AVRAG (GNR 10008872) schreibt Transparenz vor: Die Überstundenkomponente muss vom Grundentgelt trennbar ausgewiesen sein; der Durchrechnungszeitraum ist das Kalenderjahr (RS0131677, OGH 27.09.2017, 9 ObA 28/17h). Fehlt diese Trennbarkeit oder wird eine Pauschalabgeltung ohne Nachweis der tatsächlichen Deckung vereinbart, ist § 2g AVRAG verletzt — Folge: Einzelverrechnung aller tatsächlich geleisteten Überstunden, Sonn-/Feiertags- und Nachtarbeitszuschläge. Zu prüfen: Deckt das Pauschalentgelt von € 119.000 (fiktiv/illustrativ) die prognostizierten Überstunden bei Führungsrolle Vertrieb tatsächlich ab?
+§ 2g AVRAG (GNR 10008872) schreibt Transparenz vor: Die Überstundenkomponente muss vom Grundentgelt trennbar ausgewiesen sein. Der Durchrechnungszeitraum ist das Kalenderjahr — das folgt aus AZG § 19 (RS0131677, OGH 27.09.2017, 9 ObA 28/17h). Fehlt diese Trennbarkeit oder wird eine Pauschalabgeltung ohne Nachweis der tatsächlichen Deckung vereinbart, ist § 2g AVRAG verletzt — Folge: Einzelverrechnung aller tatsächlich geleisteten Überstunden, Sonn-/Feiertags- und Nachtarbeitszuschläge. Zu prüfen: Deckt das Pauschalentgelt von € 119.000 (fiktiv/illustrativ) die prognostizierten Überstunden bei Führungsrolle Vertrieb tatsächlich ab?
 
 ### §14.5 Haftungsdeckel 3 Monatsgehälter (⚪ — DHG-Boden prüfen)
 
@@ -98,15 +98,15 @@ Kein Betriebsrat im eigenen Betrieb → § 101 ArbVG-Zustimmungspflicht entfäll
 - **Unterschrift nicht gesetzt** → Der § 26 Z 2 AngG-Backstop ist **erhalten**. Eine zu aggressive einseitige Durchsetzung der verschlechternden Klauseln (Entgeltkürzung, Herabstufung) würde das Austrittsrecht aktivieren.
 - **Vorbehalt noch nicht gesetzt** → Wenn die Mandantin/der Mandant die Fix-Erhöhung ohne schriftlichen Vorbehalt annimmt, entsteht konkludente Bindung an den neuen Fixbetrag (§ 863 ABGB), aber der Austrittsgrund für die Verschlechterungen bleibt — sofern er zeitnah geltend gemacht wird.
 
-### Was ein Unterschrift abbauen würde
+### Was eine Unterschrift abbauen würde
 
 Wer die Verschlechterungen (Versetzung auf geringerwertige Tätigkeit, Widerrufsvorbehalt, All-in, Urlaubsverfall) unterzeichnet, stimmt einvernehmlich zu (§ 863 ABGB). Der § 26-Backstop entfällt dann in diesem Umfang — die noch verbleibende Kontrolle läuft über § 879 Abs 3 ABGB (Inhaltskontrolle der Klauseln) und die DE-Vorlage-Audit-Ergebnisse.
 
 ### Ansprüche im Austrittsfall (§ 29 AngG)
 
-Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel 1): **Kündigungsentschädigung** (§ 29 AngG) = voller Bezugsersatz für die fiktive Restlaufzeit der Kündigungsfrist; in den ersten drei Monaten keine Anrechnung anderweitiger Erwerbe. Abfertigung neu (BMSVG) — Auszahlungsanspruch gegen BV-Kasse bei Erfüllung der 3-Jahres-Schwelle (hier noch nicht erreicht; Anwartschaft läuft weiter).
+Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel 1; Z 2 = Entgelt-Prong: erhebliche Entgeltschmälerung; bare Herabstufung ohne Entgelteinbuße = allgemeiner wichtiger Grund): **Kündigungsentschädigung** (§ 29 AngG) = voller Bezugsersatz für die fiktive Restlaufzeit der Kündigungsfrist; in den ersten drei Monaten keine Anrechnung anderweitiger Erwerbe. Abfertigung neu (BMSVG) — Auszahlungsanspruch gegen BV-Kasse bei Erfüllung der 3-Jahres-Schwelle (hier noch nicht erreicht; Anwartschaft läuft weiter).
 
-[Prüfpunkt: Proposition „schriftlich unter Protest" für § 26-Zeitnähe auf Volltext OGH 05.06.2008, 9 ObA 164/07v via `python3 tools/ris_client.py leit "9 ObA 164/07v"` bestätigen.]
+§ 26 AngG verlangt, dass der vorzeitige Austritt ohne unnötigen Aufschub aus dem aktuellen wichtigen Grund erklärt wird; vorbehaltlose Weiterarbeit kann den Austrittsgrund verwirken.
 
 ---
 
@@ -139,6 +139,7 @@ Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel
 - § 40 ArbVG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008329&Paragraf=40
 - § 19c AZG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008238&Paragraf=19c
 - § 2g AVRAG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008872&Paragraf=2g
+- § 2 URLG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008376&Paragraf=2
 - § 12 URLG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008376&Paragraf=12
 - §§ 2, 5 DHG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008209&Artikel=1&Paragraf=2
 - §§ 6–9 PatG — https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002181&Paragraf=6
@@ -148,13 +149,14 @@ Bei berechtigtem vorzeitigem Austritt nach § 26 Z 2 AngG (GNR 10008069, Artikel
 - Änderungsregime / Bestandsvertrag — RS0109380 (OGH 12.02.1998, 8 ObA 35/98z)
 - Konkludente Bindung durch wiederholte Annahme — RS0014526
 - Empfängerhorizont bei schlüssigem Verhalten — RS0014154
-- Verschlechterung wirkt nicht konkludent zurück — RS0124521 (OGH 24.02.2009, 9 ObA 113/08w)
+- Strenge Anforderungen an schlüssige Erklärungen — RS0042828
+- Bloße Entgegennahme = kein Erklärungswert — RS0047273 [T2]
+- Verschlechterung wirkt nicht konkludent zurück — § 863 ABGB + RS0042828 + RS0014154 (RS0124521 betrifft Unverbindlichkeitsvorbehalt für Sonderzahlungen, nicht diese Proposition)
 - § 879 Abs 3 ABGB Leitdoktrin — RS0016914 (OGH 1 Ob 581/83; bestätigt OGH 1 Ob 105/10p)
 - Bonus-Widerrufsvorbehalt / Toleranzschwelle — RS0112269 (OGH 8 ObA 16/03s) [Volltext abrufen]
-- All-in / Durchrechnungszeitraum Kalenderjahr — RS0131677 (OGH 27.09.2017, 9 ObA 28/17h)
-- § 19c AZG zwingend — RS0118331 (OGH 9 ObA 57/22f)
+- All-in / Durchrechnungszeitraum Kalenderjahr (AZG § 19) — RS0131677 (OGH 27.09.2017, 9 ObA 28/17h)
+- § 19c AZG zwingend (Vollzeit-Lage) — RS0118331 (OGH 8 ObA 86/03k; 9 ObA 57/22f folgt RS0118331, Beisatz stützt sich auf § 19d Abs 2 AZG/Teilzeit)
 - Urlaubsrecht / Verjährung / AG-Hinweispflicht — RS0134421 (OGH 27.06.2023, 8 ObA 23/23z)
-- Vorbehalt „unter Protest" — OGH 05.06.2008, 9 ObA 164/07v [Prüfpunkt: Volltext via RIS bestätigen]
 
 **Deutsche Kontrast-Normen (bewusste Anti-Muster, kein österreichisches Recht; von verify.py übersprungen):**
 - § 6 ArbnErfG (DE), § 626 BGB (DE), § 126b BGB (DE), EFZG (DE), BAG-Stil (DE)

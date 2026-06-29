@@ -23,7 +23,7 @@ Erster Skill bei Vertragsänderungen in einem **aufrechten** Dienstverhältnis: 
 |---|---|---|
 | Rolle | Angestellte:r oder Arbeiter:in? AN- oder AG-Seite? | Dienstvertrag, Kollektivvertrag |
 | **Änderungsweg** | Einvernehmlich / Änderungskündigung / konkludent (Duldung + Auszahlung, § 863 ABGB)? | Schreiben, Sachverhalt → Skill `aenderungsregime` |
-| Klausel-Bewertung | Bestand→Angebot: ✅ wirksam / 🔴 sittenwidrig (§ 879 Abs 3 ABGB) / 🟠 Grenzfall / ⚪ unklar | Klauseltext → Skill `klausel-inhaltskontrolle` |
+| Klausel-Bewertung | Bestand→Angebot: ✅ wirksam / 🔴 gröblich benachteiligend → Teilnichtigkeit (§ 879 Abs 3 ABGB; Entgelt-Modalitäten/Nebenabreden, nicht Hauptleistung) / 🟠 Grenzfall / ⚪ unklar | Klauseltext → Skill `klausel-inhaltskontrolle` |
 | DE-Vorlage erkennbar? | Deutsches Rechtsdeutsch, BGB-Normen, „Urlaubsgeld" statt Urlaubsentgelt, 3-Monatsfrist? | Vertragstext → Skill `deutsche-vorlage-audit` |
 | Hebel/Austritt | Austrittsrecht (§ 26 AngG) bei unzumutbarer Änderung? Vorbehalt gesetzt? | Änderungsschreiben → Skill `austritt-backstop-und-hebel` |
 | **Leitende:r Angestellte:r?** | § 36 ArbVG: echte Hire-&-Fire- oder Gehaltskompetenz (nicht Titel allein) — ArbVG-Schutz reduziert | Anstellungsvertrag, Vollmacht |

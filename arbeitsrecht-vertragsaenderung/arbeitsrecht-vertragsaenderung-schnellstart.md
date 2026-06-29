@@ -12,9 +12,9 @@ Du unterstützt anwaltliche Arbeit bei **Vertragsänderungen im aufrechten Arbei
 |---|---|---|
 | 1 | `einstieg-vertragsaenderung` | Anwalts-Dashboard: Rolle, Änderungsweg, Klausel-Bewertung (Bestand → Angebot), Fristen und Hebel in einer scanbaren Tabelle |
 | 2 | `aenderungsregime` | Gate-Skill: trennt einvernehmliche Vertragsänderung, Änderungskündigung und konkludente Änderung (§ 863 ABGB); klärt, was ohne Unterschrift gilt |
-| 3 | `klausel-inhaltskontrolle` | Klauselweise Inhaltskontrolle nach § 879 Abs 3 ABGB: Bonus-Widerruf, Versetzung, All-in, Urlaub, Haftungsdeckel |
+| 3 | `klausel-inhaltskontrolle` | Klauselweise Inhaltskontrolle nach § 879 Abs 3 ABGB: Bonus-Widerruf, Versetzung, All-in, Arbeitszeitlage (§ 19c AZG), Urlaub, Haftungsdeckel |
 | 4 | `deutsche-vorlage-audit` | Falsche-Freunde-Scanner: erkennt aus deutschen Vorlagen übernommene Klauseln und ersetzt sie durch die österreichisch korrekte Norm |
-| 5 | `austritt-backstop-und-hebel` | Strategischer Hebel: berechtigter vorzeitiger Austritt § 26 AngG + Kündigungsentschädigung § 29 AngG; warnt, dass Unterschrift den Backstop abbaut |
+| 5 | `austritt-backstop-und-hebel` | Strategischer Hebel: berechtigter vorzeitiger Austritt § 26 Z 2 AngG + Kündigungsentschädigung § 29 AngG; warnt, dass Unterschrift den Backstop abbaut |
 | 6 | `anschluss-routing` | Abschluss-Router: verweist auf die Beendigungs-Vertikale, AK/Anwalt, Betriebsrat und Steuerberater |
 
 ## 1. Änderungsweg (die Weiche)
@@ -35,7 +35,7 @@ Vorformulierte Klauseln sind nichtig, soweit sie den Vertragspartner gröblich b
 - **Versetzung auf geringerwertige Tätigkeit** → 🟠 ohne Betriebsrat: § 879 Abs 3 ABGB als Individualschutz; mit Betriebsrat: Zustimmungspflicht § 101 ArbVG vorgelagert.
 - **All-in ohne Transparenz** → 🔴 § 2g AVRAG: Überstundenanteil trennbar ausweisen; Durchrechnungszeitraum = Kalenderjahr (RS0131677).
 - **Arbeitszeitlage einseitig durch AG** → 🔴 § 19c AZG zwingend; einseitiger Gestaltungsvorbehalt unwirksam (RS0118331).
-- **Urlaubsverfall ohne Ersatzleistung** → 🔴 gesetzlicher Mindestanspruch § 12 URLG nicht abdingbar; AG-Hinweispflicht erforderlich (RS0134421).
+- **Urlaubsverfall ohne Ersatzleistung** → 🔴 gesetzliches Urlaubsausmaß § 2 Abs 1 URLG nicht abdingbar (§ 12 URLG); AG-Hinweispflicht erforderlich (RS0134421).
 - **Haftungsdeckel unter DHG-Boden** → § 2 DHG und § 5 DHG zwingend; Vorsatz-Ausschluss nichtig.
 
 ## 3. DE-Vorlage-Audit (Falsche-Freunde-Scanner)

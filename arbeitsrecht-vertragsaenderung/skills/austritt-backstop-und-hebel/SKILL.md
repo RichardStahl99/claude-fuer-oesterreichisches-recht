@@ -7,12 +7,12 @@ description: "Strategischer Hebel: berechtigter vorzeitiger Austritt (§ 26 Z 2 
 
 ## Fachlicher Anker
 
-- **Normen (über RIS auflösen, `tools/ris_client.py`):** § 26 Z 2 AngG (berechtigter vorzeitiger Austritt bei erheblicher Entgeltkürzung / Herabstufung) — GNR 10008069 (Artikel 1); § 29 AngG (Kündigungsentschädigung) — GNR 10008069 (Artikel 1); § 863 ABGB (schlüssiges Verhalten / Vorbehalt) — GNR 10001622.
+- **Normen (über RIS auflösen, `tools/ris_client.py`):** § 26 Z 2 AngG (berechtigter vorzeitiger Austritt bei erheblicher Entgeltschmälerung — Z 2 = Entgelt-Prong; bare Herabstufung ohne Entgelteinbuße = allgemeiner wichtiger Grund § 26 AngG) — GNR 10008069 (Artikel 1); § 29 AngG (Kündigungsentschädigung) — GNR 10008069 (Artikel 1); § 863 ABGB (schlüssiges Verhalten / Vorbehalt) — GNR 10001622.
 - **Kernsätze (Laufzeit-Verifikation erforderlich):**
-  1. Eine zu aggressive einseitige Herabstufung oder Entgeltkürzung — ohne wirksame einvernehmliche Vertragsänderung oder Änderungskündigung — berechtigt den Arbeitnehmer nach § 26 Z 2 AngG zum vorzeitigen Austritt, wenn der Arbeitgeber die wesentliche Vertragspflicht (Entgelt, Verwendung) erheblich verletzt.
+  1. Eine erhebliche Entgeltkürzung ohne vertragliche Grundlage berechtigt den Arbeitnehmer nach § 26 Z 2 AngG (Entgelt-Prong) zum vorzeitigen Austritt; eine Herabstufung, die nicht mit einer Entgeltschmälerung verbunden ist, kann allgemeiner wichtiger Grund nach § 26 AngG sein, fällt aber nicht unter Z 2.
   2. Rechtsfolge des berechtigten Austritts: Kündigungsentschädigung nach § 29 AngG — voller Bezugsersatz für die fiktive Restlaufzeit der Kündigungsfrist; in den ersten drei Monaten der Schadensminderungsfrist keine Anrechnung anderweitiger Erwerbe.
-  3. Wer die Verschlechterung vorbehaltlos unterschreibt oder die geänderte Leistung vorbehaltlos weiterhin annimmt, stimmt konkludent zu (§ 863 ABGB) und baut damit den § 26-Backstop ab; ein nachträglicher Vorbehalt wirkt nicht rückwirkend (RIS-Justiz RS0124521, OGH 24.02.2009, 9 ObA 113/08w — Linie aus `aenderungsregime`).
-  4. Reagiert der Arbeitnehmer auf die aufgezwungene Änderung sofort schriftlich „unter Protest" / „unter ausdrücklichem Vorbehalt aller Rechte", bleibt das Austrittsrecht erhalten — vorausgesetzt, der Austritt wird zeitnah zum auslösenden Anlass erklärt (GZ RIS-bestätigt: OGH 05.06.2008, 9 ObA 164/07v — die Proposition „schriftlich unter Protest" erst nach Volltext-Prüfung übernehmen; siehe Judikatur-Anker).
+  3. Wer die Verschlechterung vorbehaltlos unterschreibt oder die geänderte Leistung vorbehaltlos weiterhin annimmt, stimmt konkludent zu (§ 863 ABGB) und baut damit den § 26-Backstop ab; ein nachträglicher Vorbehalt wirkt nicht rückwirkend (§ 863 ABGB + RS0042828 [strenge Anforderungen an schlüssige Erklärungen] + RS0014154 [Empfängerhorizont]; bloße Entgegennahme = kein Erklärungswert: RS0047273 [T2]).
+  4. § 26 AngG verlangt, dass der vorzeitige Austritt ohne unnötigen Aufschub aus dem aktuellen wichtigen Grund erklärt wird; vorbehaltlose Weiterarbeit kann den Austrittsgrund verwirken.
 - **Quellenhygiene:** `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md`. Keine GZ aus Modellwissen — nur RIS-verifizierte Fundstellen verwenden.
 
 ## Einsatzlage
@@ -23,7 +23,7 @@ Dieser Skill greift, wenn das Arbeitsverhältnis **nicht durch Kündigung, sonde
 
 | Szenario | Sachverhalt | Hebel |
 |---|---|---|
-| **Herabstufung** | Arbeitgeber versetzt einseitig auf eine schlechter entlohnte oder statusmäßig niedrigere Stelle | § 26 Z 2 AngG — Austrittsrecht, wenn Entgelt- oder Verwendungspflicht erheblich verletzt |
+| **Herabstufung** | Arbeitgeber versetzt einseitig auf eine schlechter entlohnte oder statusmäßig niedrigere Stelle | § 26 Z 2 AngG — Austrittsrecht bei Entgeltschmälerung; bare Herabstufung ohne Entgelteinbuße = allgemeiner wichtiger Grund (§ 26 AngG, nicht Z 2) |
 | **Entgeltkürzung** | Arbeitgeber kürzt Grundgehalt, Zulagen oder laufende Prämien ohne vertragliche Deckung | § 26 Z 2 AngG — Nichterfüllung der Entgeltpflicht als Austrittsgrund |
 | **Unterschrift bereits geleistet** | Arbeitnehmer hat einem Widerrufs- oder Versetzungsvorbehalt schriftlich zugestimmt | **Backstop abgebaut** — vertragliche Grundlage für die Herabstufung besteht; § 26-Schutz stark reduziert; Klausel auf § 879 Abs 3 ABGB prüfen (→ `klausel-inhaltskontrolle`) |
 
@@ -60,8 +60,8 @@ Priorität: **Frist** vor allem — Austritt zeitnah zum auslösenden Anlass erk
 
 Zur Laufzeit ausführen — **keine GZ aus Modellwissen behaupten**, nur RIS-geliefertes übernehmen:
 
-- **Ankerbeschluss „unter Protest" / Vorbehalt bei Versetzung:** `python3 tools/ris_client.py leit "9 ObA 164/07v"` → bestätigt als Folgeentscheidung (OGH 05.06.2008); folgt RIS-Justiz RS0112755 (Stamm OGH 9 ObA 255/99m, 10 Entscheidungen — Feststellungsbegehren Unwirksamkeit Versetzung), RS0029509 (Stamm OGH 9 ObA 29/93, 25 Entscheidungen — dienstvertragliche Beurteilung Versetzung), RS0021252 (Stamm OGH 9 ObA 34/88, 4 Entscheidungen — vertragsändernde vs. direktoriale Versetzung). Volltext des Erkenntnisses: RIS-Websuche `https://www.ris.bka.gv.at/Ergebnis.wxe?Abfrage=Justiz&Suchworte=9%20ObA%20164/07v` — Proposition „schriftlich unter Protest" im Entscheidungstext bestätigen.
-- **Konkludente Bindung / Vorbehalt nach Zufluss:** `python3 tools/ris_client.py volltext "JJR_20090224_OGH0002_009OBA00113_08W0000_001"` → RIS-Justiz RS0124521, OGH 24.02.2009, 9 ObA 113/08w (Verschlechterung wirkt nicht konkludent zurück; Vorbehalt nach Zufluss nicht mehr nachholbar).
+- **Zeitnähe des Austritts / vorbehaltlose Weiterarbeit:** § 26 AngG verlangt, dass der vorzeitige Austritt ohne unnötigen Aufschub aus dem aktuellen wichtigen Grund erklärt wird; vorbehaltlose Weiterarbeit kann den Austrittsgrund verwirken. (9 ObA 164/07v ist eine Versetzungs-/Feststellungsklage ohne § 26/Austritt-Inhalt — kein Zitat.)
+- **Konkludente Bindung / Vorbehalt nach Zufluss:** Gestützt auf § 863 ABGB + RS0042828 (strenge Anforderungen an schlüssige Erklärungen) + RS0014154 (Empfängerhorizont) + RS0047273 [T2] (bloße Entgegennahme = kein Erklärungswert). — RS0124521 (9 ObA 113/08w) betrifft Unverbindlichkeitsvorbehalt für Sonderzahlungen, nicht diese Proposition.
 - **Aktualität § 26 AngG:** `python3 tools/ris_client.py aktualitaet ANGG 26 --seit 2008-06-05` → Fassung unverändert seit 1921-07-01; keine Gesetzesänderung nach dem Ankerbeschluss.
 - **Aktualität § 29 AngG:** `python3 tools/ris_client.py aktualitaet ANGG 29 --seit 2008-06-05` → Fassung unverändert seit 1971-08-01; keine Gesetzesänderung nach dem Ankerbeschluss.
 
