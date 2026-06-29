@@ -22,7 +22,7 @@ description: "Systematischer Falsche-Freunde-Scanner: erkennt aus deutschen Vorl
 
 ## Einsatzlage
 
-Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wurden und nach deutschem Recht konzipiert sind. Er ersetzt das Analyse-Schritt, der in `klausel-inhaltskontrolle` bei Klauseln mit deutschen Rechtsmustern ausgelöst wird. Einsatz: vor der inhaltlichen Klauselkontrolle, wenn der Vertragstext Merkmale deutschen Rechtsdenkens aufweist (BGB-Zitate, HGB-Terminologie, „Treu und Glauben" ohne österreichischen Bezug, arbeitnehmererfindungsrechtliche Klauseln nach ArbnErfG).
+Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wurden und nach deutschem Recht konzipiert sind. Er ersetzt den Analyse-Schritt, der in `klausel-inhaltskontrolle` bei Klauseln mit deutschen Rechtsmustern ausgelöst wird. Einsatz: vor der inhaltlichen Klauselkontrolle, wenn der Vertragstext Merkmale deutschen Rechtsdenkens aufweist (BGB-Zitate, HGB-Terminologie, „Treu und Glauben" ohne österreichischen Bezug, arbeitnehmererfindungsrechtliche Klauseln nach ArbnErfG).
 
 **Typische Falsche-Freunde im Arbeitsvertrag:**
 
@@ -39,7 +39,7 @@ Dieser Skill erkennt Klauseln, die aus deutschen Vertragsvorlagen übernommen wu
 | Klausel-Indiz | Prüfpunkt | Ampel | Norm-Anker AT | Deutsche Wurzel |
 |---|---|---|---|---|
 | ArbnErfG-Klausel / 4-Monats-Fiktion | Liegt eine schriftliche Vereinbarung über den Rechtsübergang vor? Fehlt sie, besteht kein Erwerb. | 🔴 | §§ 6–9 PatG | § 6 ArbnErfG (DE) |
-| „außerordentliche Kündigung ohne Abmahnung" | Greift ein Entlassungsgrund nach § 27 AngG? Tatbestandsprüfung anhand österreichischer Judikatur — keine deutschen BGH-Linien übernehmen. | 🔴 | § 27 AngG | § 626 BGB (DE) |
+| „außerordentliche Kündigung ohne Abmahnung" | Greift ein Entlassungsgrund nach § 27 AngG? Tatbestandsprüfung anhand österreichischer Judikatur — keine deutschen BAG-Linien übernehmen. | 🔴 | § 27 AngG | § 626 BGB (DE) |
 | „in Textform" | Welche Formvorschrift ist gemeint? Schriftform (§ 886 ABGB)? Keine Entsprechung in AT; Klausel muss klargestellt werden. | 🟠 | § 886 ABGB | § 126b BGB (DE) |
 | EFZG-Verweis / „Entgeltfortzahlungsgesetz" | Angestellte sind vom deutschen EFZG ausgenommen (§ 1 Abs 2 EFZG (DE)); für sie gilt § 8 AngG. Vertragstext auf AT-Norm umstellen. | 🔴 | § 8 AngG | EFZG (DE) |
 | Fixer 3-Monats-Haftungsdeckel (BAG-Muster) | DHG-Boden (§§ 2, 5 DHG) zwingend; Klausel darf Vorsatz/grobe Fahrlässigkeit nicht ausschließen und darf die DHG-Haftungsuntergrenze nicht unterschreiten. | 🔴 | §§ 2, 5 DHG | BAG-Stil (DE) |
