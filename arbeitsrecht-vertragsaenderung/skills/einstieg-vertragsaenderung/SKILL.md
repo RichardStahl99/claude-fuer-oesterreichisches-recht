@@ -49,7 +49,7 @@ Vorrangig **`aenderungsregime`** — der Änderungsweg ist die Weiche; bei Ände
 ## Norm-Radar
 
 - `§ 863 ABGB` — konkludenter Konsens (Bindung durch Duldung und Annahme der Leistung)
-- `§ 879 Abs 3 ABGB` — Inhaltskontrolle: gröblich benachteiligende Klausel im Verbrauchergeschäft nichtig
+- `§ 879 Abs 3 ABGB` — Inhaltskontrolle: gröblich benachteiligende Klausel in vorformulierten Vertragsbestimmungen (AGB/Formularbindung) nichtig
 - `§ 26 AngG` — Austrittsrecht bei unzumutbarer Verschlechterung der Arbeitsbedingungen
 - `§ 29 AngG` — Ansprüche bei berechtigt erklärtem Austritt (Abfertigung, Kündigungsentschädigung)
 - `§ 36 Abs 2 Z 3 ArbVG` — Definition leitende:r Angestellte:r (Hire-&-Fire-/Gehaltskompetenz)
@@ -58,7 +58,7 @@ Vorrangig **`aenderungsregime`** — der Änderungsweg ist die Weiche; bei Ände
 
 ## Genau eine Rückfrage (nur wenn nötig)
 
-Trägt die Akte 80 %: Dashboard mit `[noch zu klären: …]`. Sonst die **eine** Weiche: *„Auf welchem Weg will der Arbeitgeber die Änderung durchsetzen — einvernehmlich, per Änderungskündigung oder durch faktische Änderung der Leistung?"* (entscheidet Änderungsregime, Fristlauf und Hebel).
+Trägt die Akte 80 %: Dashboard mit `[noch zu klären: …]`. Sonst die **eine** Weiche: *„Auf welchem Weg will der Arbeitgeber die Änderung durchsetzen — einvernehmlich, per Änderungskündigung oder durch konkludente Änderung (Duldung + Auszahlung)?"* (entscheidet Änderungsregime, Fristlauf und Hebel).
 
 ## Judikatur-Anker (Such-Wegweiser, kein Blindzitat)
 
