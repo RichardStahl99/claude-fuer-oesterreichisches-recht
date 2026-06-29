@@ -39,6 +39,13 @@
       "description": "Beendigung des Arbeitsverhältnisses: Beendigungsart, Kündigungsfristen (§ 20 AngG, § 1159 ABGB), Kündigungsschutz/Anfechtung (§ 105 ArbVG, Betriebsrat, ASG, 2-Wochen-Frist) und Beendigungsansprüche (Abfertigung neu/alt, Urlaubsersatz, Kündigungsentschädigung). Vierte Pilot-Vertikale.",
       "version": "0.1.0",
       "author": "RichardStahl99"
+    },
+    {
+      "name": "arbeitsrecht-vertragsaenderung",
+      "source": "./arbeitsrecht-vertragsaenderung",
+      "description": "Vertragsänderung im aufrechten Dienstverhältnis: Regime-Triage (einvernehmlich/Änderungskündigung/konkludent § 863 ABGB), Klausel-Inhaltskontrolle (§ 879 Abs 3 ABGB), DE→AT-Falsche-Freunde-Audit und Austritts-Backstop (§ 26/§ 29 AngG). Fünfte Vertikale.",
+      "version": "0.1.0",
+      "author": "RichardStahl99"
     }
   ]
 }
