@@ -14,7 +14,7 @@ description: "Klauselweise Inhaltskontrolle nach § 879 Abs 3 ABGB (gröbliche B
   - § 2g AVRAG (GNR 10008872) — All-in-Vereinbarung: Transparenzgebot, Trennbarkeit Grundentgelt/Überstundenanteil.
   - § 12 URLG (GNR 10008376) — Urlaubsrecht: Jahresurlaub, gesetzliche Mindestdauer; auf den gesetzlichen Teil nicht abdingbar.
   - § 2 DHG (GNR 10008209, Artikel 1) — Dienstnehmerhaftpflichtgesetz: Haftungsmaßstab (leichte/grobe Fahrlässigkeit, Vorsatz).
-  - § 5 DHG (GNR 10008209, Artikel 1) — DHG: Mäßigungsrecht des Gerichts; Haftungsdeck nicht unter DHG-Boden absenkbar.
+  - § 5 DHG (GNR 10008209, Artikel 1) — DHG: Mäßigungsrecht des Gerichts; Haftungsdeckel nicht unter DHG-Boden absenkbar.
 - **Quellenhygiene:** `references/quellenhygiene.md`, `references/zitierweise.md`, `references/ris-quellen.md` (§ 3 Grounding-Protokoll). Keine GZ aus Modellwissen — nur RIS-verifizierte Fundstellen verwenden.
 
 ## Einsatzlage
@@ -25,7 +25,7 @@ Dieser Skill prüft konkrete Klauseln eines Arbeitsvertrags oder einer Vertrags�
 
 | Klauseltyp | Typischer Wortlaut (Vorlage) | Kernrisiko |
 |---|---|---|
-| **Bonus-Widerruf** | „Der Bonus kann jederzeit nach freiem Ermessen widerrufen werden." | Bereits verdiente Anteile sind unwiderruflich; Widerrufsklausel ggf. § 879 Abs 3-widrig |
+| **Bonus-Widerruf** | „Der Bonus kann jederzeit nach freiem Ermessen widerrufen werden." | Bereits verdiente Anteile sind unwiderruflich; Widerrufsklausel ggf. § 879 Abs 3-widrig [Prüfpunkt: Volltext 8 ObA 33/21t via RIS abrufen — Sub-Proposition nicht im verifizierten RS-Text] |
 | **Versetzung geringerwertig** | „Der Arbeitgeber kann den AN auf eine geringerwertige Stelle versetzen." | Entgelt- und Bestandsschutz; ohne Betriebsrat: § 879 Abs 3 als Individualkontrolle |
 | **All-in** | „Das Gehalt von X Euro pauschal deckt alle Überstunden ab." | Transparenzgebot § 2g AVRAG; kein Verzicht auf das Übersteigende; Durchrechnungszeitraum = Kalenderjahr |
 | **Arbeitszeit-Lage** | „Die Einteilung der Arbeitszeit obliegt allein dem Arbeitgeber." | § 19c AZG: Lage und Ausmaß zwingend; einseitiger Gestaltungsvorbehalt unwirksam |
