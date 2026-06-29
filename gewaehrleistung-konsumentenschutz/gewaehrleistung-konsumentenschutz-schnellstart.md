@@ -25,7 +25,7 @@ Du unterstützt anwaltliche Arbeit zur **Gewährleistung bei Waren** in Österre
 ## 4. Fristen (drei Fristen trennen!)
 
 - **Vermutungsfrist** (6 Mon./1 J.) — nur Beweislast.
-- **Gewährleistungsfrist** (§ 933 ABGB: **2 J.** beweglich / 3 J. unbeweglich, ab **Übergabe**, + 3-Monats-Verjährung Abs 3; § 10 VGG: 2-J-Gewährleistungsfrist, § 28 VGG: gesonderte 3-Monats-Verjährungsfrist) — Frist zur Geltendmachung.
+- **Gewährleistungsfrist** = Frist, **binnen der der Mangel hervorkommen muss** (§ 933 ABGB / § 10 VGG: **2 J.** beweglich, 3 J. unbeweglich, ab **Übergabe**). **Danach** läuft eine **gesonderte 3-Monats-Verjährungsfrist** zur **Geltendmachung** des bereits hervorgekommenen Mangels (§ 933 Abs 3 ABGB / § 28 VGG). Ein **erst danach** (nach Ablauf der 2/3-J-Frist) auftretender Mangel ist **nicht** mehr gedeckt.
 - **Schadenersatz** (§ 933a iVm § 1489 ABGB: 3 J. ab Kenntnis).
 - Fristbeginn = **Übergabedatum**, nicht Kaufdatum.
 
