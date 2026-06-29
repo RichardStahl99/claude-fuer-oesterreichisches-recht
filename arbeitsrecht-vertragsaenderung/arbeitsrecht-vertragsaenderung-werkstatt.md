@@ -89,7 +89,7 @@ Prüfmaßstab: § 879 Abs 3 ABGB, Leitdoktrin RS0016914.
 | „Arbeitnehmererfindungsgesetz" / 4-Monats-Fiktion | § 6 ArbnErfG (DE) | § 6 PatG — kein Erwerb ex lege; Schriftlichkeit zwingend | 🔴 |
 | „außerordentliche Kündigung ohne Abmahnung" | § 626 BGB (DE) | § 27 AngG — Entlassung; abschließender Tatbestandskatalog | 🔴 |
 | „in Textform" | § 126b BGB (DE) | in AT nicht kodifiziert; Schriftform = § 886 ABGB | 🟠 |
-| „§ 2 Entgeltfortzahlungsgesetz" | EFZG (DE) | § 8 AngG — Angestellte vom deutschen EFZG ausgenommen | 🔴 |
+| „§ 2 Entgeltfortzahlungsgesetz" / EFZG-Verweis | EFZG (DE) | § 8 AngG — das **österreichische** EFZG (BGBl 399/1974) nimmt die Angestellten gemäß § 1 Abs 2 EFZG vom Geltungsbereich aus (es gilt für Arbeiter); für Angestellte gilt § 8 AngG | 🔴 |
 | fixer 3-Monats-Haftungsdeckel (BAG-Stil) | BAG-Muster (DE) | § 2 DHG, § 5 DHG — DHG-Boden zwingend | 🔴 |
 
 **Zwischenergebnis:** Der Nachtrag basiert in mehreren Klauseln auf einer deutschen Vertragsvorlage. Die betroffenen Klauseln sind im jeweiligen Umfang unwirksam oder leer. Nach Umstellung auf die AT-Norm schließt die Inhaltskontrolle nach § 879 Abs 3 ABGB an.
