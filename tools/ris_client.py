@@ -129,6 +129,8 @@ def split_geschaeftszahlen(item) -> list[str]:
     'A; B (B2); A' -> ['A', 'B'] (führende GZ je Eintrag, Klammer-Parallel-GZ verworfen)."""
     if isinstance(item, dict):
         item = item.get("item")
+    if isinstance(item, list):
+        item = ";".join(str(x) for x in item)
     out, seen = [], set()
     for part in (item or "").split(";"):
         lead = part.split("(")[0].strip()
